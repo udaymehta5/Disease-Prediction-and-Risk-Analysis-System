@@ -1,1 +1,0 @@
-# Disease-Prediction-and-Risk-Analysis-System
