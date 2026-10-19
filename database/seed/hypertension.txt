@@ -1,0 +1,35 @@
+Disease: Hypertension (High Blood Pressure)
+Category: Cardiovascular Disorder
+
+Overview:
+Hypertension is a prevalent chronic vascular condition characterized by persistently elevated systemic arterial blood pressure. Often termed the "silent killer" because it frequently produces no early overt symptoms while damaging arterial walls, kidneys, brain, and the heart.
+
+Key Symptoms:
+- Dull morning headaches (occipital region)
+- Dizziness, lightheadedness, or feeling faint
+- Shortness of breath during mild exertion
+- Spontaneous nosebleeds (epistaxis) in severe or crisis stages
+- Palpitations or irregular fluttering heart sensation
+- Visual disturbances (blurred vision, double vision)
+- Chest tightness or vascular pulsation sensations
+
+Critical Biomarkers / Lab Indicators:
+- Systolic Blood Pressure >= 130 mmHg and/or Diastolic Blood Pressure >= 80 mmHg (Stage 1 Hypertension)
+- Systolic Blood Pressure >= 140 mmHg and/or Diastolic Blood Pressure >= 90 mmHg (Stage 2 Hypertension)
+- Hypertensive Crisis: Systolic > 180 mmHg and/or Diastolic > 120 mmHg (requires emergency care)
+- Elevated serum creatinine, microalbuminuria, or decreased eGFR suggesting hypertensive nephropathy
+
+Primary Risk Factors:
+- High dietary sodium (> 2,300 mg daily) and low dietary potassium intake
+- Chronic emotional or occupational stress
+- Tobacco smoking, vaping, or heavy alcohol consumption
+- Advanced age (arterial stiffness increases over age 50)
+- Obesity (BMI >= 30) and obstructive sleep apnea (OSA)
+- Genetic predisposition / positive family history
+
+Precautions & Clinical Management:
+- Follow the Dietary Approaches to Stop Hypertension (DASH diet)
+- Restrict daily sodium intake to under 1,500 - 2,000 mg
+- Regular automated blood pressure logging at home twice daily
+- Cardiovascular exercise: 30 minutes of brisk walking or swimming 5 days weekly
+- Consultation with a cardiologist or physician for ACE inhibitors, ARBs, or calcium channel blockers

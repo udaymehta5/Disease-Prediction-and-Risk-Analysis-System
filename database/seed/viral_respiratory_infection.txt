@@ -1,0 +1,34 @@
+Disease: Acute Viral Respiratory Infections (Influenza, COVID-19, Common Cold)
+Category: Infectious Respiratory Disease
+
+Overview:
+Acute viral respiratory infections are caused by viruses (such as Influenza A/B, SARS-CoV-2, Rhinovirus, Adenovirus, or RSV) affecting the upper and/or lower respiratory tracts, transmitted predominantly through airborne respiratory droplets.
+
+Key Symptoms:
+- Sudden onset of high fever (> 38°C / 100.4°F) with shivering or rigors
+- Dry, hacking, or productive cough
+- Sore throat, pharyngeal pain, and difficulty swallowing
+- Severe generalized muscle aches (myalgia) and joint pain
+- Profound physical fatigue, malaise, and weakness
+- Nasal congestion, rhinorrhea (runny nose), and sneezing
+- Loss of taste (ageusia) or smell (anosmia) particularly with SARS-CoV-2
+
+Critical Biomarkers / Lab Indicators:
+- Rapid Antigen Diagnostic Test (RADT) or RT-PCR positive for Influenza or SARS-CoV-2
+- Complete Blood Count (CBC): Normal or decreased white blood cell count (leukopenia) with relative lymphopenia
+- Elevated C-Reactive Protein (CRP) or Erythrocyte Sedimentation Rate (ESR)
+- Pulse Oximetry SpO2 < 94% indicates lower respiratory tract involvement / pneumonia requiring urgent evaluation
+
+Primary Risk Factors:
+- Close contact with infected individuals in poorly ventilated or crowded indoor environments
+- Lack of up-to-date seasonal influenza or COVID-19 vaccinations
+- Compromised immune system (immunosuppressive therapy, HIV, active cancer chemotherapy)
+- Extremes of age (< 2 years or > 65 years)
+- Chronic comorbid conditions (diabetes, chronic kidney disease, heart failure, asthma)
+
+Precautions & Clinical Management:
+- Ensure strict bed rest and drink abundant oral fluids (water, oral rehydration solutions, warm soups)
+- Isolate at home to prevent transmitting viral infection to vulnerable family members
+- Antipyretic / analgesic medications (acetaminophen or ibuprofen) to manage fever and myalgias
+- For high-risk individuals, early prescription antiviral therapy (e.g., Oseltamivir within 48 hours for Flu; Paxlovid for COVID-19)
+- Seek immediate emergency care if experiencing cyanosis (blue lips/face), confusion, or severe respiratory distress

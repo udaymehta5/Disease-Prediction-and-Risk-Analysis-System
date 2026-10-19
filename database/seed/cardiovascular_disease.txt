@@ -1,0 +1,33 @@
+Disease: Coronary Artery Disease (CAD) and Acute Myocardial Infarction
+Category: Cardiovascular Emergency & Chronic Disease
+
+Overview:
+Coronary artery disease is caused by atherosclerosis—the buildup of fatty plaques within coronary arteries that supply blood, oxygen, and nutrients to the heart myocardium. Complete arterial occlusion causes myocardial infarction (heart attack).
+
+Key Symptoms:
+- Angina pectoris: squeezing, heavy pressure, fullness, or crushing pain in the center of the chest
+- Radiation of discomfort or pain to the left shoulder, left arm, neck, jaw, back, or epigastrium
+- Shortness of breath with or without chest discomfort
+- Cold sweat (diaphoresis), lightheadedness, or sudden unexplained dizziness
+- Nausea, indigestion, vomiting, or overwhelming generalized fatigue (common in females)
+- Rapid, irregular heart rate or sensations of impending doom
+
+Critical Biomarkers / Lab Indicators:
+- Serum Cardiac Troponin I (cTnI) or Troponin T (cTnT) markedly elevated
+- Creatine Kinase-MB (CK-MB) elevation
+- Lipid Profile: Elevated Total Cholesterol (> 200 mg/dL), High LDL-C (> 100 mg/dL), Low HDL-C (< 40 mg/dL), High Triglycerides (> 150 mg/dL)
+- High-sensitivity C-reactive protein (hs-CRP) > 3.0 mg/L indicating high vascular inflammation
+- 12-lead ECG: ST-segment elevation (STEMI), ST-depression, or T-wave inversion
+
+Primary Risk Factors:
+- Pre-existing hypertension, diabetes mellitus, or dyslipidemia
+- Chronic tobacco use (causes endothelial dysfunction and platelet aggregation)
+- Premature family history of coronary heart disease (males < 55, females < 65)
+- Physical inactivity, high-stress lifestyle, and high saturated/trans fat diet
+- Chronic systemic inflammation or metabolic syndrome
+
+Precautions & Clinical Management:
+- EMERGENCY WARNING: Any persistent chest pressure with arm pain or sweating requires immediate emergency 911/ambulance dispatch! Do NOT drive oneself to the hospital.
+- Therapeutic lifestyle changes: plant-predominant Mediterranean diet and smoking cessation
+- Pharmacotherapy: statin therapy for LDL reduction, antiplatelet agents (aspirin), beta-blockers
+- Regular evaluation by a cardiologist, including stress echocardiography or coronary angiogram

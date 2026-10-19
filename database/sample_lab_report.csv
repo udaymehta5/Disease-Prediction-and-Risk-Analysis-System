@@ -1,0 +1,10 @@
+Biomarker,Result,Reference_Range,Status
+Fasting Blood Glucose,148,70 - 99 mg/dL,High
+Hemoglobin A1c (HbA1c),7.2,< 5.7 %,High
+Systolic Blood Pressure,138,90 - 120 mmHg,Elevated
+Diastolic Blood Pressure,86,60 - 80 mmHg,Elevated
+Total Cholesterol,220,< 200 mg/dL,High
+LDL Cholesterol,135,< 100 mg/dL,High
+HDL Cholesterol,38,> 40 mg/dL,Low
+Serum Creatinine,1.0,0.7 - 1.3 mg/dL,Normal
+eGFR,88,> 60 mL/min,Normal

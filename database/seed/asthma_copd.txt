@@ -1,0 +1,34 @@
+Disease: Asthma and Chronic Obstructive Pulmonary Disease (COPD)
+Category: Respiratory System Disorder
+
+Overview:
+Asthma is a chronic inflammatory condition of the airways causing reversible bronchial hyperresponsiveness and episodic airflow obstruction. COPD represents progressive, largely irreversible lung damage characterized by chronic bronchitis and emphysema.
+
+Key Symptoms:
+- Wheezing (high-pitched whistling sound during expiration)
+- Chronic, persistent cough (dry in asthma; productive with mucus in COPD)
+- Shortness of breath (dyspnea) aggravated by physical activity or cold air
+- Chest tightness or feeling like an elastic band around the chest
+- Frequent nocturnal awakenings due to coughing or breathing difficulty
+- Increased fatigue and frequent chest infections
+
+Critical Biomarkers / Lab Indicators:
+- Spirometry: Reduced Forced Expiratory Volume in 1 second (FEV1)
+- FEV1 / FVC ratio < 0.70 post-bronchodilator confirms persistent airflow limitation
+- Peak Expiratory Flow (PEF) variability > 10%
+- Pulse oximetry showing resting SpO2 < 92% during exacerbations
+- Elevated fractional exhaled nitric oxide (FeNO) in eosinophilic asthma
+
+Primary Risk Factors:
+- Cigarette smoking (primary cause of COPD) or prolonged secondhand smoke exposure
+- Atopy or family history of allergic rhinitis, eczema, and asthma
+- Environmental exposures: air pollution, chemical fumes, and organic dusts
+- Childhood respiratory viral infections (RSV, rhinovirus)
+- Cold weather, exercise, strong perfumes, or pollen triggers
+
+Precautions & Clinical Management:
+- Immediate cessation of all tobacco smoking and avoidance of vaping
+- Consistent compliance with prescribed inhaled corticosteroids (ICS) and long-acting beta-agonists (LABA)
+- Keep quick-relief rescue inhaler (albuterol) accessible at all times
+- Annual influenza and pneumococcal vaccinations to prevent exacerbations
+- Pulmonary rehabilitation and scheduled Spirometry follow-ups with a pulmonologist

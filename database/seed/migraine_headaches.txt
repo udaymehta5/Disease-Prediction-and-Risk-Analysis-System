@@ -1,0 +1,32 @@
+Disease: Migraine Headache and Chronic Tension-Type Headaches
+Category: Neurological Disorder
+
+Overview:
+Migraine is a neurovascular headache disorder characterized by recurrent attacks of moderate to severe throbbing head pain, typically unilateral, associated with autonomic and sensory symptoms like photophobia, phonophobia, and nausea.
+
+Key Symptoms:
+- Unilateral (one-sided) throbbing or pulsating head pain lasting 4 to 72 hours
+- Aggravation by routine physical activity (walking, climbing stairs)
+- Sensitivity to light (photophobia) and sensitivity to sound (phonophobia)
+- Nausea and vomiting during headache episodes
+- Sensory aura in ~25-30% of patients: shimmering zigzag lines (scintillating scotoma), blind spots, or unilateral numbness
+- Prodrome symptoms: neck stiffness, yawning, food cravings, fatigue occurring 24 hours prior
+
+Critical Biomarkers / Lab Indicators:
+- Migraine is primarily diagnosed clinically via International Classification of Headache Disorders (ICHD-3) criteria
+- Brain MRI or CT scans rule out secondary causes (intracranial hemorrhage, aneurysm, space-occupying lesions) when red flags ("SNOOP") are present
+- Blood tests: Normal ESR/CRP (rules out temporal arteritis in patients > 50 years)
+
+Primary Risk Factors:
+- Female sex (migraines are 3x more common in women due to estrogen fluctuations)
+- Positive family history of migraines (strong genetic component)
+- Environmental & emotional triggers: emotional stress, sleep disturbances, skipping meals
+- Dietary triggers: aged cheeses, processed meats with nitrates, MSG, artificial sweeteners, red wine, caffeine withdrawal
+- Weather or barometric pressure shifts, sensory overload (flickering bright lights, loud noises)
+
+Precautions & Clinical Management:
+- Rest in a quiet, dark, temperature-controlled room during acute attacks; apply cold compress to forehead or neck
+- Maintain consistent sleep-wake cycles, balanced meals, and regular hydration (at least 2-3 liters water daily)
+- Keep a detailed headache diary logging potential triggers, frequency, and symptom duration
+- Acute abortive therapy: Triptans (e.g., sumatriptan) taken early during pain onset, or NSAIDs
+- For frequent attacks (> 4 headache days/month), consult a neurologist for preventive therapy (beta-blockers, CGRP antagonists)

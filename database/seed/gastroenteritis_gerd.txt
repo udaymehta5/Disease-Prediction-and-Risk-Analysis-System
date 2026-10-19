@@ -1,0 +1,32 @@
+Disease: Gastroesophageal Reflux Disease (GERD) and Acute Gastroenteritis
+Category: Gastrointestinal Disorder
+
+Overview:
+GERD is a chronic digestive disease occurring when stomach acid frequently flows back into the esophagus, causing mucosal irritation. Acute gastroenteritis is an intestinal infection characterized by inflammation of the stomach and small/large intestines.
+
+Key Symptoms:
+- Heartburn (pyrosis): burning chest discomfort behind the breastbone, typically worsening after meals or when lying flat
+- Acid regurgitation (bitter or sour fluid rising into throat or mouth)
+- Epigastric pain, nausea, bloating, and early satiety
+- Dysphagia (difficulty swallowing) or feeling of a lump in the throat (globus sensation)
+- Chronic dry cough or hoarseness (laryngopharyngeal reflux)
+- In gastroenteritis: watery diarrhea, abdominal cramping, nausea, vomiting, low-grade fever
+
+Critical Biomarkers / Lab Indicators:
+- Esophageal 24-hour ambulatory pH-impedance monitoring: DeMeester score > 14.72 confirms pathological acid exposure
+- Upper GI Endoscopy (EGD): Identifies erosive esophagitis (Los Angeles classification A-D) or Barrett's esophagus
+- In acute gastroenteritis: elevated fecal calprotectin, stool electrolyte derangements, elevated blood urea nitrogen (BUN) indicating dehydration
+
+Primary Risk Factors:
+- Hiatal hernia causing mechanical weakening of the lower esophageal sphincter (LES)
+- Obesity and increased intra-abdominal pressure
+- Consumption of trigger foods: citrus fruits, tomatoes, caffeine, chocolate, fatty meals, peppermint, alcohol
+- Tobacco smoking (relaxes the lower esophageal sphincter)
+- Consumption of contaminated food/water (infectious gastroenteritis)
+
+Precautions & Clinical Management:
+- Elevate the head of the bed by 6 inches when sleeping; do not lie down within 3 hours after eating
+- Avoid known trigger foods, carbonated beverages, large late-evening meals, and tight-fitting clothing
+- Pharmacotherapy: Proton Pump Inhibitors (e.g., omeprazole, pantoprazole) or H2 receptor antagonists for acid suppression
+- In acute diarrhea/vomiting: replenish electrolytes rapidly with oral rehydration salts (ORS); seek intravenous hydration if unable to keep liquids down
+- Consult a gastroenterologist for persistent dysphagia, unexplained weight loss, or gastrointestinal bleeding (black tarry stools)

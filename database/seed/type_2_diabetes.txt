@@ -1,0 +1,35 @@
+Disease: Type 2 Diabetes Mellitus
+Category: Endocrine & Metabolic Disorder
+
+Overview:
+Type 2 diabetes is a chronic metabolic condition characterized by insulin resistance and relative insulin deficiency, leading to chronically elevated blood glucose levels (hyperglycemia).
+
+Key Symptoms:
+- Frequent urination (polyuria), particularly at night (nocturia)
+- Excessive and unquenchable thirst (polydipsia)
+- Persistent hunger (polyphagia) despite normal food intake
+- Unexplained weight loss or chronic fatigue
+- Blurred vision and slow wound healing
+- Frequent infections (e.g., skin, gums, or urinary tract)
+- Tingling, pain, or numbness in the hands or feet (peripheral neuropathy)
+
+Critical Biomarkers / Lab Indicators:
+- Fasting Plasma Glucose (FPG) >= 126 mg/dL (7.0 mmol/L)
+- Hemoglobin A1c (HbA1c) >= 6.5%
+- Oral Glucose Tolerance Test (OGTT) 2-hour postprandial glucose >= 200 mg/dL
+- Random plasma glucose >= 200 mg/dL accompanied by classic hyperglycemic symptoms
+
+Primary Risk Factors:
+- Overweight or obesity (especially abdominal/visceral adiposity)
+- Sedentary lifestyle with minimal physical activity
+- Age 45 years or older
+- First-degree family history of type 2 diabetes
+- History of gestational diabetes or polycystic ovary syndrome (PCOS)
+- Pre-existing hypertension (>= 140/90 mmHg) or dyslipidemia (low HDL, high triglycerides)
+
+Precautions & Clinical Management:
+- Regular blood glucose self-monitoring and quarterly HbA1c tests
+- Adopt a balanced, low-glycemic Mediterranean or DASH diet high in dietary fiber
+- Engage in at least 150 minutes of moderate-intensity aerobic exercise per week
+- Routine screening for diabetic retinopathy, nephropathy (urine microalbumin), and foot ulcers
+- Consult an endocrinologist or primary care physician for oral hypoglycemic agents or insulin therapy
