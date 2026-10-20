@@ -1,5 +1,6 @@
 import os
 import json
+import threading
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
@@ -13,12 +14,14 @@ from app.predict import analyze_health_risk, STANDARD_DISCLAIMER
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Preload SentenceTransformer embedding model once at startup
-    try:
-        get_embedder()
-        print("[Startup] SentenceTransformer model loaded successfully.")
-    except Exception as e:
-        print(f"[Startup Warning] Could not preload embedder: {e}")
+    # Preload SentenceTransformer in a background thread so port 7860 opens instantly!
+    def preload():
+        try:
+            get_embedder()
+            print("[Startup Background] SentenceTransformer model loaded successfully.")
+        except Exception as e:
+            print(f"[Startup Background Warning] Could not preload embedder: {e}")
+    threading.Thread(target=preload, daemon=True).start()
     yield
 
 app = FastAPI(
@@ -68,7 +71,12 @@ def verify_api_key(x_api_key: Optional[str] = Header(None, alias="X-API-KEY")):
         )
     return True
 
-# 1. Health check endpoint (public, skips API key)
+# 1. Health check endpoints (public, skips API key)
+@app.get("/")
+def root():
+    """Root health check for platform monitors."""
+    return {"status": "ok", "service": "vitasignal-ml"}
+
 @app.get("/health")
 def health_check():
     """Returns the operational status of the ML service."""
