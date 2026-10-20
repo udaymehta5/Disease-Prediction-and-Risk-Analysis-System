@@ -18,9 +18,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
 
-// 1. CORS Configuration (Restricted to CLIENT_URL)
+// 1. CORS Configuration (Supports single URL, comma-separated URLs, or wildcard '*')
+const allowedOrigins = CLIENT_URL === '*'
+  ? true
+  : (CLIENT_URL.includes(',') ? CLIENT_URL.split(',').map(s => s.trim()) : [CLIENT_URL, 'http://localhost:5173', 'http://localhost:3000']);
+
 app.use(cors({
-  origin: CLIENT_URL,
+  origin: allowedOrigins,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
