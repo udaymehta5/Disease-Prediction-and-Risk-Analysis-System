@@ -6,9 +6,12 @@ from dotenv import load_dotenv
 from groq import Groq
 
 # Load environment variables from workspace root or ml-service directory
-dotenv_path = Path(__file__).resolve().parent.parent.parent / '.env'
-if dotenv_path.exists():
-    load_dotenv(dotenv_path=dotenv_path, override=True)
+dotenv_path_root = Path(__file__).resolve().parent.parent.parent / '.env'
+dotenv_path_service = Path(__file__).resolve().parent.parent / '.env'
+if dotenv_path_root.exists():
+    load_dotenv(dotenv_path=dotenv_path_root, override=True)
+elif dotenv_path_service.exists():
+    load_dotenv(dotenv_path=dotenv_path_service, override=True)
 else:
     load_dotenv(override=True)
 

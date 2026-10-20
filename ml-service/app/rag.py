@@ -4,10 +4,13 @@ from pathlib import Path
 from dotenv import load_dotenv
 import psycopg2
 
-# Load environment variables
-dotenv_path = Path(__file__).resolve().parent.parent.parent / '.env'
-if dotenv_path.exists():
-    load_dotenv(dotenv_path=dotenv_path)
+# Load environment variables from workspace root or ml-service directory
+dotenv_path_root = Path(__file__).resolve().parent.parent.parent / '.env'
+dotenv_path_service = Path(__file__).resolve().parent.parent / '.env'
+if dotenv_path_root.exists():
+    load_dotenv(dotenv_path=dotenv_path_root)
+elif dotenv_path_service.exists():
+    load_dotenv(dotenv_path=dotenv_path_service)
 else:
     load_dotenv()
 
@@ -57,12 +60,13 @@ def embed_text(text: str) -> list[float]:
 
 def get_db_connection():
     """Establishes a connection to the Supabase PostgreSQL database."""
-    if not DATABASE_URL:
+    db_url = os.getenv("DATABASE_URL", DATABASE_URL)
+    if not db_url:
         raise ValueError("DATABASE_URL environment variable is not configured.")
     
     # Supabase cloud requires SSL mode
-    sslmode = "disable" if "localhost" in DATABASE_URL or "127.0.0.1" in DATABASE_URL else "require"
-    return psycopg2.connect(DATABASE_URL, sslmode=sslmode)
+    sslmode = "disable" if "localhost" in db_url or "127.0.0.1" in db_url else "require"
+    return psycopg2.connect(db_url, sslmode=sslmode)
 
 def store_document_chunks(chunks: list[str], user_id: int | None = None, metadata: dict | None = None) -> int:
     """

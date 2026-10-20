@@ -1,37 +1,99 @@
+import os
 import json
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
 
 from app.parsers import parse_document
-from app.rag import retrieve_relevant_chunks
+from app.rag import retrieve_relevant_chunks, get_embedder
 from app.llm import generate_chat_response, generate_json
 from app.predict import analyze_health_risk, STANDARD_DISCLAIMER
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Preload SentenceTransformer embedding model once at startup
+    try:
+        get_embedder()
+        print("[Startup] SentenceTransformer model loaded successfully.")
+    except Exception as e:
+        print(f"[Startup Warning] Could not preload embedder: {e}")
+    yield
+
 app = FastAPI(
-    title="Disease Prediction & Risk Analysis ML Service",
+    title="Vita Signal ML",
     description="FastAPI service delivering RAG vector search, Groq LLM clinical predictions, chat, and MCQ assessment",
-    version="1.0.1"
+    version="1.0.1",
+    lifespan=lifespan
 )
 
-# Enable CORS for internal backend service communication
+# Read allowed CORS origins from ALLOWED_ORIGINS env var (comma-separated), defaulting to localhost
+allowed_origins_raw = os.getenv("ALLOWED_ORIGINS", "").strip()
+if allowed_origins_raw:
+    if allowed_origins_raw == "*":
+        allowed_origins = ["*"]
+    else:
+        allowed_origins = [orig.strip() for orig in allowed_origins_raw.split(",") if orig.strip()]
+else:
+    allowed_origins = [
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "http://localhost:5000",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:3000",
+        "http://127.0.0.1:5000"
+    ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# 1. Health check endpoint
+def verify_api_key(x_api_key: Optional[str] = Header(None, alias="X-API-KEY")):
+    """
+    Checks the X-API-KEY header against the API_KEY environment variable.
+    If API_KEY is not set or empty, authentication is bypassed for local development.
+    """
+    configured_key = os.getenv("API_KEY", "").strip()
+    if not configured_key:
+        return True
+    if not x_api_key or x_api_key != configured_key:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid or missing X-API-KEY header."
+        )
+    return True
+
+# 1. Health check endpoint (public, skips API key)
 @app.get("/health")
 def health_check():
     """Returns the operational status of the ML service."""
-    return {"status": "ok", "service": "ml-service"}
+    return {"status": "ok"}
+
+# Request schema for /predict
+class PredictRequest(BaseModel):
+    user_input: Optional[str] = None
+    message: Optional[str] = None
+    symptoms: Optional[str] = None
+    user_id: Optional[int] = None
+
+# Standard clinical prediction endpoint
+@app.post("/predict", dependencies=[Depends(verify_api_key)])
+def predict_endpoint(request: PredictRequest):
+    """
+    Standardized clinical disease prediction and risk analysis endpoint.
+    """
+    text = request.user_input or request.message or request.symptoms or ""
+    if not text.strip():
+        raise HTTPException(status_code=400, detail="user_input cannot be empty.")
+    return analyze_health_risk(user_input=text.strip(), user_id=request.user_id)
 
 # 2. File Upload analysis
-@app.post("/analyze-file")
+@app.post("/analyze-file", dependencies=[Depends(verify_api_key)])
 async def analyze_file(
     file: UploadFile = File(...),
     user_id: Optional[int] = Form(None)
@@ -65,7 +127,7 @@ class ChatRequest(BaseModel):
     user_id: Optional[int] = None
 
 # 3. AI Chat endpoint
-@app.post("/chat")
+@app.post("/chat", dependencies=[Depends(verify_api_key)])
 def chat(request: ChatRequest):
     """
     Processes user symptom description with RAG context and conversational history.
@@ -108,7 +170,7 @@ class ChatAnalyzeRequest(BaseModel):
     user_id: Optional[int] = None
 
 # 3b. AI Chat full risk synthesis endpoint
-@app.post("/chat/analyze")
+@app.post("/chat/analyze", dependencies=[Depends(verify_api_key)])
 def chat_analyze(request: ChatAnalyzeRequest):
     """
     Synthesizes the entire symptom conversation into a formal clinical risk report
@@ -225,7 +287,7 @@ FALLBACK_MCQ_BANK = [
 ]
 
 # 4. MCQ Next question endpoint
-@app.post("/mcq/next")
+@app.post("/mcq/next", dependencies=[Depends(verify_api_key)])
 def mcq_next(request: MCQNextRequest):
     """
     Generates the next adaptive multiple-choice question with 4 options + 'None of these'.
@@ -299,7 +361,7 @@ class MCQResultRequest(BaseModel):
     user_id: Optional[int] = None
 
 # 5. MCQ Result prediction endpoint
-@app.post("/mcq/result")
+@app.post("/mcq/result", dependencies=[Depends(verify_api_key)])
 def mcq_result(request: MCQResultRequest):
     """
     Synthesizes all submitted MCQ answers and generates the final disease prediction and risk analysis.
