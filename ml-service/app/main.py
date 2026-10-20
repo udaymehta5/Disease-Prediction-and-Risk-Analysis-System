@@ -1,11 +1,16 @@
 import os
 import json
-import threading
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
+
+# Route all model caches to /tmp to prevent container permission crashes on Hugging Face
+os.environ["HF_HOME"] = "/tmp/hf_cache"
+os.environ["TRANSFORMERS_CACHE"] = "/tmp/hf_cache"
+os.environ["SENTENCE_TRANSFORMERS_HOME"] = "/tmp/hf_cache"
+os.environ["TORCH_HOME"] = "/tmp/torch_cache"
 
 from app.parsers import parse_document
 from app.rag import retrieve_relevant_chunks, get_embedder
@@ -14,14 +19,8 @@ from app.predict import analyze_health_risk, STANDARD_DISCLAIMER
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Preload SentenceTransformer in a background thread so port 7860 opens instantly!
-    def preload():
-        try:
-            get_embedder()
-            print("[Startup Background] SentenceTransformer model loaded successfully.")
-        except Exception as e:
-            print(f"[Startup Background Warning] Could not preload embedder: {e}")
-    threading.Thread(target=preload, daemon=True).start()
+    # Lazy loading: Models will load seamlessly on the first prediction call.
+    # No blocking or background thread at boot allows Uvicorn to answer HF health checks instantly!
     yield
 
 app = FastAPI(

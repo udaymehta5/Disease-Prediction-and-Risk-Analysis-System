@@ -4,6 +4,11 @@ from pathlib import Path
 from dotenv import load_dotenv
 import psycopg2
 
+os.environ["HF_HOME"] = "/tmp/hf_cache"
+os.environ["TRANSFORMERS_CACHE"] = "/tmp/hf_cache"
+os.environ["SENTENCE_TRANSFORMERS_HOME"] = "/tmp/hf_cache"
+os.environ["TORCH_HOME"] = "/tmp/torch_cache"
+
 # Load environment variables from workspace root or ml-service directory
 dotenv_path_root = Path(__file__).resolve().parent.parent.parent / '.env'
 dotenv_path_service = Path(__file__).resolve().parent.parent / '.env'
