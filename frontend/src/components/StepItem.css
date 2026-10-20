@@ -1,0 +1,81 @@
+.step-item-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+}
+
+.step-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.75rem;
+  z-index: 2;
+}
+
+.step-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: var(--border);
+  background-color: var(--green-soft);
+  color: var(--ink);
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.step-label {
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  letter-spacing: 0.08em;
+}
+
+.step-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+
+.step-description {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Horizontal Connector Line for Desktop */
+.step-connector {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .steps-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 899px) {
+  .steps-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

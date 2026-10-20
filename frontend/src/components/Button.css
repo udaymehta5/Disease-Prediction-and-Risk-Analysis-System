@@ -1,0 +1,84 @@
+.vita-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
+  border: var(--border);
+  box-shadow: var(--shadow-offset);
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--surface);
+  color: var(--ink);
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 150ms ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.vita-btn:hover:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-offset-hover);
+}
+
+.vita-btn:active:not(:disabled) {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+.vita-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Filled Green Variant */
+.vita-btn.btn-filled {
+  background-color: var(--green);
+  color: var(--green-text);
+  border: var(--border);
+}
+
+.vita-btn.btn-filled:hover:not(:disabled) {
+  background-color: var(--green-hover);
+}
+
+/* Outline Variant */
+.vita-btn.btn-outline {
+  background-color: var(--surface);
+  color: var(--ink);
+  border: var(--border);
+}
+
+.vita-btn.btn-outline:hover:not(:disabled) {
+  background-color: var(--green-soft);
+}
+
+/* Small size */
+.vita-btn.btn-sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  box-shadow: var(--shadow-offset-sm);
+}
+
+.vita-btn.btn-sm:hover:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+.vita-btn.btn-sm:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+/* Large size */
+.vita-btn.btn-lg {
+  padding: 0.9rem 1.75rem;
+  font-size: 1.05rem;
+  box-shadow: var(--shadow-offset-lg);
+}

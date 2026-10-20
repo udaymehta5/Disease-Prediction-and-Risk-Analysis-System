@@ -1,0 +1,195 @@
+/* Sticky Navbar with 2px Ink Divider */
+.vita-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg);
+  border-bottom: var(--border);
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
+
+.vita-header-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* Brand Wordmark & Pulse Icon */
+.vita-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: var(--ink);
+  user-select: none;
+}
+
+.brand-mark-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: var(--border);
+  background-color: var(--green-soft);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.pulse-svg {
+  display: block;
+}
+
+.brand-text {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+/* Desktop Links */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 150ms ease, color 150ms ease;
+}
+
+.nav-item:hover {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+/* Right Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.auth-btn-group,
+.user-nav-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user-name-badge {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.65rem;
+  border: var(--border);
+  border-radius: 6px;
+  background-color: var(--surface);
+}
+
+.user-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+
+/* Mobile Hamburger Button */
+.hamburger-btn {
+  display: none;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 8px;
+  border: var(--border);
+  background-color: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-offset-sm);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-btn:hover {
+  background-color: var(--green-soft);
+}
+
+/* Mobile Dropdown Panel */
+.mobile-dropdown-panel {
+  display: none;
+  border-top: var(--border);
+  background-color: var(--surface);
+  padding: 1.25rem 1.5rem 1.5rem;
+  box-shadow: 0 6px 0 var(--ink);
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.mobile-nav-item {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(14, 14, 14, 0.1);
+}
+
+[data-theme="dark"] .mobile-nav-item {
+  border-bottom: 1px solid rgba(237, 245, 234, 0.15);
+}
+
+.mobile-nav-item:hover {
+  color: var(--green);
+}
+
+.mobile-auth-divider {
+  height: 1px;
+  background-color: var(--ink);
+  opacity: 0.2;
+  margin: 0.5rem 0;
+}
+
+.mobile-auth-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 880px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .auth-btn-group {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: inline-flex;
+  }
+
+  .mobile-dropdown-panel {
+    display: block;
+  }
+}

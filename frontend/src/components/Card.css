@@ -1,0 +1,26 @@
+.vita-card {
+  background-color: var(--surface);
+  border: var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-offset);
+  padding: 1.75rem;
+  transition: transform 140ms ease, box-shadow 140ms ease, background-color 150ms ease;
+}
+
+.vita-card-interactive {
+  cursor: pointer;
+}
+
+.vita-card-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-offset-lg);
+}
+
+.vita-card-interactive:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-offset-hover);
+}
+
+.vita-card-accent {
+  background-color: var(--green-soft);
+}

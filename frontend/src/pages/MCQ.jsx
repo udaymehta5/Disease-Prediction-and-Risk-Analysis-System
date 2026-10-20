@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { setResult } from '../store/resultSlice';
 import MCQCard from '../components/MCQCard';
 import api from '../services/api';
+import './Assessments.css';
 
 function MCQ() {
   const [step, setStep] = useState(1);
@@ -102,12 +103,15 @@ function MCQ() {
 
   if (analyzingResult) {
     return (
-      <div className="page-container text-center">
-        <div className="card placeholder-card">
-          <div className="spinner large-spinner"></div>
-          <h3 className="mt-4">Synthesizing Symptom Assessment...</h3>
-          <p className="text-muted">
-            Our clinical inference engine is cross-referencing your answers with disease profiles.
+      <div className="page-container" style={{ textAlign: 'center', maxWidth: '640px' }}>
+        <div className="mcq-card" style={{ padding: '4rem 2rem' }}>
+          <div className="auth-spinner" style={{ width: '42px', height: '42px', margin: '0 auto 1.5rem', borderWidth: '3.5px' }} />
+          <h2 style={{ fontFamily: 'Fraunces, serif', marginBottom: '0.75rem' }}>
+            Synthesizing Clinical Profile...
+          </h2>
+          <p style={{ color: 'var(--ink-muted)', fontSize: '0.98rem', lineHeight: '1.6' }}>
+            Our clinical inference engine is cross-referencing your questionnaire responses against
+            multi-condition diagnostic indicators to generate your comprehensive risk report.
           </p>
         </div>
       </div>
@@ -117,41 +121,59 @@ function MCQ() {
   return (
     <div className="page-container mcq-page">
       <div className="page-header">
-        <h2>Adaptive Symptom Assessment Quiz</h2>
+        <span className="page-kicker">// ADAPTIVE CLINICAL SCREENING</span>
+        <h1 className="page-title">Dynamic Symptom Assessment Quiz</h1>
         <p className="page-subtitle">
-          Answer each question carefully. The questions adapt based on your answers to identify potential risks.
+          An interactive, clinically informed questionnaire. Each question adapts in real-time based on
+          your preceding responses to isolate symptoms and estimate disorder risks.
         </p>
       </div>
 
+      <div className="clinical-notice-banner">
+        <span className="clinical-notice-icon">📋</span>
+        <div>
+          <strong>Adaptive Evaluation:</strong> Select the option that best mirrors your experience over recent weeks.
+          If a symptom does not apply, simply choose <strong>"None of these"</strong>.
+        </div>
+      </div>
+
       {error && (
-        <div className="alert alert-error">
-          <span>{error}</span>
-          <button onClick={() => fetchQuestion(step, answers)} className="btn btn-sm btn-outline ml-2">
+        <div className="auth-alert auth-alert-error" style={{ marginBottom: '1.5rem' }}>
+          <div className="auth-alert-content">{error}</div>
+          <button
+            onClick={() => fetchQuestion(step, answers)}
+            className="btn btn-sm btn-outline ml-2"
+            style={{ marginLeft: '0.75rem' }}
+          >
             Retry
           </button>
         </div>
       )}
 
-      {question ? (
-        <MCQCard
-          step={step}
-          totalSteps={totalSteps}
-          question={question}
-          options={options}
-          selectedOption={selectedOption}
-          onSelectOption={setSelectedOption}
-          onNext={handleNext}
-          loading={loading}
-          isLastStep={step === totalSteps}
-        />
-      ) : (
-        loading && (
-          <div className="card placeholder-card">
-            <span className="spinner"></span>
-            <p className="mt-2">Generating adaptive clinical question...</p>
-          </div>
-        )
-      )}
+      <div className="mcq-container">
+        {question ? (
+          <MCQCard
+            step={step}
+            totalSteps={totalSteps}
+            question={question}
+            options={options}
+            selectedOption={selectedOption}
+            onSelectOption={setSelectedOption}
+            onNext={handleNext}
+            loading={loading}
+            isLastStep={step === totalSteps}
+          />
+        ) : (
+          loading && (
+            <div className="mcq-card" style={{ textAlign: 'center', padding: '3.5rem 2rem' }}>
+              <div className="auth-spinner" style={{ width: '32px', height: '32px', margin: '0 auto 1rem' }} />
+              <p style={{ fontWeight: 600, color: 'var(--ink)' }}>
+                Generating adaptive clinical inquiry...
+              </p>
+            </div>
+          )
+        )}
+      </div>
     </div>
   );
 }

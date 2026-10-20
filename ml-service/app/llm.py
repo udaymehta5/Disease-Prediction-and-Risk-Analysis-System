@@ -8,14 +8,25 @@ from groq import Groq
 # Load environment variables from workspace root or ml-service directory
 dotenv_path = Path(__file__).resolve().parent.parent.parent / '.env'
 if dotenv_path.exists():
-    load_dotenv(dotenv_path=dotenv_path)
+    load_dotenv(dotenv_path=dotenv_path, override=True)
 else:
-    load_dotenv()
+    load_dotenv(override=True)
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+DEFAULT_MODEL = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b")
 
 _client = None
+_active_model = None
+
+# Known high-performing models on Groq to try in order of preference
+FALLBACK_MODELS = [
+    DEFAULT_MODEL,
+    "qwen/qwen3.8-27b",
+    "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",
+    "llama-3.3-70b-versatile",
+    "llama-3.1-8b-instant"
+]
 
 def get_groq_client() -> Groq:
     """Initializes and caches the Groq API client."""
@@ -34,13 +45,78 @@ def clean_json_string(raw_text: str) -> str:
         return match.group(1).strip()
     return raw_text.strip()
 
+def _call_groq_with_fallback(messages: list, response_format=None, temperature=0.3, max_tokens=1024):
+    """
+    Calls Groq chat completion with automatic model discovery and fallback.
+    Prevents 404 (model_not_found) and 400 (model_decommissioned) errors.
+    """
+    global _active_model
+    client = get_groq_client()
+
+    # Prioritize active working model, then fallback candidates
+    models_to_try = []
+    if _active_model:
+        models_to_try.append(_active_model)
+    for m in FALLBACK_MODELS:
+        if m and m not in models_to_try:
+            models_to_try.append(m)
+
+    last_error = None
+    for model_name in models_to_try:
+        try:
+            kwargs = {
+                "model": model_name,
+                "messages": messages,
+                "temperature": temperature,
+                "max_tokens": max_tokens,
+            }
+            if response_format:
+                kwargs["response_format"] = response_format
+
+            completion = client.chat.completions.create(**kwargs)
+            _active_model = model_name  # Cache working model
+            return completion
+        except Exception as e:
+            err_str = str(e).lower()
+            last_error = e
+            # Only try next model if it is a model availability/deprecation issue
+            if "model_not_found" in err_str or "model_decommissioned" in err_str or "404" in err_str or "does not exist" in err_str:
+                print(f"[LLM Warning] Model '{model_name}' unavailable on Groq. Trying fallback...")
+                continue
+            else:
+                # If it's a JSON validation error or rate limit, re-raise or break
+                raise e
+
+    # If all static candidates failed, query Groq for available models dynamically
+    try:
+        remote_models = [m.id for m in client.models.list().data if not m.id.startswith("whisper")]
+        for model_name in remote_models:
+            if model_name not in models_to_try:
+                try:
+                    kwargs = {
+                        "model": model_name,
+                        "messages": messages,
+                        "temperature": temperature,
+                        "max_tokens": max_tokens,
+                    }
+                    if response_format:
+                        kwargs["response_format"] = response_format
+                    completion = client.chat.completions.create(**kwargs)
+                    _active_model = model_name
+                    print(f"[LLM Success] Dynamically selected available Groq model: {model_name}")
+                    return completion
+                except Exception:
+                    continue
+    except Exception:
+        pass
+
+    raise last_error
+
 def generate_json(prompt: str, system_prompt: str = "") -> dict:
     """
     Calls Groq LLM and safely parses response as JSON.
     Guarantees returning a dictionary, with fallback if parsing fails.
     """
-    client = get_groq_client()
-
     messages = []
     if system_prompt:
         messages.append({"role": "system", "content": system_prompt})
@@ -53,12 +129,11 @@ def generate_json(prompt: str, system_prompt: str = "") -> dict:
     messages.append({"role": "user", "content": prompt})
 
     try:
-        completion = client.chat.completions.create(
-            model=GROQ_MODEL,
+        completion = _call_groq_with_fallback(
             messages=messages,
             response_format={"type": "json_object"},
             temperature=0.2,
-            max_tokens=2048,
+            max_tokens=2048
         )
 
         raw_content = completion.choices[0].message.content or "{}"
@@ -87,7 +162,6 @@ def generate_chat_response(messages: list, system_prompt: str = "") -> str:
     """
     Generates a natural language response for multi-turn conversational AI chat.
     """
-    client = get_groq_client()
     formatted_messages = []
 
     if system_prompt:
@@ -96,11 +170,10 @@ def generate_chat_response(messages: list, system_prompt: str = "") -> str:
     for m in messages:
         formatted_messages.append({"role": m["role"], "content": m["content"]})
 
-    completion = client.chat.completions.create(
-        model=GROQ_MODEL,
+    completion = _call_groq_with_fallback(
         messages=formatted_messages,
         temperature=0.4,
-        max_tokens=1024,
+        max_tokens=1024
     )
 
     return completion.choices[0].message.content or ""

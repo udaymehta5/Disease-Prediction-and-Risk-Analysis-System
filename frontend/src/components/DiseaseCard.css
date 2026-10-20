@@ -1,0 +1,191 @@
+.disease-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  cursor: pointer;
+  text-align: left;
+  user-select: none;
+}
+
+.disease-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-offset-lg);
+}
+
+.disease-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.disease-category-tag {
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--green);
+  letter-spacing: 0.08em;
+  display: inline-block;
+  margin-bottom: 0.35rem;
+}
+
+.disease-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0;
+}
+
+.disease-expand-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: var(--border);
+  background-color: var(--surface);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0 var(--ink);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.disease-card:hover .disease-expand-btn {
+  background-color: var(--green-soft);
+}
+
+.disease-short-desc {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.section-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-subtle);
+  margin-bottom: 0.45rem;
+}
+
+.disease-symptoms-section {
+  margin-bottom: 1rem;
+}
+
+.symptoms-pill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.symptom-pill {
+  font-size: 0.88rem;
+  color: var(--ink);
+  background-color: var(--green-soft);
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+  padding: 0.3rem 0.65rem;
+  display: inline-block;
+  width: fit-content;
+}
+
+.disease-risk-note {
+  margin-bottom: 1.25rem;
+}
+
+.disease-risk-note p {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Expanded Drawer */
+.disease-expanded-drawer {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.expanded-divider {
+  height: 2px;
+  background-color: var(--ink);
+  margin-bottom: 1.25rem;
+  opacity: 0.2;
+}
+
+.expanded-block {
+  margin-bottom: 1.25rem;
+}
+
+.expanded-block h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.precautions-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.precautions-bullet-list li {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.bullet-indicator {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.doc-warning-block {
+  background-color: var(--green-soft);
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.doc-warning-block p {
+  font-size: 0.88rem;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.card-footer-prompt {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--green);
+  border-top: 1px dashed rgba(14, 14, 14, 0.2);
+}
+
+[data-theme="dark"] .card-footer-prompt {
+  border-top: 1px dashed rgba(237, 245, 234, 0.2);
+}

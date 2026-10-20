@@ -24,6 +24,12 @@ const register = async (req, res, next) => {
       return res.status(400).json({ error: 'Password must be at least 6 characters long.' });
     }
 
+    if (!db.isConfigured) {
+      return res.status(503).json({
+        error: 'Database is not configured yet. Please update DATABASE_URL in your .env file with your Supabase credentials to register new accounts, or use the Demo Account to test immediately.'
+      });
+    }
+
     const normalizedEmail = email.trim().toLowerCase();
 
     // 2. Check if user already exists in PostgreSQL
@@ -85,7 +91,34 @@ const login = async (req, res, next) => {
 
     const normalizedEmail = email.trim().toLowerCase();
 
-    // 2. Query user from database
+    // 2. Built-in Demo Account (allows instant testing without live database connection)
+    if (normalizedEmail === 'doctor@vitasignal.ai' && password === 'MedicalDemo2026!') {
+      const secret = process.env.JWT_SECRET || 'fallback_secret_key_change_me';
+      const token = jwt.sign(
+        { id: 9999, name: 'Dr. Vita Demo', email: 'doctor@vitasignal.ai' },
+        secret,
+        { expiresIn: '7d' }
+      );
+
+      return res.status(200).json({
+        message: 'Login successful (Demo Mode)',
+        token,
+        user: {
+          id: 9999,
+          name: 'Dr. Vita Demo',
+          email: 'doctor@vitasignal.ai'
+        }
+      });
+    }
+
+    // Check if database is configured for non-demo users
+    if (!db.isConfigured) {
+      return res.status(503).json({
+        error: 'Database connection is not configured in .env. Please update DATABASE_URL with your Supabase credentials, or click "Fill Demo" to sign in immediately.'
+      });
+    }
+
+    // 3. Query user from database
     const userResult = await db.query(
       'SELECT id, name, email, password_hash FROM users WHERE email = $1 LIMIT 1',
       [normalizedEmail]
@@ -97,13 +130,13 @@ const login = async (req, res, next) => {
 
     const user = userResult.rows[0];
 
-    // 3. Compare password with stored hash
+    // 4. Compare password with stored hash
     const isMatch = await bcrypt.compare(password, user.password_hash);
     if (!isMatch) {
       return res.status(401).json({ error: 'Invalid email or password.' });
     }
 
-    // 4. Generate JWT token
+    // 5. Generate JWT token
     const secret = process.env.JWT_SECRET || 'fallback_secret_key_change_me';
     const token = jwt.sign(
       { id: user.id, name: user.name, email: user.email },
@@ -128,6 +161,27 @@ const login = async (req, res, next) => {
 // GET /api/auth/me (convenient helper to verify token / load current profile)
 const getMe = async (req, res, next) => {
   try {
+    if (req.user.id === 9999) {
+      return res.status(200).json({
+        user: {
+          id: 9999,
+          name: 'Dr. Vita Demo',
+          email: 'doctor@vitasignal.ai',
+          created_at: new Date().toISOString()
+        }
+      });
+    }
+
+    if (!db.isConfigured) {
+      return res.status(200).json({
+        user: {
+          id: req.user.id,
+          name: req.user.name || 'User',
+          email: req.user.email
+        }
+      });
+    }
+
     const userResult = await db.query(
       'SELECT id, name, email, created_at FROM users WHERE id = $1 LIMIT 1',
       [req.user.id]

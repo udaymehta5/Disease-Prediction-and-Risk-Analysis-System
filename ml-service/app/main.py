@@ -11,8 +11,8 @@ from app.predict import analyze_health_risk, STANDARD_DISCLAIMER
 
 app = FastAPI(
     title="Disease Prediction & Risk Analysis ML Service",
-    description="FastAPI service delivering RAG vector search, Groq LLM predictions, chat, and MCQ assessment",
-    version="1.0.0"
+    description="FastAPI service delivering RAG vector search, Groq LLM clinical predictions, chat, and MCQ assessment",
+    version="1.0.1"
 )
 
 # Enable CORS for internal backend service communication
@@ -77,15 +77,18 @@ def chat(request: ChatRequest):
         context_str = "\n---\n".join(retrieved_chunks) if retrieved_chunks else "No specific clinical notes retrieved."
 
         system_prompt = (
-            "You are an empathetic, knowledgeable Clinical Health AI assistant for a disease risk analysis project.\n"
+            "You are an empathetic, highly knowledgeable Clinical Health AI assistant powered by Groq LLaMA for a disease risk analysis platform.\n"
             f"--- CLINICAL KNOWLEDGE BASE (RAG) ---\n{context_str}\n\n"
-            "Guidelines:\n"
-            "1. Listen carefully to the user's symptoms and show empathy.\n"
-            "2. Cross-reference symptoms against the provided clinical knowledge base.\n"
-            "3. Ask clarifying follow-up questions (e.g. symptom onset, severity, triggers, associated signs).\n"
-            "4. Mention potential conditions they should be aware of, along with relevant risk factors and precautions.\n"
-            f"5. Always emphasize: {STANDARD_DISCLAIMER}\n"
-            "Keep replies concise, clear, and easy for a patient to understand."
+            "Clinical Communication Guidelines:\n"
+            "1. Listen attentively to the user's reported symptoms, onset, and severity.\n"
+            "2. Cross-reference symptoms against the clinical knowledge base to identify potential conditions.\n"
+            "3. Format your response clearly so the patient can easily understand:\n"
+            "   - **Assessment & Potential Conditions**: Explain possible medical causes in clear, compassionate language.\n"
+            "   - **Estimated Risk Level**: State whether the reported profile appears Low Risk, Moderate/Medium Risk, or High Risk, explaining why.\n"
+            "   - **Clinical Inquiries**: Ask 1-2 focused follow-up questions to help refine the assessment.\n"
+            "   - **Recommended Next Steps & Precautions**: Practical lifestyle, hydration, or medical consultation advice.\n"
+            f"4. Disclaimer: {STANDARD_DISCLAIMER}\n"
+            "Keep your formatting clean, structured, and easy for any client to read."
         )
 
         # Assemble conversation messages for Groq
@@ -99,6 +102,33 @@ def chat(request: ChatRequest):
         return {"reply": reply}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Chat generation failed: {str(e)}")
+
+class ChatAnalyzeRequest(BaseModel):
+    history: List[ChatMessage]
+    user_id: Optional[int] = None
+
+# 3b. AI Chat full risk synthesis endpoint
+@app.post("/chat/analyze")
+def chat_analyze(request: ChatAnalyzeRequest):
+    """
+    Synthesizes the entire symptom conversation into a formal clinical risk report
+    with top conditions, risk level, and precautions.
+    """
+    try:
+        if not request.history:
+            raise HTTPException(status_code=400, detail="No conversation history to analyze.")
+
+        # Extract all user-stated symptoms from conversation
+        user_statements = [msg.content for msg in request.history if msg.role == "user"]
+        if not user_statements:
+            raise HTTPException(status_code=400, detail="No patient symptoms recorded in conversation.")
+
+        conversation_summary = "Patient Consultation Transcript:\n" + "\n".join([f"- {s}" for s in user_statements])
+        result = analyze_health_risk(user_input=conversation_summary, user_id=request.user_id)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Chat risk analysis failed: {str(e)}")
+
 
 # Request schema for MCQ Next Question
 class MCQAnswer(BaseModel):

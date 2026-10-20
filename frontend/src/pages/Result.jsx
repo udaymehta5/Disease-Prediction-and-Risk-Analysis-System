@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import RiskCard from '../components/RiskCard';
+import './Assessments.css';
 
 function Result() {
   const navigate = useNavigate();
@@ -9,12 +10,13 @@ function Result() {
 
   if (!currentResult) {
     return (
-      <div className="page-container text-center">
+      <div className="page-container text-center" style={{ maxWidth: '640px' }}>
         <div className="empty-state-card">
+          <div className="empty-state-icon">📋</div>
           <h2>No Assessment Result Found</h2>
-          <p>Please perform an analysis via File Upload, AI Chat, or the Symptom Quiz.</p>
+          <p>Please perform a health analysis via Lab Report Upload, AI Chat, or the Symptom Quiz.</p>
           <button onClick={() => navigate('/')} className="btn btn-primary mt-4">
-            Go to Dashboard
+            Go to Assessments Dashboard
           </button>
         </div>
       </div>
@@ -23,77 +25,92 @@ function Result() {
 
   const { predictions, risk, disclaimer } = currentResult;
 
-  const getConfidenceClass = (conf) => {
-    switch (conf?.toLowerCase()) {
-      case 'high':
-        return 'confidence-badge conf-high';
-      case 'medium':
-        return 'confidence-badge conf-medium';
-      case 'low':
-      default:
-        return 'confidence-badge conf-low';
+  const getConfidencePill = (conf) => {
+    const c = (conf || 'Medium').toLowerCase();
+    return <span className={`confidence-pill ${c}`}>{conf} Confidence</span>;
+  };
+
+  const getSourceBadge = () => {
+    switch (source) {
+      case 'upload': return '📄 Lab Report Extraction';
+      case 'chat': return '💬 AI Consultation Transcript';
+      case 'mcq': return '📋 Adaptive Symptom Quiz';
+      default: return '🩺 Clinical Evaluation';
     }
   };
 
   return (
     <div className="page-container result-page">
-      <div className="result-header">
+      <div className="result-header-row">
         <div>
-          <h2>Assessment Results</h2>
-          {inputSummary && <p className="result-subtext">{inputSummary}</p>}
+          <span className="page-kicker">// CLINICAL SYNTHESIS REPORT</span>
+          <h1 className="page-title" style={{ marginBottom: '0.35rem' }}>Diagnostic Risk Stratification</h1>
+          <div style={{ display: 'flex', gap: '0.65rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <span className="history-source-badge">{getSourceBadge()}</span>
+            {inputSummary && (
+              <span style={{ fontSize: '0.85rem', color: 'var(--ink-muted)' }}>
+                • {inputSummary}
+              </span>
+            )}
+          </div>
         </div>
-        <div className="result-actions">
+
+        <div className="result-actions-group">
           <button onClick={() => window.print()} className="btn btn-outline btn-sm">
-            🖨️ Print Report
+            🖨️ Print Clinical Summary
           </button>
           <button onClick={() => navigate('/history')} className="btn btn-outline btn-sm">
-            📜 View History
+            📜 Historical Records
           </button>
         </div>
       </div>
 
       {/* Prominent Medical Disclaimer */}
-      <div className="disclaimer-alert">
-        <span className="disclaimer-icon">⚠️</span>
-        <div className="disclaimer-text">
-          <strong>Medical Disclaimer:</strong> {disclaimer || "This is an informational tool, NOT a medical diagnosis. Consult a qualified doctor."}
+      <div className="clinical-notice-banner">
+        <span className="clinical-notice-icon">⚠️</span>
+        <div>
+          <strong>Medical Notice:</strong> {disclaimer || "Vita Signal provides clinical decision support and risk estimates. Always consult a licensed medical provider for diagnostic verification."}
         </div>
       </div>
 
       {/* Top 3 Predicted Diseases */}
-      <div className="section-block">
-        <h3>Top Predicted Conditions</h3>
-        <div className="predictions-list">
+      <div style={{ marginBottom: '2.5rem' }}>
+        <h3 style={{ fontFamily: 'Fraunces, serif', fontSize: '1.45rem', marginBottom: '1rem' }}>
+          Condition Differential & Predicted Findings
+        </h3>
+        <div className="predictions-container">
           {predictions && predictions.length > 0 ? (
             predictions.map((item, idx) => (
-              <div key={idx} className="prediction-item">
-                <div className="prediction-main">
-                  <div className="prediction-title-row">
-                    <span className="rank-indicator">#{idx + 1}</span>
-                    <h4 className="disease-name">{item.disease}</h4>
-                    <span className={getConfidenceClass(item.confidence)}>
-                      {item.confidence} Confidence
-                    </span>
-                  </div>
-                  <p className="prediction-reason">{item.reason}</p>
+              <div key={idx} className="prediction-item-card">
+                <div className="prediction-top-row">
+                  <span className="prediction-rank-badge">#{idx + 1} PROBABILITY</span>
+                  <h4 className="prediction-disease-title">{item.disease}</h4>
+                  {getConfidencePill(item.confidence)}
                 </div>
+                <p className="prediction-reason-text">{item.reason}</p>
               </div>
             ))
           ) : (
-            <p className="empty-note">No specific conditions identified.</p>
+            <p style={{ color: 'var(--ink-muted)' }}>No specific condition patterns matched.</p>
           )}
         </div>
       </div>
 
-      {/* Risk Analysis Card */}
-      <div className="section-block">
+      {/* Multi-Condition Risk Card */}
+      <div style={{ marginBottom: '2.5rem' }}>
         <RiskCard risk={risk} />
       </div>
 
-      {/* Next Steps Buttons */}
-      <div className="result-footer-nav">
-        <button onClick={() => navigate('/')} className="btn btn-primary">
-          Perform Another Assessment
+      {/* Next Steps Footer */}
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'flex-start', paddingTop: '1rem', borderTop: '1px solid rgba(0,0,0,0.08)' }}>
+        <button onClick={() => navigate('/upload')} className="btn btn-primary">
+          📄 Ingest Another Lab Report
+        </button>
+        <button onClick={() => navigate('/chat')} className="btn btn-outline">
+          💬 Follow Up with AI Chat
+        </button>
+        <button onClick={() => navigate('/')} className="btn btn-outline">
+          Return to Dashboard
         </button>
       </div>
     </div>

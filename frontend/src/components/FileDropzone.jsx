@@ -12,12 +12,12 @@ function FileDropzone({ onFileSelected, selectedFile, error, clearError }) {
 
     const ext = '.' + file.name.split('.').pop().toLowerCase();
     if (!allowedExtensions.includes(ext)) {
-      alert('Unsupported file format. Please upload a CSV, PDF, or TXT file.');
+      alert('Unsupported file format. Please upload a CSV, PDF, or TXT medical file.');
       return;
     }
 
     if (file.size > maxSizeBytes) {
-      alert('File is too large. Maximum allowed size is 5 MB.');
+      alert('File size exceeds 5 MB limit. Please select a smaller report.');
       return;
     }
 
@@ -75,11 +75,21 @@ function FileDropzone({ onFileSelected, selectedFile, error, clearError }) {
         tabIndex={0}
       >
         {selectedFile ? (
-          <div className="selected-file-info">
-            <div className="file-icon">📄</div>
-            <div className="file-details">
-              <strong>{selectedFile.name}</strong>
-              <span>{formatFileSize(selectedFile.size)}</span>
+          <div className="selected-file-display" onClick={(e) => e.stopPropagation()}>
+            <div className="selected-file-main">
+              <div className="selected-file-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              <div className="selected-file-meta">
+                <div className="selected-file-name">{selectedFile.name}</div>
+                <div className="selected-file-size">{formatFileSize(selectedFile.size)} • Ready for AI extraction</div>
+              </div>
             </div>
             <button
               type="button"
@@ -90,21 +100,32 @@ function FileDropzone({ onFileSelected, selectedFile, error, clearError }) {
                 if (fileInputRef.current) fileInputRef.current.value = '';
               }}
               title="Remove file"
+              aria-label="Remove file"
             >
               ✕
             </button>
           </div>
         ) : (
           <div className="dropzone-prompt">
-            <div className="prompt-icon">📁</div>
-            <h4>Drag & drop your medical file here</h4>
-            <p>or click to browse from your computer</p>
-            <span className="file-support-hint">Supported formats: CSV, PDF, TXT (Max 5 MB)</span>
+            <div className="dropzone-prompt-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+            </div>
+            <h3 className="dropzone-title">Drag & drop your medical report here</h3>
+            <p className="dropzone-subtitle">or click to browse from your device</p>
+            <span className="file-support-pill">Supported Formats: CSV • PDF • TXT (Max 5 MB)</span>
           </div>
         )}
       </div>
 
-      {error && <div className="dropzone-error">{error}</div>}
+      {error && (
+        <div className="auth-alert auth-alert-error mt-3" style={{ margin: '1rem 0 0' }}>
+          <div className="auth-alert-content">{error}</div>
+        </div>
+      )}
     </div>
   );
 }

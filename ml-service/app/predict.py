@@ -51,8 +51,27 @@ def analyze_health_risk(user_input: str, user_id: int | None = None) -> dict:
         result = {}
 
     predictions = result.get("predictions", [])
-    if not isinstance(predictions, list) or len(predictions) == 0:
-        predictions = [
+    normalized_predictions = []
+    if isinstance(predictions, list) and len(predictions) > 0:
+        for item in predictions:
+            if isinstance(item, dict):
+                conf = item.get("confidence", "Medium")
+                if conf not in ["Low", "Medium", "High"]:
+                    conf = "Medium"
+                normalized_predictions.append({
+                    "disease": str(item.get("disease", "Condition Under Evaluation")),
+                    "confidence": conf,
+                    "reason": str(item.get("reason", "Correlated with provided symptom/biomarker profile."))
+                })
+            elif isinstance(item, str):
+                normalized_predictions.append({
+                    "disease": item,
+                    "confidence": "Medium",
+                    "reason": "Correlated with provided symptom/biomarker profile."
+                })
+
+    if not normalized_predictions:
+        normalized_predictions = [
             {
                 "disease": "Inconclusive Findings",
                 "confidence": "Low",
@@ -60,26 +79,34 @@ def analyze_health_risk(user_input: str, user_id: int | None = None) -> dict:
             }
         ]
 
-    # Clean confidence values to Low | Medium | High
-    for p in predictions:
-        if p.get("confidence") not in ["Low", "Medium", "High"]:
-            p["confidence"] = "Medium"
+    predictions = normalized_predictions
 
     risk = result.get("risk", {})
-    if not isinstance(risk, dict):
-        risk = {}
-
-    risk_level = risk.get("level", "Medium")
-    if risk_level not in ["Low", "Medium", "High"]:
+    if isinstance(risk, str):
+        # Handle models returning risk as a single string (e.g., "Moderate", "High Risk")
+        lowered = risk.lower()
+        if "high" in lowered or "severe" in lowered:
+            risk_level = "High"
+        elif "low" in lowered or "mild" in lowered:
+            risk_level = "Low"
+        else:
+            risk_level = "Medium"
+        risk_factors = ["Clinical monitoring advised based on reported signs"]
+        risk_precautions = ["Consult a healthcare provider for formal clinical examination"]
+    elif isinstance(risk, dict):
+        risk_level = risk.get("level", "Medium")
+        if risk_level not in ["Low", "Medium", "High"]:
+            risk_level = "Medium"
+        risk_factors = risk.get("factors", [])
+        if not isinstance(risk_factors, list) or len(risk_factors) == 0:
+            risk_factors = ["General symptom monitoring advised"]
+        risk_precautions = risk.get("precautions", [])
+        if not isinstance(risk_precautions, list) or len(risk_precautions) == 0:
+            risk_precautions = ["Consult a healthcare provider for physical evaluation"]
+    else:
         risk_level = "Medium"
-
-    risk_factors = risk.get("factors", [])
-    if not isinstance(risk_factors, list):
-        risk_factors = ["General symptom monitoring advised"]
-
-    risk_precautions = risk.get("precautions", [])
-    if not isinstance(risk_precautions, list):
-        risk_precautions = ["Consult a healthcare provider for physical evaluation"]
+        risk_factors = ["Clinical observation recommended"]
+        risk_precautions = ["Consult a physician for physical examination"]
 
     return {
         "predictions": predictions[:3],

@@ -1,0 +1,164 @@
+.vita-risk-card {
+  padding: 2rem;
+  background-color: var(--surface);
+  border: var(--border);
+  box-shadow: var(--shadow-offset);
+}
+
+.risk-card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sample-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--green);
+  margin-bottom: 0.25rem;
+}
+
+.risk-card-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Risk Level Badges */
+.risk-level-badge {
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  border: var(--border);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.level-low {
+  background-color: var(--badge-low-bg);
+  color: var(--badge-low);
+}
+
+.level-medium {
+  background-color: var(--badge-medium-bg);
+  color: var(--badge-medium);
+}
+
+.level-high {
+  background-color: var(--badge-high-bg);
+  color: var(--badge-high);
+}
+
+/* 3-Segment Visual Risk Meter using simple CSS blocks */
+.risk-meter-container {
+  margin-bottom: 2rem;
+}
+
+.risk-meter-track {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  background-color: transparent;
+}
+
+.meter-segment {
+  border: var(--border);
+  border-radius: 6px;
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background-color: var(--surface);
+  color: var(--ink-muted);
+  opacity: 0.45;
+  transition: opacity 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+}
+
+.meter-segment.active {
+  opacity: 1;
+  color: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-offset-sm);
+}
+
+.meter-low.active {
+  background-color: var(--badge-low-bg);
+  color: var(--badge-low);
+}
+
+.meter-med.active {
+  background-color: var(--badge-medium-bg);
+  color: var(--badge-medium);
+}
+
+.meter-high.active {
+  background-color: var(--badge-high-bg);
+  color: var(--badge-high);
+}
+
+/* Content Columns */
+.risk-grid-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  border-top: var(--border);
+}
+
+.risk-col-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.risk-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.risk-item-list li {
+  font-size: 0.92rem;
+  color: var(--ink);
+  line-height: 1.45;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.bullet-sym {
+  font-weight: 700;
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.empty-subtle-text {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  .risk-grid-cols {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

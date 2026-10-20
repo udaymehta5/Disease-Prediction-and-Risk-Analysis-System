@@ -5,6 +5,12 @@ const getHistory = async (req, res, next) => {
   try {
     const userId = req.user.id;
 
+    if (!db.isConfigured || userId === 9999) {
+      return res.status(200).json({
+        history: []
+      });
+    }
+
     const result = await db.query(
       `SELECT id, source, input_summary, result_json, created_at 
        FROM results 
@@ -26,6 +32,10 @@ const getHistoryItem = async (req, res, next) => {
   try {
     const userId = req.user.id;
     const { id } = req.params;
+
+    if (!db.isConfigured || userId === 9999) {
+      return res.status(404).json({ error: 'Assessment record not found.' });
+    }
 
     const result = await db.query(
       `SELECT id, source, input_summary, result_json, created_at 

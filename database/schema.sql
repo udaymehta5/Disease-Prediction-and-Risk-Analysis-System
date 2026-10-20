@@ -6,9 +6,14 @@
 -- 1. Enable pgvector extension for storing and querying AI vector embeddings
 CREATE EXTENSION IF NOT EXISTS vector;
 
--- 2. Users Table
+-- 2. Clean up any pre-existing/conflicting tables from previous setups
+DROP TABLE IF EXISTS results CASCADE;
+DROP TABLE IF EXISTS documents CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+
+-- 3. Users Table
 -- Stores user account information with securely hashed passwords
-CREATE TABLE IF NOT EXISTS users (
+CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
@@ -17,11 +22,11 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 -- Index on email for fast authentication lookups
-CREATE INDEX IF NOT EXISTS idx_users_email ON users(email);
+CREATE INDEX idx_users_email ON users(email);
 
--- 3. Results Table
+-- 4. Results Table
 -- Stores historical predictions generated via File Upload, AI Chat, or MCQ Quiz
-CREATE TABLE IF NOT EXISTS results (
+CREATE TABLE results (
     id SERIAL PRIMARY KEY,
     user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     source VARCHAR(50) NOT NULL CHECK (source IN ('upload', 'chat', 'mcq')),
@@ -31,13 +36,13 @@ CREATE TABLE IF NOT EXISTS results (
 );
 
 -- Index on user_id for fast history retrieval per user
-CREATE INDEX IF NOT EXISTS idx_results_user_id ON results(user_id);
-CREATE INDEX IF NOT EXISTS idx_results_created_at ON results(created_at DESC);
+CREATE INDEX idx_results_user_id ON results(user_id);
+CREATE INDEX idx_results_created_at ON results(created_at DESC);
 
--- 4. Documents Table (Vector Store for RAG)
+-- 5. Documents Table (Vector Store for RAG)
 -- Stores chunked disease knowledge documents and embeddings (384 dimensions for all-MiniLM-L6-v2)
 -- user_id is NULL for general seed knowledge, or set to a user's id for private uploaded documents
-CREATE TABLE IF NOT EXISTS documents (
+CREATE TABLE documents (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
     content TEXT NOT NULL,
@@ -47,10 +52,10 @@ CREATE TABLE IF NOT EXISTS documents (
 );
 
 -- Index on user_id for filtering seed vs user-specific documents
-CREATE INDEX IF NOT EXISTS idx_documents_user_id ON documents(user_id);
+CREATE INDEX idx_documents_user_id ON documents(user_id);
 
--- HNSW Vector Index for fast cosine similarity search (<=> operator)
+-- 6. HNSW Vector Index for fast cosine similarity search (<=> operator)
 -- HNSW builds correctly on empty tables and scales smoothly
-CREATE INDEX IF NOT EXISTS idx_documents_embedding_hnsw 
+CREATE INDEX idx_documents_embedding_hnsw 
 ON documents 
 USING hnsw (embedding vector_cosine_ops);
