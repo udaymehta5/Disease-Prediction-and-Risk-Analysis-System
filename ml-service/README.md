@@ -3,8 +3,8 @@ title: Vita Signal ML
 emoji: 🩺
 colorFrom: green
 colorTo: gray
-sdk: docker
-app_port: 7860
+sdk: gradio
+app_file: app.py
 ---
 
 Vita Signal ML is a clinical decision-support and disease risk analysis microservice.
