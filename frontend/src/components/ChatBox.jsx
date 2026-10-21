@@ -2,19 +2,36 @@ import React, { useState, useEffect, useRef } from 'react';
 
 function ChatBox({ messages, loading, onSendMessage, onClearChat, onSynthesizeReport, analyzingReport }) {
   const [inputText, setInputText] = useState('');
-  const messagesEndRef = useRef(null);
+  const messagesContainerRef = useRef(null);
 
-  // Auto-scroll to bottom of chat feed when a new message is appended
+  // Auto-scroll strictly inside the chat messages box (never scrolls outer page)
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTo({
+        top: messagesContainerRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
   }, [messages, loading]);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     if (!inputText.trim() || loading) return;
     onSendMessage(inputText.trim());
     setInputText('');
   };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      e.stopPropagation();
+      handleSubmit(e);
+    }
+  };
+
 
   // Helper to format AI message text (supports basic markdown bolding & bullets cleanly)
   const renderFormattedMessage = (text) => {
@@ -83,7 +100,7 @@ function ChatBox({ messages, loading, onSendMessage, onClearChat, onSynthesizeRe
       </div>
 
       {/* Message Feed */}
-      <div className="chatbox-messages">
+      <div className="chatbox-messages" ref={messagesContainerRef}>
         {messages.length === 0 && (
           <div style={{ textAlign: 'center', padding: '3rem 1.5rem', color: 'var(--ink-muted)' }}>
             <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>💬</div>
@@ -137,8 +154,6 @@ function ChatBox({ messages, loading, onSendMessage, onClearChat, onSynthesizeRe
             </div>
           </div>
         )}
-
-        <div ref={messagesEndRef} />
       </div>
 
       {/* Input Row */}
@@ -148,6 +163,7 @@ function ChatBox({ messages, loading, onSendMessage, onClearChat, onSynthesizeRe
           className="chatbox-input-field"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder="Describe your symptoms (e.g., 'I have extreme thirst, fatigue, and blurry vision for 3 weeks')..."
           disabled={loading || analyzingReport}
         />

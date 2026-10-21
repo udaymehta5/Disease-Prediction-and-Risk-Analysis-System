@@ -18,13 +18,36 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
 
-// 1. CORS Configuration (Supports single URL, comma-separated URLs, or wildcard '*')
-const allowedOrigins = CLIENT_URL === '*'
-  ? true
-  : (CLIENT_URL.includes(',') ? CLIENT_URL.split(',').map(s => s.trim()) : [CLIENT_URL, 'http://localhost:5173', 'http://localhost:3000']);
+// 1. CORS Configuration (Supports localhost, 127.0.0.1, Vercel, and custom domains)
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://127.0.0.1:5173',
+  'http://localhost:3000',
+  'http://127.0.0.1:3000'
+];
+
+if (CLIENT_URL && CLIENT_URL !== '*') {
+  CLIENT_URL.split(',').forEach(url => {
+    const trimmed = url.trim();
+    if (trimmed && !allowedOrigins.includes(trimmed)) {
+      allowedOrigins.push(trimmed);
+    }
+  });
+}
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: (origin, callback) => {
+    // Allow non-browser requests (Postman, curl, server-to-server)
+    if (!origin) return callback(null, true);
+    if (CLIENT_URL === '*' || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    // Allow local development on any port
+    if (/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) {
+      return callback(null, true);
+    }
+    return callback(null, true); // Fallback allow in dev
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -56,10 +79,15 @@ app.use(errorHandler);
 
 // 7. Start listening
 app.listen(PORT, () => {
+  const mlTarget = process.env.ML_SERVICE_URL && !process.env.ML_SERVICE_URL.includes('localhost')
+    ? `External proxy (${process.env.ML_SERVICE_URL})`
+    : 'Built-in Native Groq ML Engine (Single-Folder Deployment Ready)';
+
   console.log(`Backend server running on http://localhost:${PORT}`);
   console.log(`CORS enabled for origin: ${CLIENT_URL}`);
-  console.log(`Forwarding AI requests to ML Service: ${process.env.ML_SERVICE_URL || 'http://localhost:8000'}`);
+  console.log(`ML Engine Status: ${mlTarget}`);
 });
 
 module.exports = app;
+
 

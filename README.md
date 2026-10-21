@@ -68,15 +68,7 @@ disease-prediction-and-risk-analysis/
 │   ├── seed/                     # 7 Clinical knowledge files (.txt) for RAG
 │   ├── sample_lab_report.csv     # Sample report for upload testing
 │   └── README.md                 # Supabase setup instructions
-├── ml-service/                   # Python FastAPI ML & RAG service
-│   ├── app/
-│   │   ├── main.py               # FastAPI application and route endpoints
-│   │   ├── rag.py                # Embedding generator and pgvector similarity search
-│   │   ├── llm.py                # Groq API client wrapper with safe JSON fallback
-│   │   ├── predict.py            # Prediction & risk analysis logic
-│   │   ├── parsers.py            # CSV / PDF / TXT document parsers
-│   │   └── ingest.py             # Seed ingestion CLI script
-│   └── requirements.txt
+├── render.yaml                   # Render deployment blueprint (single-service)
 ├── .env.example                  # Environment configuration template
 ├── .gitignore                    # Version control ignore rules
 └── README.md                     # Project documentation
@@ -125,15 +117,7 @@ npm install
 ```
 
 ### Step 3: Install ML Service Dependencies & Ingest Knowledge Base
-```bash
-cd ml-service
-pip install -r requirements.txt
-
-# Ingest all clinical seed knowledge files into pgvector:
-python -m app.ingest
-```
-
-### Step 4: Install Frontend Dependencies
+### Step 3: Install Frontend Dependencies
 ```bash
 cd frontend
 npm install
@@ -143,28 +127,22 @@ npm install
 
 ## 5. Running the Application
 
-Open 3 separate terminals:
+Open 2 separate terminals:
 
-### Terminal 1: Node.js Backend Server
+### Terminal 1: Node.js Backend Server (Includes Built-in Native ML Engine)
 ```bash
 cd backend
 npm run dev
-# Server runs on http://localhost:5000
+# Server runs on http://localhost:5000 (Handles Auth, Database, and Groq ML Engine)
 ```
 
-### Terminal 2: Python FastAPI ML Service
-```bash
-cd ml-service
-python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
-# ML Service runs on http://localhost:8000
-```
-
-### Terminal 3: React Frontend Client
+### Terminal 2: React Frontend Client
 ```bash
 cd frontend
 npm run dev
 # Frontend runs on http://localhost:5173
 ```
+
 
 ---
 

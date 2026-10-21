@@ -47,7 +47,8 @@ function Chat() {
         text: response.data.reply
       }));
     } catch (err) {
-      const msg = err.response?.data?.error || 'Unable to connect to AI assistant. Please verify services.';
+      console.error('[Chat Error]', err);
+      const msg = err.response?.data?.error || err.message || 'Unable to connect to AI assistant. Please verify services.';
       dispatch(setError(msg));
       dispatch(addMessage({
         sender: 'ai',
