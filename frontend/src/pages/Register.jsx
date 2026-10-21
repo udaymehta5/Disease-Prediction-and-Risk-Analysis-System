@@ -66,7 +66,8 @@ function Register() {
       dispatch(registerSuccess(response.data));
       navigate(from, { replace: true });
     } catch (err) {
-      const message = err.response?.data?.error || 'Registration failed. Please try again with another email.';
+      console.error('[Registration Error]', err);
+      const message = err.response?.data?.error || err.message || 'Registration failed. Please try again with another email.';
       dispatch(loginFailure(message));
     }
   };
