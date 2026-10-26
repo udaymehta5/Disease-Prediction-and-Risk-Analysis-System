@@ -61,7 +61,7 @@ function Chat() {
       }));
     } catch (err) {
       console.error('[Chat Error]', err);
-      const msg = err.response?.data?.error || err.message || 'Unable to connect to AI assistant. Please verify services.';
+      const msg = err.response?.data?.error || err.userMessage || err.message || 'Unable to connect to AI assistant. Please verify services.';
       dispatch(setError(msg));
       dispatch(addMessage({
         sender: 'ai',
@@ -101,7 +101,7 @@ function Chat() {
       // Navigate to formal result page
       navigate('/result');
     } catch (err) {
-      const msg = err.response?.data?.error || 'Failed to synthesize risk assessment from conversation.';
+      const msg = err.response?.data?.error || err.userMessage || err.message || 'Failed to synthesize risk assessment from conversation.';
       dispatch(setError(msg));
     } finally {
       setAnalyzingReport(false);
