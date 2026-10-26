@@ -61,8 +61,15 @@ function Navbar() {
           <span className="brand-text">Vita Signal</span>
         </Link>
 
-        {/* Desktop Navigation Links */}
-        <nav className="desktop-nav">
+        {/* Desktop Navigation: Informational Page Anchors */}
+        <nav className="desktop-info-nav">
+          <a
+            href="#features"
+            className="nav-item"
+            onClick={(e) => handleAnchorClick(e, 'features')}
+          >
+            Features
+          </a>
           <a
             href="#how-it-works"
             className="nav-item"
@@ -71,11 +78,11 @@ function Navbar() {
             How it works
           </a>
           <a
-            href="#features"
+            href="#bmi"
             className="nav-item"
-            onClick={(e) => handleAnchorClick(e, 'features')}
+            onClick={(e) => handleAnchorClick(e, 'bmi')}
           >
-            Features
+            BMI
           </a>
           <a
             href="#diseases"
@@ -91,16 +98,100 @@ function Navbar() {
           >
             FAQ
           </a>
+        </nav>
+
+        {/* Dedicated Interactive Actions Hub (User Access & Action Center) */}
+        <div className="header-interactive-hub" role="region" aria-label="Interactive Clinical Tools">
+          <Link
+            to="/upload"
+            className={`hub-tool-btn ${location.pathname === '/upload' ? 'is-active' : ''}`}
+            title="Upload laboratory blood tests or clinical reports"
+          >
+            <svg
+              className="tool-btn-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17 8 12 3 7 8" />
+              <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
+            <span>Upload</span>
+          </Link>
+
+          <Link
+            to="/chat"
+            className={`hub-tool-btn ${location.pathname === '/chat' ? 'is-active' : ''}`}
+            title="Interactive AI chat consultation and symptom triage"
+          >
+            <svg
+              className="tool-btn-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            <span>AI Chat</span>
+          </Link>
+
+          <Link
+            to="/mcq"
+            className={`hub-tool-btn ${location.pathname === '/mcq' ? 'is-active' : ''}`}
+            title="Structured interactive clinical MCQ quiz"
+          >
+            <svg
+              className="tool-btn-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+            <span>Quiz</span>
+          </Link>
 
           {isAuthenticated && (
-            <>
-              <Link to="/upload" className="nav-item">Upload</Link>
-              <Link to="/chat" className="nav-item">Chat</Link>
-              <Link to="/mcq" className="nav-item">Quiz</Link>
-              <Link to="/history" className="nav-item">History</Link>
-            </>
+            <Link
+              to="/history"
+              className={`hub-tool-btn ${location.pathname === '/history' ? 'is-active' : ''}`}
+              title="Review saved predictions and report assessments"
+            >
+              <svg
+                className="tool-btn-icon"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>History</span>
+            </Link>
           )}
-        </nav>
+        </div>
 
         {/* Right Action Area */}
         <div className="header-actions">
@@ -178,7 +269,101 @@ function Navbar() {
       {/* Mobile Drawer / Dropdown Panel */}
       {mobileMenuOpen && (
         <div className="mobile-dropdown-panel">
+          {/* Prominent Mobile Interactive Tools Hub */}
+          <div className="mobile-interactive-section">
+            <div className="mobile-section-heading">
+              <span className="mobile-tools-badge">
+                <span className="hub-tag-pulse"></span>
+                QUICK ACTIONS
+              </span>
+              <span className="mobile-tools-sub">Direct Patient Access</span>
+            </div>
+
+            <div className="mobile-tools-grid">
+              <Link
+                to="/upload"
+                className={`mobile-tool-card ${location.pathname === '/upload' ? 'is-active' : ''}`}
+                onClick={closeMobileMenu}
+              >
+                <div className="mobile-tool-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" y1="3" x2="12" y2="15" />
+                  </svg>
+                </div>
+                <div className="mobile-tool-card-body">
+                  <span className="mobile-tool-name">Upload Report</span>
+                  <span className="mobile-tool-caption">Scan lab reports & blood tests</span>
+                </div>
+              </Link>
+
+              <Link
+                to="/chat"
+                className={`mobile-tool-card ${location.pathname === '/chat' ? 'is-active' : ''}`}
+                onClick={closeMobileMenu}
+              >
+                <div className="mobile-tool-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                  </svg>
+                </div>
+                <div className="mobile-tool-card-body">
+                  <span className="mobile-tool-name">AI Chat</span>
+                  <span className="mobile-tool-caption">Conversational clinical triage</span>
+                </div>
+              </Link>
+
+              <Link
+                to="/mcq"
+                className={`mobile-tool-card ${location.pathname === '/mcq' ? 'is-active' : ''}`}
+                onClick={closeMobileMenu}
+              >
+                <div className="mobile-tool-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 11l3 3L22 4" />
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                  </svg>
+                </div>
+                <div className="mobile-tool-card-body">
+                  <span className="mobile-tool-name">Symptom Quiz</span>
+                  <span className="mobile-tool-caption">Targeted multi-choice diagnosis</span>
+                </div>
+              </Link>
+
+              {isAuthenticated && (
+                <Link
+                  to="/history"
+                  className={`mobile-tool-card ${location.pathname === '/history' ? 'is-active' : ''}`}
+                  onClick={closeMobileMenu}
+                >
+                  <div className="mobile-tool-card-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                  </div>
+                  <div className="mobile-tool-card-body">
+                    <span className="mobile-tool-name">History</span>
+                    <span className="mobile-tool-caption">Saved tests & risk logs</span>
+                  </div>
+                </Link>
+              )}
+            </div>
+          </div>
+
+          {/* Informational Anchor Links */}
+          <div className="mobile-section-heading mobile-info-heading">
+            <span className="mobile-info-label">Page Navigation</span>
+          </div>
           <nav className="mobile-nav-links">
+            <a
+              href="#features"
+              className="mobile-nav-item"
+              onClick={(e) => handleAnchorClick(e, 'features')}
+            >
+              Features
+            </a>
             <a
               href="#how-it-works"
               className="mobile-nav-item"
@@ -187,11 +372,11 @@ function Navbar() {
               How it works
             </a>
             <a
-              href="#features"
+              href="#bmi"
               className="mobile-nav-item"
-              onClick={(e) => handleAnchorClick(e, 'features')}
+              onClick={(e) => handleAnchorClick(e, 'bmi')}
             >
-              Features
+              BMI
             </a>
             <a
               href="#diseases"
@@ -207,54 +392,41 @@ function Navbar() {
             >
               FAQ
             </a>
-
-            {isAuthenticated ? (
-              <>
-                <Link to="/upload" className="mobile-nav-item" onClick={closeMobileMenu}>
-                  Upload Report
-                </Link>
-                <Link to="/chat" className="mobile-nav-item" onClick={closeMobileMenu}>
-                  AI Chat Consultation
-                </Link>
-                <Link to="/mcq" className="mobile-nav-item" onClick={closeMobileMenu}>
-                  Symptom Quiz
-                </Link>
-                <Link to="/history" className="mobile-nav-item" onClick={closeMobileMenu}>
-                  Assessment History
-                </Link>
-                <div className="mobile-auth-divider"></div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={handleLogout}
-                  className="btn-block"
-                >
-                  Log out ({user?.name || 'Account'})
-                </Button>
-              </>
-            ) : (
-              <div className="mobile-auth-actions">
-                <Button
-                  as={Link}
-                  to="/login"
-                  variant="outline"
-                  onClick={closeMobileMenu}
-                  className="btn-block"
-                >
-                  Log in
-                </Button>
-                <Button
-                  as={Link}
-                  to="/register"
-                  variant="filled"
-                  onClick={closeMobileMenu}
-                  className="btn-block"
-                >
-                  Sign up
-                </Button>
-              </div>
-            )}
           </nav>
+
+          {/* Auth Section */}
+          <div className="mobile-auth-divider"></div>
+          {isAuthenticated ? (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handleLogout}
+              className="btn-block"
+            >
+              Log out ({user?.name || 'Account'})
+            </Button>
+          ) : (
+            <div className="mobile-auth-actions">
+              <Button
+                as={Link}
+                to="/login"
+                variant="outline"
+                onClick={closeMobileMenu}
+                className="btn-block"
+              >
+                Log in
+              </Button>
+              <Button
+                as={Link}
+                to="/register"
+                variant="filled"
+                onClick={closeMobileMenu}
+                className="btn-block"
+              >
+                Sign up
+              </Button>
+            </div>
+          )}
         </div>
       )}
     </header>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginStart, loginSuccess, loginFailure, clearError } from '../store/authSlice';
+import GoogleAuthButton from '../components/GoogleAuthButton';
 import api from '../services/api';
 import './Auth.css';
 
@@ -31,7 +32,8 @@ function Login() {
       dispatch(loginSuccess(response.data));
       navigate(from, { replace: true });
     } catch (err) {
-      const message = err.response?.data?.error || 'Login failed. Please verify your email and password.';
+      console.error('[Login Error]', err);
+      const message = err.response?.data?.error || err.userMessage || (err.message === 'Network Error' ? 'Cannot connect to backend server. Please make sure the backend is running on port 5000.' : err.message) || 'Login failed. Please verify your email and password.';
       dispatch(loginFailure(message));
     }
   };
@@ -189,6 +191,14 @@ function Login() {
               </button>
             </div>
           )}
+
+          {/* Social Single Sign-On */}
+          <div className="auth-social-box">
+            <GoogleAuthButton redirectPath={from} />
+            <div className="auth-social-divider">
+              <span>Or sign in with email</span>
+            </div>
+          </div>
 
           <form onSubmit={handleSubmit} className="auth-form-fields" noValidate>
             {/* Email Address */}

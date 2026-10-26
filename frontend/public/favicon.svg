@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Soft clinical radial glow -->
+    <linearGradient id="vita-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3E9B4F" />
+      <stop offset="100%" stop-color="#1E652E" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="0" flood-color="#0E0E0E" />
+    </filter>
+  </defs>
+
+  <style>
+    .card-bg {
+      fill: url(#vita-grad);
+      stroke: #0E0E0E;
+      stroke-width: 2.5;
+    }
+    .pulse-line {
+      fill: none;
+      stroke: #FFFFFF;
+      stroke-width: 4.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .pulse-dot {
+      fill: #DDF3D2;
+      stroke: #0E0E0E;
+      stroke-width: 1.5;
+    }
+    .cross-accent {
+      fill: #DDF3D2;
+      opacity: 0.85;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .card-bg {
+        fill: #16221A;
+        stroke: #6FD083;
+      }
+      .pulse-line {
+        stroke: #6FD083;
+      }
+      .pulse-dot {
+        fill: #A7F3B6;
+        stroke: #6FD083;
+      }
+      .cross-accent {
+        fill: #6FD083;
+      }
+    }
+  </style>
+
+  <!-- Squircle container with editorial ink stroke & brutalist offset shadow -->
+  <rect 
+    class="card-bg" 
+    x="5" 
+    y="5" 
+    width="52" 
+    height="52" 
+    rx="15" 
+    filter="url(#shadow)"
+  />
+
+  <!-- Subtle Medical Cross watermark in the top-right corner -->
+  <path 
+    class="cross-accent" 
+    d="M44 14h4v3h3v4h-3v3h-4v-3h-3v-4h3z" 
+  />
+
+  <!-- Active ECG Vital Signal Line (Vita Signal Heartbeat Wave) -->
+  <path 
+    class="pulse-line" 
+    d="M12 34 h9 l4 11 l9 -26 l7 21 l5 -8 h8" 
+  />
+
+  <!-- Active Signal Pulse Node (Beacon) -->
+  <circle 
+    class="pulse-dot" 
+    cx="54" 
+    cy="32" 
+    r="3" 
+  />
+</svg>

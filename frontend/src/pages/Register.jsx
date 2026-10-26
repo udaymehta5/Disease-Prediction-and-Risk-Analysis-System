@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginStart, registerSuccess, loginFailure, clearError } from '../store/authSlice';
+import GoogleAuthButton from '../components/GoogleAuthButton';
 import api from '../services/api';
 import './Auth.css';
 
@@ -67,7 +68,7 @@ function Register() {
       navigate(from, { replace: true });
     } catch (err) {
       console.error('[Registration Error]', err);
-      const message = err.response?.data?.error || err.message || 'Registration failed. Please try again with another email.';
+      const message = err.response?.data?.error || err.userMessage || (err.message === 'Network Error' ? 'Cannot connect to backend server. Please make sure the backend is running on port 5000.' : err.message) || 'Registration failed. Please try again with another email.';
       dispatch(loginFailure(message));
     }
   };
@@ -176,6 +177,14 @@ function Register() {
               </button>
             </div>
           )}
+
+          {/* Social Single Sign-On */}
+          <div className="auth-social-box">
+            <GoogleAuthButton redirectPath={from} />
+            <div className="auth-social-divider">
+              <span>Or sign up with email</span>
+            </div>
+          </div>
 
           <form onSubmit={handleSubmit} className="auth-form-fields" noValidate>
             {/* Full Name */}

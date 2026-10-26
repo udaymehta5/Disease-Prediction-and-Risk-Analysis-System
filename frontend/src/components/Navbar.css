@@ -9,13 +9,13 @@
 }
 
 .vita-header-container {
-  max-width: 1140px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0.85rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 /* Brand Wordmark & Pulse Icon */
@@ -26,6 +26,7 @@
   text-decoration: none;
   color: var(--ink);
   user-select: none;
+  flex-shrink: 0;
 }
 
 .brand-mark-circle {
@@ -53,21 +54,22 @@
   color: var(--ink);
 }
 
-/* Desktop Links */
-.desktop-nav {
+/* Desktop Informational Page Navigation */
+.desktop-info-nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.35rem;
 }
 
 .nav-item {
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: var(--ink);
   padding: 0.25rem 0;
   border-bottom: 2px solid transparent;
   transition: border-color 150ms ease, color 150ms ease;
+  white-space: nowrap;
 }
 
 .nav-item:hover {
@@ -75,11 +77,108 @@
   border-bottom-color: var(--green);
 }
 
+/* Dedicated Interactive Tools Hub (User Action Center) */
+.header-interactive-hub {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.35rem;
+  background-color: var(--surface);
+  border: var(--border);
+  border-radius: 9999px;
+  box-shadow: 2px 2px 0 var(--ink);
+  transition: all 150ms ease;
+  flex-shrink: 0;
+}
+
+.hub-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  padding: 0.2rem 0.55rem 0.2rem 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-right: 1px solid rgba(14, 14, 14, 0.15);
+  user-select: none;
+}
+
+[data-theme="dark"] .hub-tag {
+  border-right-color: rgba(237, 245, 234, 0.18);
+}
+
+.hub-tag-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--green);
+  box-shadow: 0 0 0 2px var(--green-soft);
+  animation: toolPulse 2s infinite ease-in-out;
+}
+
+@keyframes toolPulse {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+    box-shadow: 0 0 6px var(--green);
+  }
+}
+
+.hub-tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+  background-color: transparent;
+  transition: all 140ms ease;
+  white-space: nowrap;
+}
+
+.tool-btn-icon {
+  flex-shrink: 0;
+  color: var(--ink);
+  transition: transform 140ms ease, color 140ms ease;
+}
+
+.hub-tool-btn:hover {
+  background-color: var(--green-soft);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.hub-tool-btn:hover .tool-btn-icon {
+  color: var(--green);
+  transform: scale(1.1);
+}
+
+.hub-tool-btn.is-active {
+  background-color: var(--green);
+  color: #0e0e0e;
+  font-weight: 700;
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+.hub-tool-btn.is-active .tool-btn-icon {
+  color: #0e0e0e;
+}
+
 /* Right Actions */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 0.85rem;
+  flex-shrink: 0;
 }
 
 .auth-btn-group,
@@ -134,23 +233,142 @@
   display: none;
   border-top: var(--border);
   background-color: var(--surface);
-  padding: 1.25rem 1.5rem 1.5rem;
-  box-shadow: 0 6px 0 var(--ink);
+  padding: 1.25rem 1.5rem 1.75rem;
+  box-shadow: 0 8px 0 var(--ink);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* Mobile Interactive Section */
+.mobile-interactive-section {
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-offset-sm);
+}
+
+.mobile-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.mobile-tools-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.mobile-tools-sub {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.mobile-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+}
+
+@media (max-width: 480px) {
+  .mobile-tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mobile-tool-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.75rem;
+  border: var(--border);
+  border-radius: 8px;
+  background-color: var(--surface);
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 1.5px 1.5px 0 var(--ink);
+  transition: transform 120ms ease, background-color 120ms ease;
+}
+
+.mobile-tool-card:hover {
+  background-color: var(--green-soft);
+  transform: translateY(-1px);
+}
+
+.mobile-tool-card.is-active {
+  background-color: var(--green-soft);
+  border-color: var(--green);
+}
+
+.mobile-tool-card-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: var(--border);
+  background-color: var(--green-soft);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mobile-tool-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.mobile-tool-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.mobile-tool-caption {
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  line-height: 1.25;
+}
+
+/* Mobile Info Links */
+.mobile-info-heading {
+  margin-bottom: 0.4rem;
+  padding: 0 0.25rem;
+}
+
+.mobile-info-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
 }
 
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0.75rem;
 }
 
 .mobile-nav-item {
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   font-weight: 600;
   color: var(--ink);
-  padding: 0.5rem 0;
+  padding: 0.45rem 0.25rem;
   border-bottom: 1px solid rgba(14, 14, 14, 0.1);
+  transition: color 140ms ease;
 }
 
 [data-theme="dark"] .mobile-nav-item {
@@ -165,23 +383,37 @@
   height: 1px;
   background-color: var(--ink);
   opacity: 0.2;
-  margin: 0.5rem 0;
+  margin: 1rem 0 0.85rem;
 }
 
 .mobile-auth-actions {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-top: 0.5rem;
 }
 
 /* Responsive Breakpoints */
-@media (max-width: 880px) {
-  .desktop-nav {
+@media (max-width: 1140px) {
+  .desktop-info-nav {
+    gap: 0.95rem;
+  }
+  
+  .hub-tool-btn {
+    padding: 0.32rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .desktop-info-nav {
     display: none;
   }
 
   .auth-btn-group {
+    display: none;
+  }
+
+  .header-interactive-hub {
     display: none;
   }
 

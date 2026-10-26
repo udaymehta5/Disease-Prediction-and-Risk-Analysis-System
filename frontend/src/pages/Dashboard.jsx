@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Container from '../components/Container';
@@ -10,6 +10,7 @@ import FeatureRow from '../components/FeatureRow';
 import DiseaseCard from '../components/DiseaseCard';
 import RiskCard from '../components/RiskCard';
 import FaqItem from '../components/FaqItem';
+import BmiSection from '../components/BmiSection';
 import { DISEASES_DATA, DISEASE_CATEGORIES } from '../data/diseases';
 import './Dashboard.css';
 
@@ -17,6 +18,8 @@ function Dashboard() {
   const navigate = useNavigate();
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [diseaseSearch, setDiseaseSearch] = useState('');
+  const [visibleCount, setVisibleCount] = useState(12);
 
   // Handle protected feature routing: redirects unauthenticated users through /login
   const handleProtectedAction = (targetPath) => {
@@ -35,10 +38,19 @@ function Dashboard() {
     }
   };
 
-  // Filter diseases by active category
-  const filteredDiseases = selectedCategory === 'All'
-    ? DISEASES_DATA
-    : DISEASES_DATA.filter((d) => d.category === selectedCategory);
+  // Filter diseases by active category and search query across 260+ conditions
+  const filteredDiseases = useMemo(() => {
+    return DISEASES_DATA.filter((d) => {
+      const matchesCategory = selectedCategory === 'All' || d.category === selectedCategory;
+      if (!matchesCategory) return false;
+      if (!diseaseSearch.trim()) return true;
+      const q = diseaseSearch.toLowerCase();
+      const inName = d.name.toLowerCase().includes(q);
+      const inSymptoms = Array.isArray(d.symptoms) && d.symptoms.some((s) => s.toLowerCase().includes(q));
+      const inDesc = d.description && d.description.toLowerCase().includes(q);
+      return inName || inSymptoms || inDesc;
+    });
+  }, [selectedCategory, diseaseSearch]);
 
   // Sample mock data for Section 05: Understanding Risk
   const sampleRiskData = {
@@ -164,44 +176,12 @@ function Dashboard() {
       </section>
 
       {/* ====================================================================
-          02 HOW IT WORKS
-          ==================================================================== */}
-      <section className="section-padding how-it-works-section" id="how-it-works">
-        <Container>
-          <SectionHeading
-            number="02"
-            title="How it works"
-            subtitle="Three straightforward steps from describing your symptoms to obtaining structured risk guidance."
-          />
-
-          <div className="steps-row">
-            <StepItem
-              number="1"
-              title="Share your symptoms"
-              description="Upload a lab test document (CSV, PDF, TXT), describe symptoms in conversational chat, or complete a fast multiple-choice questionnaire."
-            />
-            <StepItem
-              number="2"
-              title="Compare with clinical evidence"
-              description="The system extracts biomarker values and symptom tokens, querying an evidence-based vector store of medical knowledge via RAG."
-            />
-            <StepItem
-              number="3"
-              title="Receive risk analysis & precautions"
-              description="Review top likely conditions, confidence indicators, specific risk factors, and actionable precautions to bring to your physician."
-              isLast={true}
-            />
-          </div>
-        </Container>
-      </section>
-
-      {/* ====================================================================
-          03 THREE WAYS TO USE VITA SIGNAL
+          02 THREE WAYS TO USE VITA SIGNAL (FEATURES)
           ==================================================================== */}
       <section className="section-padding" id="features">
         <Container>
           <SectionHeading
-            number="03"
+            number="02"
             title="Three ways to use Vita Signal"
             subtitle="Choose the method that best fits what information you have on hand right now."
           />
@@ -323,15 +303,86 @@ function Dashboard() {
       </section>
 
       {/* ====================================================================
-          04 DISEASES WE CAN LOOK AT
+          03 HOW IT WORKS
+          ==================================================================== */}
+      <section className="section-padding how-it-works-section" id="how-it-works">
+        <Container>
+          <SectionHeading
+            number="03"
+            title="How it works"
+            subtitle="Three straightforward steps from describing your symptoms to obtaining structured risk guidance."
+          />
+
+          <div className="steps-row">
+            <StepItem
+              number="1"
+              title="Share your symptoms"
+              description="Upload a lab test document (CSV, PDF, TXT), describe symptoms in conversational chat, or complete a fast multiple-choice questionnaire."
+            />
+            <StepItem
+              number="2"
+              title="Compare with clinical evidence"
+              description="The system extracts biomarker values and symptom tokens, querying an evidence-based vector store of medical knowledge via RAG."
+            />
+            <StepItem
+              number="3"
+              title="Receive risk analysis & precautions"
+              description="Review top likely conditions, confidence indicators, specific risk factors, and actionable precautions to bring to your physician."
+              isLast={true}
+            />
+          </div>
+        </Container>
+      </section>
+
+      {/* ====================================================================
+          04 CLINICAL BMI & METABOLIC RISK ANALYSIS
+          ==================================================================== */}
+      <BmiSection />
+
+      {/* ====================================================================
+          05 DISEASES WE CAN LOOK AT
           ==================================================================== */}
       <section className="section-padding" id="diseases">
         <Container>
           <SectionHeading
-            number="04"
+            number="05"
             title="Diseases we can look at"
             subtitle="A curated reference index of common conditions recognized in our clinical knowledge base. Click any card to expand precautions and medical guidance."
           />
+
+          {/* Live Search & Filter Bar */}
+          <div className="diseases-search-controls">
+            <div className="diseases-search-box">
+              <span className="search-icon-symbol">🔍</span>
+              <input
+                type="text"
+                placeholder="Search 260+ diseases by name, symptom (e.g. chest pain, vertigo, rash), or keyword..."
+                value={diseaseSearch}
+                onChange={(e) => {
+                  setDiseaseSearch(e.target.value);
+                  setVisibleCount(12);
+                }}
+                className="diseases-search-input"
+              />
+              {diseaseSearch && (
+                <button
+                  type="button"
+                  className="search-clear-btn"
+                  onClick={() => {
+                    setDiseaseSearch('');
+                    setVisibleCount(12);
+                  }}
+                  aria-label="Clear search"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+
+            <div className="diseases-count-indicator">
+              Showing <strong>{Math.min(visibleCount, filteredDiseases.length)}</strong> of <strong>{filteredDiseases.length}</strong> matching conditions
+            </div>
+          </div>
 
           {/* Filter Chips */}
           <div className="filter-chips-row" role="tablist" aria-label="Filter conditions by category">
@@ -340,7 +391,10 @@ function Dashboard() {
                 key={category}
                 type="button"
                 className={`filter-chip ${selectedCategory === category ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(category)}
+                onClick={() => {
+                  setSelectedCategory(category);
+                  setVisibleCount(12);
+                }}
                 role="tab"
                 aria-selected={selectedCategory === category}
               >
@@ -350,21 +404,147 @@ function Dashboard() {
           </div>
 
           {/* Expandable Diseases Grid */}
-          <div className="diseases-grid">
-            {filteredDiseases.map((disease) => (
-              <DiseaseCard key={disease.id} disease={disease} />
-            ))}
+          {filteredDiseases.length > 0 ? (
+            <>
+              <div className="diseases-grid">
+                {filteredDiseases.slice(0, visibleCount).map((disease) => (
+                  <DiseaseCard key={disease.id} disease={disease} />
+                ))}
+              </div>
+
+              {/* Show More Pagination Button */}
+              {filteredDiseases.length > visibleCount && (
+                <div className="diseases-show-more-row">
+                  <Button
+                    variant="outline"
+                    size="md"
+                    onClick={() => setVisibleCount((prev) => Math.min(prev + 18, filteredDiseases.length))}
+                  >
+                    Load More Conditions ({filteredDiseases.length - visibleCount} remaining) ▾
+                  </Button>
+                  <button
+                    type="button"
+                    className="show-all-text-btn"
+                    onClick={() => setVisibleCount(filteredDiseases.length)}
+                  >
+                    View All {filteredDiseases.length}
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="diseases-empty-search">
+              <span className="empty-icon">🔎</span>
+              <h4>No specific condition matched "{diseaseSearch}"</h4>
+              <p>Our clinical AI model can analyze any symptom even if it's not directly in this catalog.</p>
+              <Button
+                variant="filled"
+                size="sm"
+                onClick={() => handleProtectedAction('/chat')}
+              >
+                Ask AI Doctor About "{diseaseSearch}" ➔
+              </Button>
+            </div>
+          )}
+
+          {/* More Diseases Coverage Banner */}
+          <div className="more-diseases-banner">
+            <div className="more-diseases-header">
+              <div className="more-diseases-badge">
+                <span className="sparkle-icon">✨</span>
+                <span>Expanded Clinical Knowledge Base</span>
+              </div>
+              <h3 className="more-diseases-title">
+                Covering Far More Than What Is Listed Above
+              </h3>
+              <p className="more-diseases-subtitle">
+                The conditions displayed above represent our curated quick-reference index. Vita Signal's Retrieval-Augmented Generation (RAG) system and clinical AI cross-reference <strong>hundreds of symptoms, laboratory panels, and multi-system conditions</strong>.
+              </p>
+            </div>
+
+            <div className="more-diseases-categories-grid">
+              <div className="more-cat-card">
+                <div className="more-cat-icon">🫀</div>
+                <h4>Cardiovascular & Circulatory</h4>
+                <p className="more-cat-items">
+                  Arrhythmias (AFib), Coronary Artery Disease, Heart Failure, Deep Vein Thrombosis (DVT), Peripheral Artery Disease
+                </p>
+              </div>
+
+              <div className="more-cat-card">
+                <div className="more-cat-icon">🧬</div>
+                <h4>Endocrine & Metabolic</h4>
+                <p className="more-cat-items">
+                  Hypothyroidism, Hyperthyroidism, Metabolic Syndrome, Gout & Hyperuricemia, Vitamin D & B12 Deficiencies
+                </p>
+              </div>
+
+              <div className="more-cat-card">
+                <div className="more-cat-icon">🫁</div>
+                <h4>Respiratory & Pulmonary</h4>
+                <p className="more-cat-items">
+                  Acute Bronchitis, Sleep Apnea, Allergic Rhinitis, Pneumonia risk indicators, Pulmonary Embolism screening
+                </p>
+              </div>
+
+              <div className="more-cat-card">
+                <div className="more-cat-icon">🔬</div>
+                <h4>Gastrointestinal & Hepatic</h4>
+                <p className="more-cat-items">
+                  GERD / Acid Reflux, Irritable Bowel Syndrome (IBS), Gallstones (Cholelithiasis), Gastritis, NAFLD / Fatty Liver
+                </p>
+              </div>
+
+              <div className="more-cat-card">
+                <div className="more-cat-icon">🧠</div>
+                <h4>Neurological & Mental Fatigue</h4>
+                <p className="more-cat-items">
+                  Tension Headaches, Migraine with/without aura, Vertigo / Vestibular Neuritis, Chronic Stress & Burnout
+                </p>
+              </div>
+
+              <div className="more-cat-card">
+                <div className="more-cat-icon">🦴</div>
+                <h4>Musculoskeletal & Autoimmune</h4>
+                <p className="more-cat-items">
+                  Osteoarthritis, Fibromyalgia, Rheumatoid Arthritis indicators, Lumbar Radiculopathy, Tendinitis
+                </p>
+              </div>
+            </div>
+
+            <div className="more-diseases-footer">
+              <div className="more-diseases-footer-text">
+                <strong>Have unlisted symptoms or a specialized lab panel?</strong>
+                <span>Describe your symptoms to our clinical AI doctor or upload your test report for personalized triage analysis.</span>
+              </div>
+              <div className="more-diseases-cta-btns">
+                <Button
+                  variant="filled"
+                  size="sm"
+                  onClick={() => handleProtectedAction('/chat')}
+                >
+                  Ask AI About Any Condition ➔
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => handleProtectedAction('/upload')}
+                >
+                  Upload Your Report
+                </Button>
+              </div>
+            </div>
           </div>
         </Container>
       </section>
 
       {/* ====================================================================
-          05 UNDERSTANDING YOUR RISK RESULT
+          06 UNDERSTANDING YOUR RISK RESULT
           ==================================================================== */}
       <section className="section-padding" id="understanding-risk">
         <Container>
           <SectionHeading
-            number="05"
+            number="06"
             title="Understanding your risk result"
             subtitle="Every report delivers four unambiguous elements to facilitate constructive discussions with a healthcare professional."
           />
@@ -428,12 +608,12 @@ function Dashboard() {
       </section>
 
       {/* ====================================================================
-          06 PRIVACY AND SAFETY
+          07 PRIVACY AND SAFETY
           ==================================================================== */}
       <section className="section-padding" id="privacy-safety">
         <Container>
           <SectionHeading
-            number="06"
+            number="07"
             title="Privacy and safety"
             subtitle="Transparent commitments regarding data handling, project scope, and emergency protocols."
           />
@@ -479,12 +659,12 @@ function Dashboard() {
       </section>
 
       {/* ====================================================================
-          07 FAQ
+          08 FAQ
           ==================================================================== */}
       <section className="section-padding" id="faq">
         <Container>
           <SectionHeading
-            number="07"
+            number="08"
             title="Frequently asked questions"
             subtitle="Clear, direct answers about how Vita Signal works, its capabilities, and its limitations."
           />

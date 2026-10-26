@@ -3,6 +3,7 @@ const path = require('path');
 const axios = require('axios');
 const { Groq } = require('groq-sdk');
 const db = require('../config/db');
+const diseaseMatcher = require('./diseaseMatcher');
 
 const STANDARD_DISCLAIMER = 'This is an informational tool, NOT a medical diagnosis. Consult a qualified doctor.';
 
@@ -312,10 +313,13 @@ async function analyzeHealthRisk(userInput, userId = null) {
   }
 
   const userHistoryContext = await getUserMedicalHistoryContext(userId);
+  const datasetMatches = diseaseMatcher.findTopMatches(userInput, 6);
+  const datasetContext = diseaseMatcher.formatMatchesForPrompt(datasetMatches);
 
-  const systemPrompt = `You are an expert Clinical Decision Support AI. Analyze the provided clinical findings, biomarkers, and symptom descriptions against reference medical knowledge.
+  const systemPrompt = `You are an expert Clinical Decision Support AI. Analyze the provided clinical findings, biomarkers, and symptom descriptions against reference medical knowledge and the 250+ condition dataset.
 --- CLINICAL REFERENCE KNOWLEDGE ---
 ${CLINICAL_KNOWLEDGE_SUMMARY}
+${datasetContext}
 ${userHistoryContext}
 You MUST return ONLY a valid JSON object matching the exact schema below.
 Do NOT include markdown fences, comments, or pleasantries.
@@ -403,10 +407,13 @@ async function chat(message, history = [], userId = null) {
   }
 
   const userHistoryContext = await getUserMedicalHistoryContext(userId);
+  const datasetMatches = diseaseMatcher.findTopMatches(message, 5);
+  const datasetContext = diseaseMatcher.formatMatchesForPrompt(datasetMatches);
 
   const systemPrompt = `You are an empathetic, highly knowledgeable Clinical Health AI assistant for a disease risk analysis platform.
 --- CLINICAL REFERENCE KNOWLEDGE ---
 ${CLINICAL_KNOWLEDGE_SUMMARY}
+${datasetContext}
 ${userHistoryContext}
 Clinical Communication Guidelines:
 1. Listen attentively to the user's reported symptoms, onset, and severity.
@@ -417,7 +424,8 @@ Clinical Communication Guidelines:
    - **Estimated Risk Level**: State whether the reported profile appears Low Risk, Moderate/Medium Risk, or High Risk, explaining why.
    - **Clinical Inquiries**: Ask 1-2 focused follow-up questions to help refine the assessment.
    - **Recommended Next Steps & Precautions**: Practical lifestyle, hydration, or medical consultation advice.
-5. Disclaimer: ${STANDARD_DISCLAIMER}
+5. STRICT FORMATTING RULE: Never use markdown hashtag headers (never write "#", "##", "###", or "####"). Always use bold titles (e.g., **Assessment & Potential Conditions:**) and clean bullet points instead.
+6. Disclaimer: ${STANDARD_DISCLAIMER}
 Keep your formatting clean, structured, and easy for any client to read.`;
 
   const messages = [{ role: 'system', content: systemPrompt }];
@@ -431,7 +439,9 @@ Keep your formatting clean, structured, and easy for any client to read.`;
   }
   messages.push({ role: 'user', content: message.trim() });
 
-  const reply = await callGroqWithFallback(messages, { temperature: 0.4, maxTokens: 800 });
+  const rawReply = await callGroqWithFallback(messages, { temperature: 0.4, maxTokens: 800 });
+  // Cleanly strip any stray markdown hashtags (e.g. ### Assessment -> Assessment)
+  const reply = rawReply ? String(rawReply).replace(/^#{1,6}\s*/gm, '') : '';
   return { reply };
 }
 

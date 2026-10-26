@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { addMessage, setLoading, setError, clearChat } from '../store/chatSlice';
 import { setResult } from '../store/resultSlice';
 import ChatBox from '../components/ChatBox';
@@ -10,8 +10,21 @@ import './Assessments.css';
 function Chat() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
   const { messages, loading, error } = useSelector((state) => state.chat);
   const [analyzingReport, setAnalyzingReport] = useState(false);
+  const [initialPrompt, setInitialPrompt] = useState(location.state?.initialPrompt || '');
+
+  // Clean location state so refreshing does not re-trigger auto-typing
+  useEffect(() => {
+    if (location.state?.initialPrompt) {
+      navigate(location.pathname, { replace: true, state: {} });
+    }
+  }, [location.state, navigate, location.pathname]);
+
+  const handleClearInitialPrompt = () => {
+    setInitialPrompt('');
+  };
 
   // Suggested prompt chips for quick client testing
   const samplePrompts = [
@@ -172,6 +185,8 @@ function Chat() {
             onClearChat={() => dispatch(clearChat())}
             onSynthesizeReport={handleSynthesizeReport}
             analyzingReport={analyzingReport}
+            initialPrompt={initialPrompt}
+            onInitialPromptConsumed={handleClearInitialPrompt}
           />
         </main>
       </div>

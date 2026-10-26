@@ -308,6 +308,131 @@
   background-color: var(--ink);
 }
 
+/* 05 Diseases Live Search & Filter */
+.diseases-search-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.diseases-search-box {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-symbol {
+  position: absolute;
+  left: 14px;
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.diseases-search-input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 2.6rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background-color: var(--surface);
+  border: var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-offset-sm);
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+.diseases-search-input:focus {
+  border-color: var(--green);
+  box-shadow: var(--shadow-offset);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.search-clear-btn:hover {
+  color: var(--ink);
+}
+
+.diseases-count-indicator {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+
+.diseases-count-indicator strong {
+  color: var(--ink);
+}
+
+.diseases-show-more-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.show-all-text-btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+}
+
+.show-all-text-btn:hover {
+  color: var(--green-hover);
+}
+
+.diseases-empty-search {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--surface);
+  border: var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-offset-sm);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.empty-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.diseases-empty-search h4 {
+  font-family: "Fraunces", serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.diseases-empty-search p {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
 /* 04 Diseases Filter & Grid */
 .filter-chips-row {
   display: flex;
@@ -512,4 +637,128 @@
   .hero-headline {
     font-size: 2.5rem;
   }
+}
+
+/* ==========================================================================
+   More Diseases Coverage Banner (Under Diseases Grid)
+   ========================================================================== */
+.more-diseases-banner {
+  margin-top: 3rem;
+  background-color: var(--surface);
+  border: var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-offset);
+  padding: 2.25rem 2.5rem;
+}
+
+.more-diseases-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 2.25rem;
+}
+
+.more-diseases-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--green);
+  background-color: var(--green-soft);
+  border: 1px solid var(--ink);
+  padding: 0.25rem 0.85rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.more-diseases-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.more-diseases-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.more-diseases-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.more-cat-card {
+  background-color: var(--bg);
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  padding: 1.25rem 1.4rem;
+  box-shadow: var(--shadow-offset-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.more-cat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-offset);
+}
+
+.more-cat-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 0.65rem;
+}
+
+.more-cat-card h4 {
+  font-family: "Fraunces", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.more-cat-items {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.more-diseases-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.75rem;
+  border-top: 1.5px dashed var(--ink-subtle);
+}
+
+.more-diseases-footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 600px;
+}
+
+.more-diseases-footer-text strong {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.more-diseases-footer-text span {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.more-diseases-cta-btns {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }

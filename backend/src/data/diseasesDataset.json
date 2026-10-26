@@ -1,0 +1,7201 @@
+{
+  "panic disorder": {
+    "id": "panic_disorder",
+    "name": "Panic Disorder",
+    "category": "Mental Health",
+    "count": 909,
+    "symptoms": [
+      "depressive or psychotic symptoms",
+      "dizziness",
+      "insomnia",
+      "abnormal involuntary movements",
+      "breathing fast",
+      "chest tightness",
+      "irregular heartbeat",
+      "anxiety and nervousness"
+    ],
+    "top_symptom_weights": {
+      "depressive or psychotic symptoms": 620,
+      "dizziness": 478,
+      "insomnia": 470,
+      "abnormal involuntary movements": 469,
+      "breathing fast": 468,
+      "chest tightness": 462,
+      "irregular heartbeat": 455,
+      "anxiety and nervousness": 451,
+      "palpitations": 451,
+      "depression": 451,
+      "shortness of breath": 445
+    }
+  },
+  "eye alignment disorder": {
+    "id": "eye_alignment_disorder",
+    "name": "Eye Alignment Disorder",
+    "category": "ENT & Sensory",
+    "count": 453,
+    "symptoms": [
+      "lack of growth",
+      "irregular appearing scalp",
+      "double vision",
+      "symptoms of eye",
+      "eye moves abnormally",
+      "cross eyed",
+      "eye deviation",
+      "pain in eye"
+    ],
+    "top_symptom_weights": {
+      "lack of growth": 342,
+      "irregular appearing scalp": 314,
+      "double vision": 246,
+      "symptoms of eye": 241,
+      "eye moves abnormally": 241,
+      "cross eyed": 231,
+      "eye deviation": 230,
+      "pain in eye": 216,
+      "diminished vision": 214
+    }
+  },
+  "vaginitis": {
+    "id": "vaginitis",
+    "name": "Vaginitis",
+    "category": "Reproductive",
+    "count": 909,
+    "symptoms": [
+      "pain during intercourse",
+      "lower abdominal pain",
+      "vaginal pain",
+      "vaginal discharge",
+      "pelvic pain",
+      "vaginal redness",
+      "sharp abdominal pain",
+      "painful urination"
+    ],
+    "top_symptom_weights": {
+      "pain during intercourse": 609,
+      "lower abdominal pain": 498,
+      "vaginal pain": 492,
+      "vaginal discharge": 470,
+      "pelvic pain": 466,
+      "vaginal redness": 463,
+      "sharp abdominal pain": 460,
+      "painful urination": 457,
+      "pain during pregnancy": 453,
+      "suprapubic pain": 450,
+      "vaginal itching": 444
+    }
+  },
+  "glaucoma": {
+    "id": "glaucoma",
+    "name": "Glaucoma",
+    "category": "ENT & Sensory",
+    "count": 498,
+    "symptoms": [
+      "foreign body sensation in eye",
+      "itchiness of eye",
+      "itchy eyelid",
+      "lacrimation",
+      "spots or clouds in vision",
+      "symptoms of eye",
+      "eye redness",
+      "diminished vision"
+    ],
+    "top_symptom_weights": {
+      "foreign body sensation in eye": 334,
+      "itchiness of eye": 331,
+      "itchy eyelid": 317,
+      "lacrimation": 266,
+      "spots or clouds in vision": 265,
+      "symptoms of eye": 265,
+      "eye redness": 259,
+      "diminished vision": 257,
+      "pain in eye": 253
+    }
+  },
+  "eating disorder": {
+    "id": "eating_disorder",
+    "name": "Eating Disorder",
+    "category": "General Clinical",
+    "count": 494,
+    "symptoms": [
+      "abusing alcohol",
+      "insomnia",
+      "acne or pimples",
+      "depression",
+      "difficulty eating",
+      "anxiety and nervousness",
+      "depressive or psychotic symptoms",
+      "decreased appetite"
+    ],
+    "top_symptom_weights": {
+      "abusing alcohol": 349,
+      "insomnia": 340,
+      "acne or pimples": 334,
+      "depression": 267,
+      "difficulty eating": 261,
+      "anxiety and nervousness": 255,
+      "depressive or psychotic symptoms": 252,
+      "decreased appetite": 248,
+      "weight gain": 237
+    }
+  },
+  "transient ischemic attack": {
+    "id": "transient_ischemic_attack",
+    "name": "Transient Ischemic Attack",
+    "category": "General Clinical",
+    "count": 655,
+    "symptoms": [
+      "focal weakness",
+      "depressive or psychotic symptoms",
+      "headache",
+      "dizziness",
+      "loss of sensation",
+      "difficulty speaking",
+      "symptoms of the face",
+      "paresthesia"
+    ],
+    "top_symptom_weights": {
+      "focal weakness": 444,
+      "depressive or psychotic symptoms": 422,
+      "headache": 353,
+      "dizziness": 351,
+      "loss of sensation": 347,
+      "difficulty speaking": 337,
+      "symptoms of the face": 329,
+      "paresthesia": 323,
+      "disturbance of memory": 313,
+      "weakness": 312
+    }
+  },
+  "pyelonephritis": {
+    "id": "pyelonephritis",
+    "name": "Pyelonephritis",
+    "category": "Urological",
+    "count": 903,
+    "symptoms": [
+      "sharp abdominal pain",
+      "low back pain",
+      "frequent urination",
+      "side pain",
+      "nausea",
+      "lower abdominal pain",
+      "painful urination",
+      "vomiting"
+    ],
+    "top_symptom_weights": {
+      "sharp abdominal pain": 618,
+      "low back pain": 470,
+      "frequent urination": 468,
+      "side pain": 467,
+      "nausea": 465,
+      "lower abdominal pain": 459,
+      "painful urination": 457,
+      "vomiting": 448,
+      "blood in urine": 448,
+      "suprapubic pain": 434,
+      "back pain": 423
+    }
+  },
+  "chronic pain disorder": {
+    "id": "chronic_pain_disorder",
+    "name": "Chronic Pain Disorder",
+    "category": "General Clinical",
+    "count": 677,
+    "symptoms": [
+      "pelvic pain",
+      "leg pain",
+      "low back pain",
+      "ache all over",
+      "back pain",
+      "knee pain",
+      "headache",
+      "hip pain"
+    ],
+    "top_symptom_weights": {
+      "pelvic pain": 452,
+      "leg pain": 450,
+      "low back pain": 363,
+      "ache all over": 361,
+      "back pain": 350,
+      "knee pain": 344,
+      "headache": 340,
+      "hip pain": 335,
+      "sharp abdominal pain": 332,
+      "shoulder pain": 325
+    }
+  },
+  "problem during pregnancy": {
+    "id": "problem_during_pregnancy",
+    "name": "Problem During Pregnancy",
+    "category": "Urological",
+    "count": 913,
+    "symptoms": [
+      "pelvic pain",
+      "lower abdominal pain",
+      "problems during pregnancy",
+      "back pain",
+      "spotting or bleeding during pregnancy",
+      "pain during pregnancy",
+      "nausea",
+      "vomiting"
+    ],
+    "top_symptom_weights": {
+      "pelvic pain": 607,
+      "lower abdominal pain": 481,
+      "problems during pregnancy": 480,
+      "back pain": 477,
+      "spotting or bleeding during pregnancy": 472,
+      "pain during pregnancy": 469,
+      "nausea": 467,
+      "vomiting": 457,
+      "cramps and spasms": 456,
+      "headache": 448,
+      "sharp abdominal pain": 444
+    }
+  },
+  "choledocholithiasis": {
+    "id": "choledocholithiasis",
+    "name": "Choledocholithiasis",
+    "category": "General Clinical",
+    "count": 441,
+    "symptoms": [
+      "jaundice",
+      "decreased appetite",
+      "sharp abdominal pain",
+      "side pain",
+      "vomiting",
+      "chills",
+      "sharp chest pain",
+      "nausea"
+    ],
+    "top_symptom_weights": {
+      "jaundice": 344,
+      "decreased appetite": 300,
+      "sharp abdominal pain": 238,
+      "side pain": 235,
+      "vomiting": 230,
+      "chills": 229,
+      "sharp chest pain": 220,
+      "nausea": 219,
+      "upper abdominal pain": 209
+    }
+  },
+  "diabetic retinopathy": {
+    "id": "diabetic_retinopathy",
+    "name": "Diabetic Retinopathy",
+    "category": "Endocrine",
+    "count": 456,
+    "symptoms": [
+      "abnormal movement of eyelid",
+      "foreign body sensation in eye",
+      "double vision",
+      "symptoms of eye",
+      "itchiness of eye",
+      "diminished vision",
+      "spots or clouds in vision",
+      "lacrimation"
+    ],
+    "top_symptom_weights": {
+      "abnormal movement of eyelid": 341,
+      "foreign body sensation in eye": 322,
+      "double vision": 233,
+      "symptoms of eye": 230,
+      "itchiness of eye": 230,
+      "diminished vision": 229,
+      "spots or clouds in vision": 226,
+      "lacrimation": 225,
+      "pain in eye": 218
+    }
+  },
+  "fibromyalgia": {
+    "id": "fibromyalgia",
+    "name": "Fibromyalgia",
+    "category": "Musculoskeletal",
+    "count": 656,
+    "symptoms": [
+      "low back pain",
+      "hip pain",
+      "leg pain",
+      "arm pain",
+      "muscle pain",
+      "neck pain",
+      "headache",
+      "ache all over"
+    ],
+    "top_symptom_weights": {
+      "low back pain": 469,
+      "hip pain": 440,
+      "leg pain": 337,
+      "arm pain": 336,
+      "muscle pain": 334,
+      "neck pain": 333,
+      "headache": 331,
+      "ache all over": 329,
+      "sharp chest pain": 326,
+      "back pain": 318
+    }
+  },
+  "acute pancreatitis": {
+    "id": "acute_pancreatitis",
+    "name": "Acute Pancreatitis",
+    "category": "Digestive",
+    "count": 1207,
+    "symptoms": [
+      "burning abdominal pain",
+      "nausea",
+      "vomiting",
+      "hemoptysis",
+      "abusing alcohol",
+      "diarrhea",
+      "upper abdominal pain",
+      "back pain"
+    ],
+    "top_symptom_weights": {
+      "burning abdominal pain": 634,
+      "nausea": 622,
+      "vomiting": 621,
+      "hemoptysis": 614,
+      "abusing alcohol": 614,
+      "diarrhea": 611,
+      "upper abdominal pain": 609,
+      "back pain": 604,
+      "sharp abdominal pain": 601,
+      "lower body pain": 598,
+      "side pain": 595,
+      "sharp chest pain": 592
+    }
+  },
+  "thrombophlebitis": {
+    "id": "thrombophlebitis",
+    "name": "Thrombophlebitis",
+    "category": "General Clinical",
+    "count": 451,
+    "symptoms": [
+      "skin swelling",
+      "arm swelling",
+      "arm pain",
+      "foot or toe pain",
+      "ache all over",
+      "lymphedema",
+      "leg pain",
+      "skin on leg or foot looks infected"
+    ],
+    "top_symptom_weights": {
+      "skin swelling": 339,
+      "arm swelling": 292,
+      "arm pain": 245,
+      "foot or toe pain": 234,
+      "ache all over": 230,
+      "lymphedema": 230,
+      "leg pain": 229,
+      "skin on leg or foot looks infected": 227,
+      "leg swelling": 222
+    }
+  },
+  "asthma": {
+    "id": "asthma",
+    "name": "Asthma",
+    "category": "Respiratory",
+    "count": 904,
+    "symptoms": [
+      "coughing up sputum",
+      "nasal congestion",
+      "allergic reaction",
+      "wheezing",
+      "cough",
+      "difficulty breathing",
+      "fever",
+      "sharp chest pain"
+    ],
+    "top_symptom_weights": {
+      "coughing up sputum": 604,
+      "nasal congestion": 481,
+      "allergic reaction": 476,
+      "wheezing": 472,
+      "cough": 470,
+      "difficulty breathing": 465,
+      "fever": 462,
+      "sharp chest pain": 458,
+      "coryza": 458,
+      "shortness of breath": 438,
+      "chest tightness": 438
+    }
+  },
+  "teething syndrome": {
+    "id": "teething_syndrome",
+    "name": "Teething Syndrome",
+    "category": "General Clinical",
+    "count": 438,
+    "symptoms": [
+      "cough",
+      "ear pain",
+      "symptoms of infants",
+      "redness in ear",
+      "diarrhea",
+      "fever",
+      "nasal congestion",
+      "decreased appetite"
+    ],
+    "top_symptom_weights": {
+      "cough": 343,
+      "ear pain": 278,
+      "symptoms of infants": 237,
+      "redness in ear": 231,
+      "diarrhea": 227,
+      "fever": 226,
+      "nasal congestion": 220,
+      "decreased appetite": 220,
+      "temper problems": 213
+    }
+  },
+  "infectious gastroenteritis": {
+    "id": "infectious_gastroenteritis",
+    "name": "Infectious Gastroenteritis",
+    "category": "Infectious",
+    "count": 1212,
+    "symptoms": [
+      "nausea",
+      "decreased appetite",
+      "diarrhea",
+      "headache",
+      "chills",
+      "vomiting",
+      "burning abdominal pain",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "nausea": 634,
+      "decreased appetite": 631,
+      "diarrhea": 622,
+      "headache": 617,
+      "chills": 612,
+      "vomiting": 611,
+      "burning abdominal pain": 607,
+      "fever": 607,
+      "sharp abdominal pain": 606,
+      "fluid retention": 603,
+      "flu like syndrome": 586,
+      "blood in stool": 580
+    }
+  },
+  "acute sinusitis": {
+    "id": "acute_sinusitis",
+    "name": "Acute Sinusitis",
+    "category": "Respiratory",
+    "count": 906,
+    "symptoms": [
+      "sore throat",
+      "coryza",
+      "sinus congestion",
+      "ear pain",
+      "frontal headache",
+      "cough",
+      "facial pain",
+      "coughing up sputum"
+    ],
+    "top_symptom_weights": {
+      "sore throat": 596,
+      "coryza": 488,
+      "sinus congestion": 481,
+      "ear pain": 480,
+      "frontal headache": 474,
+      "cough": 462,
+      "facial pain": 461,
+      "coughing up sputum": 455,
+      "fever": 449,
+      "nasal congestion": 444,
+      "painful sinuses": 430
+    }
+  },
+  "postpartum depression": {
+    "id": "postpartum_depression",
+    "name": "Postpartum Depression",
+    "category": "Mental Health",
+    "count": 494,
+    "symptoms": [
+      "drug abuse",
+      "problems during pregnancy",
+      "delusions or hallucinations",
+      "depression",
+      "pain during pregnancy",
+      "anxiety and nervousness",
+      "depressive or psychotic symptoms",
+      "intermenstrual bleeding"
+    ],
+    "top_symptom_weights": {
+      "drug abuse": 336,
+      "problems during pregnancy": 335,
+      "delusions or hallucinations": 329,
+      "depression": 268,
+      "pain during pregnancy": 263,
+      "anxiety and nervousness": 253,
+      "depressive or psychotic symptoms": 251,
+      "intermenstrual bleeding": 251,
+      "excessive anger": 242
+    }
+  },
+  "spondylitis": {
+    "id": "spondylitis",
+    "name": "Spondylitis",
+    "category": "Musculoskeletal",
+    "count": 451,
+    "symptoms": [
+      "stiffness all over",
+      "side pain",
+      "low back pain",
+      "back pain",
+      "back mass or lump",
+      "lower body pain",
+      "leg pain",
+      "hip pain"
+    ],
+    "top_symptom_weights": {
+      "stiffness all over": 333,
+      "side pain": 297,
+      "low back pain": 238,
+      "back pain": 230,
+      "back mass or lump": 229,
+      "lower body pain": 227,
+      "leg pain": 226,
+      "hip pain": 225,
+      "neck pain": 217
+    }
+  },
+  "uterine fibroids": {
+    "id": "uterine_fibroids",
+    "name": "Uterine Fibroids",
+    "category": "Reproductive",
+    "count": 450,
+    "symptoms": [
+      "involuntary urination",
+      "intermenstrual bleeding",
+      "painful menstruation",
+      "unpredictable menstruation",
+      "cramps and spasms",
+      "lower abdominal pain",
+      "pelvic pain",
+      "sharp abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "involuntary urination": 347,
+      "intermenstrual bleeding": 303,
+      "painful menstruation": 240,
+      "unpredictable menstruation": 238,
+      "cramps and spasms": 237,
+      "lower abdominal pain": 227,
+      "pelvic pain": 223,
+      "sharp abdominal pain": 222,
+      "heavy menstrual flow": 222
+    }
+  },
+  "chalazion": {
+    "id": "chalazion",
+    "name": "Chalazion",
+    "category": "General Clinical",
+    "count": 678,
+    "symptoms": [
+      "eyelid swelling",
+      "diminished vision",
+      "mass on eyelid",
+      "lacrimation",
+      "foreign body sensation in eye",
+      "swollen eye",
+      "eye redness",
+      "pain in eye"
+    ],
+    "top_symptom_weights": {
+      "eyelid swelling": 461,
+      "diminished vision": 459,
+      "mass on eyelid": 355,
+      "lacrimation": 353,
+      "foreign body sensation in eye": 349,
+      "swollen eye": 348,
+      "eye redness": 343,
+      "pain in eye": 342,
+      "symptoms of eye": 339,
+      "skin growth": 323
+    }
+  },
+  "vaginal yeast infection": {
+    "id": "vaginal_yeast_infection",
+    "name": "Vaginal Yeast Infection",
+    "category": "Infectious",
+    "count": 608,
+    "symptoms": [
+      "suprapubic pain",
+      "itching of skin",
+      "vaginal itching",
+      "vaginal pain",
+      "lower abdominal pain",
+      "vulvar irritation",
+      "painful urination",
+      "vaginal discharge"
+    ],
+    "top_symptom_weights": {
+      "suprapubic pain": 440,
+      "itching of skin": 318,
+      "vaginal itching": 311,
+      "vaginal pain": 310,
+      "lower abdominal pain": 307,
+      "vulvar irritation": 305,
+      "painful urination": 294,
+      "vaginal discharge": 294,
+      "vaginal redness": 288,
+      "sharp abdominal pain": 277
+    }
+  },
+  "ingrown toe nail": {
+    "id": "ingrown_toe_nail",
+    "name": "Ingrown Toe Nail",
+    "category": "General Clinical",
+    "count": 604,
+    "symptoms": [
+      "neck swelling",
+      "irregular appearing nails",
+      "foot or toe swelling",
+      "swollen eye",
+      "skin on leg or foot looks infected",
+      "skin dryness peeling scaliness or roughness",
+      "abnormal appearing skin",
+      "skin growth"
+    ],
+    "top_symptom_weights": {
+      "neck swelling": 457,
+      "irregular appearing nails": 316,
+      "foot or toe swelling": 309,
+      "swollen eye": 309,
+      "skin on leg or foot looks infected": 305,
+      "skin dryness peeling scaliness or roughness": 294,
+      "abnormal appearing skin": 293,
+      "skin growth": 292,
+      "foot or toe pain": 291,
+      "skin on arm or hand looks infected": 290
+    }
+  },
+  "corneal disorder": {
+    "id": "corneal_disorder",
+    "name": "Corneal Disorder",
+    "category": "General Clinical",
+    "count": 676,
+    "symptoms": [
+      "double vision",
+      "white discharge from eye",
+      "spots or clouds in vision",
+      "itchiness of eye",
+      "diminished vision",
+      "foreign body sensation in eye",
+      "pain in eye",
+      "lacrimation"
+    ],
+    "top_symptom_weights": {
+      "double vision": 457,
+      "white discharge from eye": 431,
+      "spots or clouds in vision": 366,
+      "itchiness of eye": 357,
+      "diminished vision": 352,
+      "foreign body sensation in eye": 351,
+      "pain in eye": 345,
+      "lacrimation": 334,
+      "eye redness": 330,
+      "symptoms of eye": 323
+    }
+  },
+  "viral warts": {
+    "id": "viral_warts",
+    "name": "Viral Warts",
+    "category": "Infectious",
+    "count": 453,
+    "symptoms": [
+      "lip swelling",
+      "skin swelling",
+      "warts",
+      "skin lesion",
+      "skin growth",
+      "abnormal appearing skin",
+      "skin moles",
+      "acne or pimples"
+    ],
+    "top_symptom_weights": {
+      "lip swelling": 338,
+      "skin swelling": 309,
+      "warts": 234,
+      "skin lesion": 232,
+      "skin growth": 229,
+      "abnormal appearing skin": 221,
+      "skin moles": 220,
+      "acne or pimples": 215,
+      "bumps on penis": 212
+    }
+  },
+  "stroke": {
+    "id": "stroke",
+    "name": "Stroke",
+    "category": "Cardiovascular",
+    "count": 642,
+    "symptoms": [
+      "headache",
+      "problems with movement",
+      "focal weakness",
+      "dizziness",
+      "slurring words",
+      "abnormal involuntary movements",
+      "seizures",
+      "difficulty speaking"
+    ],
+    "top_symptom_weights": {
+      "headache": 477,
+      "problems with movement": 446,
+      "focal weakness": 339,
+      "dizziness": 336,
+      "slurring words": 334,
+      "abnormal involuntary movements": 328,
+      "seizures": 328,
+      "difficulty speaking": 322,
+      "disturbance of memory": 320,
+      "depressive or psychotic symptoms": 319
+    }
+  },
+  "pelvic organ prolapse": {
+    "id": "pelvic_organ_prolapse",
+    "name": "Pelvic Organ Prolapse",
+    "category": "Reproductive",
+    "count": 438,
+    "symptoms": [
+      "blood in urine",
+      "intermenstrual bleeding",
+      "involuntary urination",
+      "frequent urination",
+      "suprapubic pain",
+      "vaginal pain",
+      "symptoms of bladder",
+      "retention of urine"
+    ],
+    "top_symptom_weights": {
+      "blood in urine": 327,
+      "intermenstrual bleeding": 277,
+      "involuntary urination": 234,
+      "frequent urination": 231,
+      "suprapubic pain": 228,
+      "vaginal pain": 226,
+      "symptoms of bladder": 220,
+      "retention of urine": 218,
+      "vaginal discharge": 210
+    }
+  },
+  "fracture of the arm": {
+    "id": "fracture_of_the_arm",
+    "name": "Fracture of the Arm",
+    "category": "Musculoskeletal",
+    "count": 437,
+    "symptoms": [
+      "shoulder stiffness or tightness",
+      "wrist swelling",
+      "arm pain",
+      "elbow pain",
+      "elbow swelling",
+      "shoulder pain",
+      "arm swelling",
+      "wrist pain"
+    ],
+    "top_symptom_weights": {
+      "shoulder stiffness or tightness": 301,
+      "wrist swelling": 243,
+      "arm pain": 236,
+      "elbow pain": 232,
+      "elbow swelling": 227,
+      "shoulder pain": 224,
+      "arm swelling": 219,
+      "wrist pain": 217,
+      "arm stiffness or tightness": 213,
+      "wrist stiffness or tightness": 197
+    }
+  },
+  "hyperkalemia": {
+    "id": "hyperkalemia",
+    "name": "Hyperkalemia",
+    "category": "General Clinical",
+    "count": 657,
+    "symptoms": [
+      "decreased heart rate",
+      "depressive or psychotic symptoms",
+      "weakness",
+      "feeling ill",
+      "dizziness",
+      "nausea",
+      "shortness of breath",
+      "sharp chest pain"
+    ],
+    "top_symptom_weights": {
+      "decreased heart rate": 459,
+      "depressive or psychotic symptoms": 451,
+      "weakness": 351,
+      "feeling ill": 347,
+      "dizziness": 343,
+      "nausea": 342,
+      "shortness of breath": 333,
+      "sharp chest pain": 333,
+      "vomiting": 329,
+      "difficulty in swallowing": 318
+    }
+  },
+  "cornea infection": {
+    "id": "cornea_infection",
+    "name": "Cornea Infection",
+    "category": "Infectious",
+    "count": 903,
+    "symptoms": [
+      "lip swelling",
+      "spots or clouds in vision",
+      "diminished vision",
+      "pain in eye",
+      "eye burns or stings",
+      "eye redness",
+      "lacrimation",
+      "foreign body sensation in eye"
+    ],
+    "top_symptom_weights": {
+      "lip swelling": 589,
+      "spots or clouds in vision": 491,
+      "diminished vision": 471,
+      "pain in eye": 467,
+      "eye burns or stings": 460,
+      "eye redness": 459,
+      "lacrimation": 457,
+      "foreign body sensation in eye": 454,
+      "symptoms of eye": 453,
+      "itchiness of eye": 451,
+      "swollen eye": 431
+    }
+  },
+  "chronic sinusitis": {
+    "id": "chronic_sinusitis",
+    "name": "Chronic Sinusitis",
+    "category": "Respiratory",
+    "count": 657,
+    "symptoms": [
+      "cough",
+      "ear pain",
+      "headache",
+      "painful sinuses",
+      "congestion in chest",
+      "frontal headache",
+      "sinus congestion",
+      "sore throat"
+    ],
+    "top_symptom_weights": {
+      "cough": 458,
+      "ear pain": 436,
+      "headache": 344,
+      "painful sinuses": 344,
+      "congestion in chest": 342,
+      "frontal headache": 336,
+      "sinus congestion": 334,
+      "sore throat": 333,
+      "facial pain": 326,
+      "fever": 325
+    }
+  },
+  "conductive hearing loss": {
+    "id": "conductive_hearing_loss",
+    "name": "Conductive Hearing Loss",
+    "category": "ENT & Sensory",
+    "count": 598,
+    "symptoms": [
+      "hoarse voice",
+      "plugged feeling in ear",
+      "ear pain",
+      "low self esteem",
+      "difficulty speaking",
+      "diminished hearing",
+      "redness in ear",
+      "ringing in ear"
+    ],
+    "top_symptom_weights": {
+      "hoarse voice": 438,
+      "plugged feeling in ear": 318,
+      "ear pain": 318,
+      "low self esteem": 311,
+      "difficulty speaking": 307,
+      "diminished hearing": 307,
+      "redness in ear": 301,
+      "ringing in ear": 293,
+      "fluid in ear": 292,
+      "dizziness": 275
+    }
+  },
+  "abdominal hernia": {
+    "id": "abdominal_hernia",
+    "name": "Abdominal Hernia",
+    "category": "Digestive",
+    "count": 407,
+    "symptoms": [
+      "symptoms of the scrotum and testes",
+      "lower abdominal pain",
+      "sharp abdominal pain",
+      "irregular belly button",
+      "upper abdominal pain",
+      "ache all over",
+      "swollen abdomen",
+      "groin mass"
+    ],
+    "top_symptom_weights": {
+      "symptoms of the scrotum and testes": 306,
+      "lower abdominal pain": 291,
+      "sharp abdominal pain": 241,
+      "irregular belly button": 231,
+      "upper abdominal pain": 228,
+      "ache all over": 219,
+      "swollen abdomen": 218,
+      "groin mass": 215,
+      "regurgitation": 211,
+      "regurgitation 1": 211
+    }
+  },
+  "marijuana abuse": {
+    "id": "marijuana_abuse",
+    "name": "Marijuana Abuse",
+    "category": "General Clinical",
+    "count": 1210,
+    "symptoms": [
+      "abusing alcohol",
+      "excessive anger",
+      "low self esteem",
+      "hostile behavior",
+      "fears and phobias",
+      "drug abuse",
+      "depressive or psychotic symptoms",
+      "depression"
+    ],
+    "top_symptom_weights": {
+      "abusing alcohol": 636,
+      "excessive anger": 629,
+      "low self esteem": 628,
+      "hostile behavior": 625,
+      "fears and phobias": 619,
+      "drug abuse": 616,
+      "depressive or psychotic symptoms": 604,
+      "depression": 603,
+      "delusions or hallucinations": 599,
+      "difficulty speaking": 597,
+      "temper problems": 594,
+      "anxiety and nervousness": 591
+    }
+  },
+  "indigestion": {
+    "id": "indigestion",
+    "name": "Indigestion",
+    "category": "General Clinical",
+    "count": 447,
+    "symptoms": [
+      "stomach bloating",
+      "heartburn",
+      "sharp abdominal pain",
+      "diarrhea",
+      "vomiting",
+      "nausea",
+      "sharp chest pain",
+      "decreased appetite"
+    ],
+    "top_symptom_weights": {
+      "stomach bloating": 332,
+      "heartburn": 310,
+      "sharp abdominal pain": 232,
+      "diarrhea": 232,
+      "vomiting": 225,
+      "nausea": 224,
+      "sharp chest pain": 223,
+      "decreased appetite": 222,
+      "burning abdominal pain": 218
+    }
+  },
+  "bursitis": {
+    "id": "bursitis",
+    "name": "Bursitis",
+    "category": "Musculoskeletal",
+    "count": 1208,
+    "symptoms": [
+      "elbow swelling",
+      "knee pain",
+      "hip pain",
+      "arm swelling",
+      "arm pain",
+      "elbow pain",
+      "arm stiffness or tightness",
+      "knee swelling"
+    ],
+    "top_symptom_weights": {
+      "elbow swelling": 641,
+      "knee pain": 626,
+      "hip pain": 619,
+      "arm swelling": 618,
+      "arm pain": 614,
+      "elbow pain": 613,
+      "arm stiffness or tightness": 611,
+      "knee swelling": 605,
+      "shoulder stiffness or tightness": 592,
+      "leg pain": 589,
+      "leg swelling": 589,
+      "shoulder pain": 586
+    }
+  },
+  "pulmonary congestion": {
+    "id": "pulmonary_congestion",
+    "name": "Pulmonary Congestion",
+    "category": "General Clinical",
+    "count": 497,
+    "symptoms": [
+      "cough",
+      "chest tightness",
+      "leg swelling",
+      "sharp chest pain",
+      "nasal congestion",
+      "shortness of breath",
+      "weakness",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "cough": 351,
+      "chest tightness": 338,
+      "leg swelling": 337,
+      "sharp chest pain": 268,
+      "nasal congestion": 262,
+      "shortness of breath": 254,
+      "weakness": 244,
+      "fever": 240,
+      "decreased heart rate": 237
+    }
+  },
+  "actinic keratosis": {
+    "id": "actinic_keratosis",
+    "name": "Actinic Keratosis",
+    "category": "Dermatological",
+    "count": 909,
+    "symptoms": [
+      "symptoms of the face",
+      "irregular appearing scalp",
+      "skin dryness peeling scaliness or roughness",
+      "skin moles",
+      "itching of skin",
+      "skin growth",
+      "abnormal appearing skin",
+      "skin irritation"
+    ],
+    "top_symptom_weights": {
+      "symptoms of the face": 635,
+      "irregular appearing scalp": 480,
+      "skin dryness peeling scaliness or roughness": 476,
+      "skin moles": 471,
+      "itching of skin": 468,
+      "skin growth": 459,
+      "abnormal appearing skin": 459,
+      "skin irritation": 452,
+      "skin rash": 451,
+      "skin swelling": 450,
+      "skin lesion": 441
+    }
+  },
+  "acute otitis media": {
+    "id": "acute_otitis_media",
+    "name": "Acute Otitis Media",
+    "category": "ENT & Sensory",
+    "count": 683,
+    "symptoms": [
+      "diminished hearing",
+      "coryza",
+      "plugged feeling in ear",
+      "redness in ear",
+      "fever",
+      "ear pain",
+      "nasal congestion",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "diminished hearing": 452,
+      "coryza": 446,
+      "plugged feeling in ear": 360,
+      "redness in ear": 353,
+      "fever": 353,
+      "ear pain": 344,
+      "nasal congestion": 340,
+      "cough": 339,
+      "sore throat": 336,
+      "fluid in ear": 332
+    }
+  },
+  "chronic obstructive pulmonary disease (copd)": {
+    "id": "chronic_obstructive_pulmonary_disease_copd",
+    "name": "Chronic Obstructive Pulmonary Disease (copd)",
+    "category": "Respiratory",
+    "count": 906,
+    "symptoms": [
+      "sharp chest pain",
+      "coryza",
+      "coughing up sputum",
+      "cough",
+      "nasal congestion",
+      "wheezing",
+      "congestion in chest",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "sharp chest pain": 628,
+      "coryza": 483,
+      "coughing up sputum": 477,
+      "cough": 476,
+      "nasal congestion": 472,
+      "wheezing": 470,
+      "congestion in chest": 454,
+      "fever": 451,
+      "sore throat": 450,
+      "shortness of breath": 440,
+      "chest tightness": 438
+    }
+  },
+  "spondylosis": {
+    "id": "spondylosis",
+    "name": "Spondylosis",
+    "category": "Musculoskeletal",
+    "count": 1216,
+    "symptoms": [
+      "neck pain",
+      "low back pain",
+      "ache all over",
+      "back pain",
+      "arm pain",
+      "loss of sensation",
+      "hip pain",
+      "lower body pain"
+    ],
+    "top_symptom_weights": {
+      "neck pain": 629,
+      "low back pain": 628,
+      "ache all over": 627,
+      "back pain": 621,
+      "arm pain": 616,
+      "loss of sensation": 616,
+      "hip pain": 609,
+      "lower body pain": 605,
+      "knee pain": 602,
+      "shoulder pain": 596,
+      "paresthesia": 587,
+      "leg pain": 584
+    }
+  },
+  "herpangina": {
+    "id": "herpangina",
+    "name": "Herpangina",
+    "category": "Cardiovascular",
+    "count": 450,
+    "symptoms": [
+      "swollen lymph nodes",
+      "insomnia",
+      "decreased appetite",
+      "vomiting",
+      "cough",
+      "fever",
+      "skin rash",
+      "mouth ulcer"
+    ],
+    "top_symptom_weights": {
+      "swollen lymph nodes": 329,
+      "insomnia": 307,
+      "decreased appetite": 237,
+      "vomiting": 233,
+      "cough": 232,
+      "fever": 229,
+      "skin rash": 229,
+      "mouth ulcer": 228,
+      "sore throat": 219
+    }
+  },
+  "injury to the shoulder": {
+    "id": "injury_to_the_shoulder",
+    "name": "Injury to the Shoulder",
+    "category": "General Clinical",
+    "count": 510,
+    "symptoms": [
+      "shoulder stiffness or tightness",
+      "bones are painful",
+      "muscle cramps contractures or spasms",
+      "arm stiffness or tightness",
+      "elbow pain",
+      "shoulder pain",
+      "back pain",
+      "neck pain"
+    ],
+    "top_symptom_weights": {
+      "shoulder stiffness or tightness": 348,
+      "bones are painful": 346,
+      "muscle cramps contractures or spasms": 343,
+      "arm stiffness or tightness": 268,
+      "elbow pain": 262,
+      "shoulder pain": 260,
+      "back pain": 247,
+      "neck pain": 245,
+      "arm pain": 239
+    }
+  },
+  "heart block": {
+    "id": "heart_block",
+    "name": "Heart Block",
+    "category": "Cardiovascular",
+    "count": 606,
+    "symptoms": [
+      "weight gain",
+      "weakness",
+      "irregular heartbeat",
+      "palpitations",
+      "fainting",
+      "chest tightness",
+      "peripheral edema",
+      "dizziness"
+    ],
+    "top_symptom_weights": {
+      "weight gain": 455,
+      "weakness": 333,
+      "irregular heartbeat": 314,
+      "palpitations": 308,
+      "fainting": 305,
+      "chest tightness": 303,
+      "peripheral edema": 298,
+      "dizziness": 291,
+      "shortness of breath": 287,
+      "sharp chest pain": 287
+    }
+  },
+  "attention deficit hyperactivity disorder (adhd)": {
+    "id": "attention_deficit_hyperactivity_disorder_adhd",
+    "name": "Attention Deficit Hyperactivity Disorder (adhd)",
+    "category": "General Clinical",
+    "count": 507,
+    "symptoms": [
+      "hostile behavior",
+      "lack of growth",
+      "drug abuse",
+      "depression",
+      "antisocial behavior",
+      "temper problems",
+      "depressive or psychotic symptoms",
+      "anxiety and nervousness"
+    ],
+    "top_symptom_weights": {
+      "hostile behavior": 350,
+      "lack of growth": 334,
+      "drug abuse": 323,
+      "depression": 264,
+      "antisocial behavior": 264,
+      "temper problems": 263,
+      "depressive or psychotic symptoms": 249,
+      "anxiety and nervousness": 247,
+      "restlessness": 246
+    }
+  },
+  "injury to the arm": {
+    "id": "injury_to_the_arm",
+    "name": "Injury to the Arm",
+    "category": "General Clinical",
+    "count": 1209,
+    "symptoms": [
+      "wrist swelling",
+      "loss of sensation",
+      "elbow swelling",
+      "arm stiffness or tightness",
+      "elbow pain",
+      "joint pain",
+      "arm pain",
+      "bones are painful"
+    ],
+    "top_symptom_weights": {
+      "wrist swelling": 633,
+      "loss of sensation": 614,
+      "elbow swelling": 611,
+      "arm stiffness or tightness": 610,
+      "elbow pain": 607,
+      "joint pain": 607,
+      "arm pain": 606,
+      "bones are painful": 603,
+      "wrist pain": 602,
+      "arm swelling": 601,
+      "hand or finger swelling": 598,
+      "hand or finger pain": 588
+    }
+  },
+  "complex regional pain syndrome": {
+    "id": "complex_regional_pain_syndrome",
+    "name": "Complex Regional Pain Syndrome",
+    "category": "General Clinical",
+    "count": 1217,
+    "symptoms": [
+      "back pain",
+      "foot or toe pain",
+      "neck pain",
+      "leg pain",
+      "arm pain",
+      "hand or finger pain",
+      "paresthesia",
+      "low back pain"
+    ],
+    "top_symptom_weights": {
+      "back pain": 649,
+      "foot or toe pain": 633,
+      "neck pain": 632,
+      "leg pain": 616,
+      "arm pain": 616,
+      "hand or finger pain": 610,
+      "paresthesia": 610,
+      "low back pain": 599,
+      "loss of sensation": 596,
+      "abnormal involuntary movements": 595,
+      "ache all over": 591,
+      "problems with movement": 587
+    }
+  },
+  "injury to the trunk": {
+    "id": "injury_to_the_trunk",
+    "name": "Injury to the Trunk",
+    "category": "General Clinical",
+    "count": 905,
+    "symptoms": [
+      "symptoms of the scrotum and testes",
+      "neck pain",
+      "back pain",
+      "shoulder pain",
+      "rib pain",
+      "lower body pain",
+      "low back pain",
+      "wrist pain"
+    ],
+    "top_symptom_weights": {
+      "symptoms of the scrotum and testes": 619,
+      "neck pain": 487,
+      "back pain": 467,
+      "shoulder pain": 467,
+      "rib pain": 461,
+      "lower body pain": 460,
+      "low back pain": 459,
+      "wrist pain": 447,
+      "headache": 444,
+      "sharp chest pain": 440,
+      "bones are painful": 438
+    }
+  },
+  "vulvodynia": {
+    "id": "vulvodynia",
+    "name": "Vulvodynia",
+    "category": "General Clinical",
+    "count": 1218,
+    "symptoms": [
+      "back pain",
+      "vaginal discharge",
+      "lower abdominal pain",
+      "nausea",
+      "pelvic pain",
+      "pain during pregnancy",
+      "painful urination",
+      "side pain"
+    ],
+    "top_symptom_weights": {
+      "back pain": 632,
+      "vaginal discharge": 627,
+      "lower abdominal pain": 616,
+      "nausea": 613,
+      "pelvic pain": 611,
+      "pain during pregnancy": 609,
+      "painful urination": 608,
+      "side pain": 600,
+      "burning abdominal pain": 595,
+      "cramps and spasms": 594,
+      "sharp abdominal pain": 591,
+      "vaginal pain": 587
+    }
+  },
+  "concussion": {
+    "id": "concussion",
+    "name": "Concussion",
+    "category": "General Clinical",
+    "count": 1191,
+    "symptoms": [
+      "nausea",
+      "headache",
+      "disturbance of memory",
+      "double vision",
+      "back pain",
+      "facial pain",
+      "sleepiness",
+      "rib pain"
+    ],
+    "top_symptom_weights": {
+      "nausea": 629,
+      "headache": 618,
+      "disturbance of memory": 611,
+      "double vision": 606,
+      "back pain": 605,
+      "facial pain": 602,
+      "sleepiness": 602,
+      "rib pain": 600,
+      "neck pain": 599,
+      "vomiting": 599,
+      "difficulty speaking": 592,
+      "dizziness": 591
+    }
+  },
+  "bladder disorder": {
+    "id": "bladder_disorder",
+    "name": "Bladder Disorder",
+    "category": "Urological",
+    "count": 454,
+    "symptoms": [
+      "painful urination",
+      "lower abdominal pain",
+      "frequent urination",
+      "sharp abdominal pain",
+      "suprapubic pain",
+      "symptoms of bladder",
+      "blood in urine",
+      "retention of urine"
+    ],
+    "top_symptom_weights": {
+      "painful urination": 333,
+      "lower abdominal pain": 299,
+      "frequent urination": 242,
+      "sharp abdominal pain": 233,
+      "suprapubic pain": 232,
+      "symptoms of bladder": 228,
+      "blood in urine": 224,
+      "retention of urine": 224,
+      "involuntary urination": 221
+    }
+  },
+  "neuralgia": {
+    "id": "neuralgia",
+    "name": "Neuralgia",
+    "category": "Neurological",
+    "count": 684,
+    "symptoms": [
+      "headache",
+      "hip pain",
+      "back pain",
+      "loss of sensation",
+      "neck pain",
+      "shoulder pain",
+      "low back pain",
+      "arm pain"
+    ],
+    "top_symptom_weights": {
+      "headache": 465,
+      "hip pain": 452,
+      "back pain": 357,
+      "loss of sensation": 354,
+      "neck pain": 352,
+      "shoulder pain": 350,
+      "low back pain": 345,
+      "arm pain": 340,
+      "ache all over": 340,
+      "leg pain": 320
+    }
+  },
+  "bipolar disorder": {
+    "id": "bipolar_disorder",
+    "name": "Bipolar Disorder",
+    "category": "Mental Health",
+    "count": 663,
+    "symptoms": [
+      "insomnia",
+      "abusing alcohol",
+      "depression",
+      "delusions or hallucinations",
+      "depressive or psychotic symptoms",
+      "excessive anger",
+      "obsessions and compulsions",
+      "fears and phobias"
+    ],
+    "top_symptom_weights": {
+      "insomnia": 441,
+      "abusing alcohol": 429,
+      "depression": 344,
+      "delusions or hallucinations": 343,
+      "depressive or psychotic symptoms": 340,
+      "excessive anger": 336,
+      "obsessions and compulsions": 336,
+      "fears and phobias": 335,
+      "anxiety and nervousness": 323,
+      "temper problems": 318
+    }
+  },
+  "gastroesophageal reflux disease (gerd)": {
+    "id": "gastroesophageal_reflux_disease_gerd",
+    "name": "Gastroesophageal Reflux Disease (gerd)",
+    "category": "Digestive",
+    "count": 448,
+    "symptoms": [
+      "cough",
+      "difficulty in swallowing",
+      "sharp abdominal pain",
+      "regurgitation",
+      "regurgitation 1",
+      "chest tightness",
+      "sharp chest pain",
+      "hoarse voice"
+    ],
+    "top_symptom_weights": {
+      "cough": 338,
+      "difficulty in swallowing": 289,
+      "sharp abdominal pain": 245,
+      "regurgitation": 232,
+      "regurgitation 1": 232,
+      "chest tightness": 231,
+      "sharp chest pain": 228,
+      "hoarse voice": 224,
+      "burning abdominal pain": 219,
+      "nausea": 209
+    }
+  },
+  "hypoglycemia": {
+    "id": "hypoglycemia",
+    "name": "Hypoglycemia",
+    "category": "General Clinical",
+    "count": 1215,
+    "symptoms": [
+      "feeling ill",
+      "nausea",
+      "seizures",
+      "fainting",
+      "sweating",
+      "abnormal involuntary movements",
+      "sleepiness",
+      "dizziness"
+    ],
+    "top_symptom_weights": {
+      "feeling ill": 624,
+      "nausea": 624,
+      "seizures": 622,
+      "fainting": 621,
+      "sweating": 619,
+      "abnormal involuntary movements": 613,
+      "sleepiness": 610,
+      "dizziness": 607,
+      "weakness": 605,
+      "problems with movement": 604,
+      "decreased appetite": 586,
+      "depressive or psychotic symptoms": 581
+    }
+  },
+  "idiopathic absence of menstruation": {
+    "id": "idiopathic_absence_of_menstruation",
+    "name": "Idiopathic Absence of Menstruation",
+    "category": "Reproductive",
+    "count": 493,
+    "symptoms": [
+      "vaginal itching",
+      "sharp abdominal pain",
+      "lower abdominal pain",
+      "absence of menstruation",
+      "pelvic pain",
+      "heartburn",
+      "pain or soreness of breast",
+      "long menstrual periods"
+    ],
+    "top_symptom_weights": {
+      "vaginal itching": 346,
+      "sharp abdominal pain": 345,
+      "lower abdominal pain": 334,
+      "absence of menstruation": 260,
+      "pelvic pain": 258,
+      "heartburn": 258,
+      "pain or soreness of breast": 248,
+      "long menstrual periods": 248,
+      "nausea": 247
+    }
+  },
+  "hiatal hernia": {
+    "id": "hiatal_hernia",
+    "name": "Hiatal Hernia",
+    "category": "Digestive",
+    "count": 906,
+    "symptoms": [
+      "difficulty in swallowing",
+      "nausea",
+      "upper abdominal pain",
+      "sharp abdominal pain",
+      "back pain",
+      "heartburn",
+      "regurgitation",
+      "regurgitation 1"
+    ],
+    "top_symptom_weights": {
+      "difficulty in swallowing": 612,
+      "nausea": 482,
+      "upper abdominal pain": 480,
+      "sharp abdominal pain": 476,
+      "back pain": 465,
+      "heartburn": 461,
+      "regurgitation": 460,
+      "regurgitation 1": 460,
+      "dizziness": 459,
+      "burning abdominal pain": 459,
+      "vomiting blood": 454,
+      "sharp chest pain": 440
+    }
+  },
+  "allergy": {
+    "id": "allergy",
+    "name": "Allergy",
+    "category": "General Clinical",
+    "count": 905,
+    "symptoms": [
+      "fluid retention",
+      "allergic reaction",
+      "peripheral edema",
+      "skin swelling",
+      "itching of skin",
+      "abnormal appearing skin",
+      "itchiness of eye",
+      "skin rash"
+    ],
+    "top_symptom_weights": {
+      "fluid retention": 609,
+      "allergic reaction": 475,
+      "peripheral edema": 472,
+      "skin swelling": 467,
+      "itching of skin": 464,
+      "abnormal appearing skin": 458,
+      "itchiness of eye": 457,
+      "skin rash": 451,
+      "lip swelling": 441,
+      "cough": 437,
+      "swollen eye": 435
+    }
+  },
+  "chronic otitis media": {
+    "id": "chronic_otitis_media",
+    "name": "Chronic Otitis Media",
+    "category": "ENT & Sensory",
+    "count": 669,
+    "symptoms": [
+      "cough",
+      "painful sinuses",
+      "fever",
+      "nasal congestion",
+      "pulling at ears",
+      "allergic reaction",
+      "redness in ear",
+      "ear pain"
+    ],
+    "top_symptom_weights": {
+      "cough": 442,
+      "painful sinuses": 433,
+      "fever": 358,
+      "nasal congestion": 342,
+      "pulling at ears": 341,
+      "allergic reaction": 337,
+      "redness in ear": 337,
+      "ear pain": 335,
+      "plugged feeling in ear": 335,
+      "fluid in ear": 327
+    }
+  },
+  "lymphedema": {
+    "id": "lymphedema",
+    "name": "Lymphedema",
+    "category": "General Clinical",
+    "count": 505,
+    "symptoms": [
+      "foot or toe swelling",
+      "throat swelling",
+      "lymphedema",
+      "fluid retention",
+      "skin lesion",
+      "abnormal appearing skin",
+      "leg swelling",
+      "leg pain"
+    ],
+    "top_symptom_weights": {
+      "foot or toe swelling": 338,
+      "throat swelling": 337,
+      "lymphedema": 328,
+      "fluid retention": 270,
+      "skin lesion": 266,
+      "abnormal appearing skin": 261,
+      "leg swelling": 259,
+      "leg pain": 253,
+      "peripheral edema": 250
+    }
+  },
+  "acute bronchospasm": {
+    "id": "acute_bronchospasm",
+    "name": "Acute Bronchospasm",
+    "category": "Respiratory",
+    "count": 906,
+    "symptoms": [
+      "vomiting",
+      "cough",
+      "sore throat",
+      "difficulty breathing",
+      "wheezing",
+      "nasal congestion",
+      "sharp chest pain",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "vomiting": 623,
+      "cough": 484,
+      "sore throat": 475,
+      "difficulty breathing": 472,
+      "wheezing": 470,
+      "nasal congestion": 466,
+      "sharp chest pain": 459,
+      "fever": 455,
+      "chest tightness": 447,
+      "coryza": 441,
+      "shortness of breath": 440
+    }
+  },
+  "sciatica": {
+    "id": "sciatica",
+    "name": "Sciatica",
+    "category": "Neurological",
+    "count": 668,
+    "symptoms": [
+      "leg pain",
+      "problems with movement",
+      "low back pain",
+      "lower body pain",
+      "leg weakness",
+      "loss of sensation",
+      "hip pain",
+      "back cramps or spasms"
+    ],
+    "top_symptom_weights": {
+      "leg pain": 446,
+      "problems with movement": 446,
+      "low back pain": 352,
+      "lower body pain": 352,
+      "leg weakness": 350,
+      "loss of sensation": 346,
+      "hip pain": 333,
+      "back cramps or spasms": 326,
+      "unusual color or odor to urine": 321,
+      "leg cramps or spasms": 316
+    }
+  },
+  "degenerative disc disease": {
+    "id": "degenerative_disc_disease",
+    "name": "Degenerative Disc Disease",
+    "category": "General Clinical",
+    "count": 909,
+    "symptoms": [
+      "shoulder pain",
+      "neck pain",
+      "low back pain",
+      "loss of sensation",
+      "joint pain",
+      "lower body pain",
+      "paresthesia",
+      "back pain"
+    ],
+    "top_symptom_weights": {
+      "shoulder pain": 614,
+      "neck pain": 483,
+      "low back pain": 476,
+      "loss of sensation": 470,
+      "joint pain": 469,
+      "lower body pain": 466,
+      "paresthesia": 460,
+      "back pain": 454,
+      "leg pain": 451,
+      "hip pain": 450,
+      "arm pain": 442
+    }
+  },
+  "diverticulosis": {
+    "id": "diverticulosis",
+    "name": "Diverticulosis",
+    "category": "Digestive",
+    "count": 673,
+    "symptoms": [
+      "nausea",
+      "rectal bleeding",
+      "upper abdominal pain",
+      "sharp abdominal pain",
+      "diarrhea",
+      "lower abdominal pain",
+      "heartburn",
+      "melena"
+    ],
+    "top_symptom_weights": {
+      "nausea": 458,
+      "rectal bleeding": 454,
+      "upper abdominal pain": 345,
+      "sharp abdominal pain": 344,
+      "diarrhea": 339,
+      "lower abdominal pain": 338,
+      "heartburn": 336,
+      "melena": 333,
+      "vomiting": 327,
+      "blood in stool": 326
+    }
+  },
+  "pain after an operation": {
+    "id": "pain_after_an_operation",
+    "name": "Pain After An Operation",
+    "category": "General Clinical",
+    "count": 908,
+    "symptoms": [
+      "leg pain",
+      "low back pain",
+      "nausea",
+      "headache",
+      "neck pain",
+      "back pain",
+      "vomiting",
+      "side pain"
+    ],
+    "top_symptom_weights": {
+      "leg pain": 614,
+      "low back pain": 483,
+      "nausea": 483,
+      "headache": 474,
+      "neck pain": 474,
+      "back pain": 466,
+      "vomiting": 459,
+      "side pain": 454,
+      "lower abdominal pain": 451,
+      "sharp chest pain": 450,
+      "sharp abdominal pain": 438
+    }
+  },
+  "dermatitis due to sun exposure": {
+    "id": "dermatitis_due_to_sun_exposure",
+    "name": "Dermatitis Due to Sun Exposure",
+    "category": "Dermatological",
+    "count": 446,
+    "symptoms": [
+      "lack of growth",
+      "acne or pimples",
+      "skin rash",
+      "skin dryness peeling scaliness or roughness",
+      "skin moles",
+      "abnormal appearing skin",
+      "irregular appearing scalp",
+      "skin lesion"
+    ],
+    "top_symptom_weights": {
+      "lack of growth": 343,
+      "acne or pimples": 298,
+      "skin rash": 238,
+      "skin dryness peeling scaliness or roughness": 237,
+      "skin moles": 234,
+      "abnormal appearing skin": 229,
+      "irregular appearing scalp": 228,
+      "skin lesion": 228,
+      "skin swelling": 225
+    }
+  },
+  "fungal infection of the skin": {
+    "id": "fungal_infection_of_the_skin",
+    "name": "Fungal Infection of the Skin",
+    "category": "Infectious",
+    "count": 683,
+    "symptoms": [
+      "acne or pimples",
+      "itchy scalp",
+      "skin lesion",
+      "itching of skin",
+      "skin rash",
+      "too little hair",
+      "irregular appearing scalp",
+      "abnormal appearing skin"
+    ],
+    "top_symptom_weights": {
+      "acne or pimples": 455,
+      "itchy scalp": 439,
+      "skin lesion": 357,
+      "itching of skin": 356,
+      "skin rash": 352,
+      "too little hair": 350,
+      "irregular appearing scalp": 347,
+      "abnormal appearing skin": 342,
+      "skin dryness peeling scaliness or roughness": 335,
+      "skin swelling": 318
+    }
+  },
+  "injury to the leg": {
+    "id": "injury_to_the_leg",
+    "name": "Injury to the Leg",
+    "category": "General Clinical",
+    "count": 1206,
+    "symptoms": [
+      "leg swelling",
+      "problems with movement",
+      "knee swelling",
+      "knee pain",
+      "ankle swelling",
+      "foot or toe pain",
+      "foot or toe swelling",
+      "ankle pain"
+    ],
+    "top_symptom_weights": {
+      "leg swelling": 631,
+      "problems with movement": 623,
+      "knee swelling": 622,
+      "knee pain": 617,
+      "ankle swelling": 615,
+      "foot or toe pain": 612,
+      "foot or toe swelling": 610,
+      "ankle pain": 609,
+      "irregular appearing nails": 601,
+      "leg pain": 601,
+      "infant feeding problem": 594,
+      "knee stiffness or tightness": 593
+    }
+  },
+  "mitral valve disease": {
+    "id": "mitral_valve_disease",
+    "name": "Mitral Valve Disease",
+    "category": "General Clinical",
+    "count": 504,
+    "symptoms": [
+      "sweating",
+      "shortness of breath",
+      "irregular heartbeat",
+      "chest tightness",
+      "nightmares",
+      "dizziness",
+      "fatigue",
+      "sharp chest pain"
+    ],
+    "top_symptom_weights": {
+      "sweating": 346,
+      "shortness of breath": 342,
+      "irregular heartbeat": 334,
+      "chest tightness": 275,
+      "nightmares": 265,
+      "dizziness": 260,
+      "fatigue": 253,
+      "sharp chest pain": 250,
+      "increased heart rate": 239
+    }
+  },
+  "parkinson disease": {
+    "id": "parkinson_disease",
+    "name": "Parkinson Disease",
+    "category": "Neurological",
+    "count": 513,
+    "symptoms": [
+      "focal weakness",
+      "stiffness all over",
+      "leg stiffness or tightness",
+      "abnormal involuntary movements",
+      "weakness",
+      "difficulty speaking",
+      "dizziness",
+      "disturbance of memory"
+    ],
+    "top_symptom_weights": {
+      "focal weakness": 347,
+      "stiffness all over": 346,
+      "leg stiffness or tightness": 343,
+      "abnormal involuntary movements": 267,
+      "weakness": 262,
+      "difficulty speaking": 251,
+      "dizziness": 245,
+      "disturbance of memory": 240,
+      "problems with movement": 232
+    }
+  },
+  "gout": {
+    "id": "gout",
+    "name": "Gout",
+    "category": "Endocrine",
+    "count": 1211,
+    "symptoms": [
+      "knee pain",
+      "foot or toe pain",
+      "knee swelling",
+      "foot or toe swelling",
+      "ankle pain",
+      "wrist swelling",
+      "ankle swelling",
+      "hand or finger swelling"
+    ],
+    "top_symptom_weights": {
+      "knee pain": 647,
+      "foot or toe pain": 627,
+      "knee swelling": 626,
+      "foot or toe swelling": 625,
+      "ankle pain": 619,
+      "wrist swelling": 619,
+      "ankle swelling": 612,
+      "hand or finger swelling": 610,
+      "wrist pain": 601,
+      "joint pain": 600,
+      "hand or finger pain": 586,
+      "leg swelling": 573
+    }
+  },
+  "otitis media": {
+    "id": "otitis_media",
+    "name": "Otitis Media",
+    "category": "ENT & Sensory",
+    "count": 910,
+    "symptoms": [
+      "vomiting",
+      "ear pain",
+      "coryza",
+      "diminished hearing",
+      "cough",
+      "fluid in ear",
+      "fever",
+      "pulling at ears"
+    ],
+    "top_symptom_weights": {
+      "vomiting": 620,
+      "ear pain": 493,
+      "coryza": 481,
+      "diminished hearing": 467,
+      "cough": 455,
+      "fluid in ear": 455,
+      "fever": 454,
+      "pulling at ears": 454,
+      "plugged feeling in ear": 450,
+      "nasal congestion": 448,
+      "sore throat": 445
+    }
+  },
+  "drug abuse (opioids)": {
+    "id": "drug_abuse_opioids",
+    "name": "Drug Abuse (opioids)",
+    "category": "General Clinical",
+    "count": 604,
+    "symptoms": [
+      "restlessness",
+      "temper problems",
+      "drug abuse",
+      "insomnia",
+      "abusing alcohol",
+      "delusions or hallucinations",
+      "depression",
+      "anxiety and nervousness"
+    ],
+    "top_symptom_weights": {
+      "restlessness": 442,
+      "temper problems": 326,
+      "drug abuse": 321,
+      "insomnia": 313,
+      "abusing alcohol": 303,
+      "delusions or hallucinations": 296,
+      "depression": 295,
+      "anxiety and nervousness": 293,
+      "excessive anger": 293,
+      "depressive or psychotic symptoms": 286
+    }
+  },
+  "acute kidney injury": {
+    "id": "acute_kidney_injury",
+    "name": "Acute Kidney Injury",
+    "category": "Urological",
+    "count": 908,
+    "symptoms": [
+      "retention of urine",
+      "weakness",
+      "vomiting",
+      "nausea",
+      "kidney mass",
+      "peripheral edema",
+      "sharp chest pain",
+      "sharp abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "retention of urine": 620,
+      "weakness": 491,
+      "vomiting": 484,
+      "nausea": 468,
+      "kidney mass": 458,
+      "peripheral edema": 456,
+      "sharp chest pain": 455,
+      "sharp abdominal pain": 454,
+      "shortness of breath": 451,
+      "dizziness": 443,
+      "symptoms of the kidneys": 432
+    }
+  },
+  "threatened pregnancy": {
+    "id": "threatened_pregnancy",
+    "name": "Threatened Pregnancy",
+    "category": "Reproductive",
+    "count": 905,
+    "symptoms": [
+      "sharp abdominal pain",
+      "cramps and spasms",
+      "lower abdominal pain",
+      "pelvic pain",
+      "intermenstrual bleeding",
+      "problems during pregnancy",
+      "back pain",
+      "spotting or bleeding during pregnancy"
+    ],
+    "top_symptom_weights": {
+      "sharp abdominal pain": 600,
+      "cramps and spasms": 480,
+      "lower abdominal pain": 465,
+      "pelvic pain": 462,
+      "intermenstrual bleeding": 460,
+      "problems during pregnancy": 458,
+      "back pain": 453,
+      "spotting or bleeding during pregnancy": 449,
+      "uterine contractions": 443,
+      "blood clots during menstrual periods": 427,
+      "vaginal discharge": 418
+    }
+  },
+  "gum disease": {
+    "id": "gum_disease",
+    "name": "Gum Disease",
+    "category": "General Clinical",
+    "count": 894,
+    "symptoms": [
+      "mouth ulcer",
+      "toothache",
+      "ear pain",
+      "gum pain",
+      "facial pain",
+      "jaw swelling",
+      "peripheral edema",
+      "bleeding gums"
+    ],
+    "top_symptom_weights": {
+      "mouth ulcer": 622,
+      "toothache": 476,
+      "ear pain": 476,
+      "gum pain": 466,
+      "facial pain": 458,
+      "jaw swelling": 457,
+      "peripheral edema": 453,
+      "bleeding gums": 450,
+      "fever": 444,
+      "pain in gums": 433,
+      "lip swelling": 428
+    }
+  },
+  "gastrointestinal hemorrhage": {
+    "id": "gastrointestinal_hemorrhage",
+    "name": "Gastrointestinal Hemorrhage",
+    "category": "Digestive",
+    "count": 1214,
+    "symptoms": [
+      "blood in stool",
+      "rectal bleeding",
+      "vomiting",
+      "nausea",
+      "sharp abdominal pain",
+      "vomiting blood",
+      "fainting",
+      "changes in stool appearance"
+    ],
+    "top_symptom_weights": {
+      "blood in stool": 628,
+      "rectal bleeding": 624,
+      "vomiting": 617,
+      "nausea": 617,
+      "sharp abdominal pain": 617,
+      "vomiting blood": 606,
+      "fainting": 603,
+      "changes in stool appearance": 598,
+      "diarrhea": 591,
+      "melena": 591,
+      "weakness": 578,
+      "dizziness": 576
+    }
+  },
+  "seborrheic dermatitis": {
+    "id": "seborrheic_dermatitis",
+    "name": "Seborrheic Dermatitis",
+    "category": "Dermatological",
+    "count": 880,
+    "symptoms": [
+      "acne or pimples",
+      "skin dryness peeling scaliness or roughness",
+      "irregular appearing scalp",
+      "skin lesion",
+      "dry or flaky scalp",
+      "itching of skin",
+      "skin growth",
+      "symptoms of the face"
+    ],
+    "top_symptom_weights": {
+      "acne or pimples": 580,
+      "skin dryness peeling scaliness or roughness": 466,
+      "irregular appearing scalp": 458,
+      "skin lesion": 458,
+      "dry or flaky scalp": 458,
+      "itching of skin": 453,
+      "skin growth": 451,
+      "symptoms of the face": 449,
+      "skin rash": 446,
+      "too little hair": 442,
+      "abnormal appearing skin": 440
+    }
+  },
+  "food allergy": {
+    "id": "food_allergy",
+    "name": "Food Allergy",
+    "category": "General Clinical",
+    "count": 454,
+    "symptoms": [
+      "lip swelling",
+      "cough",
+      "allergic reaction",
+      "abnormal appearing skin",
+      "itching of skin",
+      "hand or finger swelling",
+      "vomiting",
+      "skin rash"
+    ],
+    "top_symptom_weights": {
+      "lip swelling": 337,
+      "cough": 311,
+      "allergic reaction": 239,
+      "abnormal appearing skin": 234,
+      "itching of skin": 232,
+      "hand or finger swelling": 230,
+      "vomiting": 224,
+      "skin rash": 223,
+      "nasal congestion": 221
+    }
+  },
+  "labyrinthitis": {
+    "id": "labyrinthitis",
+    "name": "Labyrinthitis",
+    "category": "General Clinical",
+    "count": 654,
+    "symptoms": [
+      "ear pain",
+      "diminished hearing",
+      "vomiting",
+      "loss of sensation",
+      "headache",
+      "sweating",
+      "nausea",
+      "dizziness"
+    ],
+    "top_symptom_weights": {
+      "ear pain": 457,
+      "diminished hearing": 437,
+      "vomiting": 350,
+      "loss of sensation": 345,
+      "headache": 338,
+      "sweating": 338,
+      "nausea": 330,
+      "dizziness": 326,
+      "spots or clouds in vision": 325,
+      "plugged feeling in ear": 321
+    }
+  },
+  "anxiety": {
+    "id": "anxiety",
+    "name": "Anxiety",
+    "category": "Mental Health",
+    "count": 1198,
+    "symptoms": [
+      "sharp chest pain",
+      "depressive or psychotic symptoms",
+      "insomnia",
+      "depression",
+      "abnormal involuntary movements",
+      "headache",
+      "irregular heartbeat",
+      "shortness of breath"
+    ],
+    "top_symptom_weights": {
+      "sharp chest pain": 636,
+      "depressive or psychotic symptoms": 619,
+      "insomnia": 618,
+      "depression": 614,
+      "abnormal involuntary movements": 610,
+      "headache": 608,
+      "irregular heartbeat": 606,
+      "shortness of breath": 605,
+      "fears and phobias": 605,
+      "palpitations": 600,
+      "increased heart rate": 591,
+      "anxiety and nervousness": 590
+    }
+  },
+  "bell palsy": {
+    "id": "bell_palsy",
+    "name": "Bell Palsy",
+    "category": "Neurological",
+    "count": 685,
+    "symptoms": [
+      "diminished vision",
+      "abnormal involuntary movements",
+      "peripheral edema",
+      "focal weakness",
+      "symptoms of eye",
+      "symptoms of the face",
+      "facial pain",
+      "headache"
+    ],
+    "top_symptom_weights": {
+      "diminished vision": 449,
+      "abnormal involuntary movements": 441,
+      "peripheral edema": 359,
+      "focal weakness": 358,
+      "symptoms of eye": 353,
+      "symptoms of the face": 352,
+      "facial pain": 340,
+      "headache": 335,
+      "weakness": 335,
+      "loss of sensation": 331
+    }
+  },
+  "conjunctivitis due to allergy": {
+    "id": "conjunctivitis_due_to_allergy",
+    "name": "Conjunctivitis Due to Allergy",
+    "category": "General Clinical",
+    "count": 1215,
+    "symptoms": [
+      "eye redness",
+      "sneezing",
+      "itchiness of eye",
+      "nasal congestion",
+      "symptoms of eye",
+      "pain in eye",
+      "lacrimation",
+      "swollen eye"
+    ],
+    "top_symptom_weights": {
+      "eye redness": 633,
+      "sneezing": 629,
+      "itchiness of eye": 627,
+      "nasal congestion": 625,
+      "symptoms of eye": 619,
+      "pain in eye": 617,
+      "lacrimation": 617,
+      "swollen eye": 613,
+      "allergic reaction": 609,
+      "diminished vision": 601,
+      "eye burns or stings": 578,
+      "cough": 576
+    }
+  },
+  "drug reaction": {
+    "id": "drug_reaction",
+    "name": "Drug Reaction",
+    "category": "General Clinical",
+    "count": 909,
+    "symptoms": [
+      "nausea",
+      "skin rash",
+      "allergic reaction",
+      "headache",
+      "peripheral edema",
+      "vomiting",
+      "dizziness",
+      "itching of skin"
+    ],
+    "top_symptom_weights": {
+      "nausea": 629,
+      "skin rash": 485,
+      "allergic reaction": 477,
+      "headache": 475,
+      "peripheral edema": 472,
+      "vomiting": 461,
+      "dizziness": 460,
+      "itching of skin": 459,
+      "abnormal appearing skin": 455,
+      "shortness of breath": 450,
+      "throat swelling": 439
+    }
+  },
+  "myopia": {
+    "id": "myopia",
+    "name": "Myopia",
+    "category": "General Clinical",
+    "count": 448,
+    "symptoms": [
+      "foreign body sensation in eye",
+      "eye deviation",
+      "eye redness",
+      "diminished vision",
+      "pain in eye",
+      "blindness",
+      "eye moves abnormally",
+      "symptoms of eye"
+    ],
+    "top_symptom_weights": {
+      "foreign body sensation in eye": 348,
+      "eye deviation": 291,
+      "eye redness": 236,
+      "diminished vision": 234,
+      "pain in eye": 233,
+      "blindness": 230,
+      "eye moves abnormally": 228,
+      "symptoms of eye": 228,
+      "spots or clouds in vision": 225
+    }
+  },
+  "osteoarthritis": {
+    "id": "osteoarthritis",
+    "name": "Osteoarthritis",
+    "category": "Musculoskeletal",
+    "count": 896,
+    "symptoms": [
+      "hip pain",
+      "knee weakness",
+      "knee pain",
+      "ankle pain",
+      "muscle pain",
+      "knee swelling",
+      "elbow pain",
+      "back pain"
+    ],
+    "top_symptom_weights": {
+      "hip pain": 617,
+      "knee weakness": 467,
+      "knee pain": 467,
+      "ankle pain": 463,
+      "muscle pain": 458,
+      "knee swelling": 455,
+      "elbow pain": 453,
+      "back pain": 450,
+      "leg pain": 447,
+      "hand or finger pain": 444,
+      "joint pain": 441
+    }
+  },
+  "macular degeneration": {
+    "id": "macular_degeneration",
+    "name": "Macular Degeneration",
+    "category": "General Clinical",
+    "count": 909,
+    "symptoms": [
+      "double vision",
+      "foreign body sensation in eye",
+      "blindness",
+      "lacrimation",
+      "abnormal movement of eyelid",
+      "bleeding from eye",
+      "spots or clouds in vision",
+      "pain in eye"
+    ],
+    "top_symptom_weights": {
+      "double vision": 613,
+      "foreign body sensation in eye": 490,
+      "blindness": 475,
+      "lacrimation": 467,
+      "abnormal movement of eyelid": 462,
+      "bleeding from eye": 455,
+      "spots or clouds in vision": 454,
+      "pain in eye": 452,
+      "diminished vision": 451,
+      "itchiness of eye": 447,
+      "symptoms of eye": 446
+    }
+  },
+  "pneumonia": {
+    "id": "pneumonia",
+    "name": "Pneumonia",
+    "category": "Respiratory",
+    "count": 1212,
+    "symptoms": [
+      "vomiting",
+      "nasal congestion",
+      "cough",
+      "weakness",
+      "sore throat",
+      "sharp chest pain",
+      "wheezing",
+      "difficulty breathing"
+    ],
+    "top_symptom_weights": {
+      "vomiting": 630,
+      "nasal congestion": 624,
+      "cough": 624,
+      "weakness": 616,
+      "sore throat": 609,
+      "sharp chest pain": 607,
+      "wheezing": 599,
+      "difficulty breathing": 599,
+      "chills": 596,
+      "coryza": 596,
+      "fever": 592,
+      "shortness of breath": 588
+    }
+  },
+  "fracture of the rib": {
+    "id": "fracture_of_the_rib",
+    "name": "Fracture of the Rib",
+    "category": "Musculoskeletal",
+    "count": 882,
+    "symptoms": [
+      "shortness of breath",
+      "back pain",
+      "rib pain",
+      "back mass or lump",
+      "side pain",
+      "bones are painful",
+      "sharp chest pain",
+      "hurts to breath"
+    ],
+    "top_symptom_weights": {
+      "shortness of breath": 586,
+      "back pain": 466,
+      "rib pain": 466,
+      "back mass or lump": 462,
+      "side pain": 461,
+      "bones are painful": 458,
+      "sharp chest pain": 458,
+      "hurts to breath": 458,
+      "ache all over": 447,
+      "hip pain": 445,
+      "shoulder pain": 442
+    }
+  },
+  "vaginal cyst": {
+    "id": "vaginal_cyst",
+    "name": "Vaginal Cyst",
+    "category": "Dermatological",
+    "count": 1215,
+    "symptoms": [
+      "heavy menstrual flow",
+      "pelvic pain",
+      "lower abdominal pain",
+      "intermenstrual bleeding",
+      "pain during pregnancy",
+      "vaginal pain",
+      "cramps and spasms",
+      "blood clots during menstrual periods"
+    ],
+    "top_symptom_weights": {
+      "heavy menstrual flow": 631,
+      "pelvic pain": 629,
+      "lower abdominal pain": 622,
+      "intermenstrual bleeding": 620,
+      "pain during pregnancy": 617,
+      "vaginal pain": 611,
+      "cramps and spasms": 609,
+      "blood clots during menstrual periods": 605,
+      "vaginal discharge": 603,
+      "problems during pregnancy": 600,
+      "spotting or bleeding during pregnancy": 597,
+      "sharp abdominal pain": 581
+    }
+  },
+  "alcohol abuse": {
+    "id": "alcohol_abuse",
+    "name": "Alcohol Abuse",
+    "category": "General Clinical",
+    "count": 510,
+    "symptoms": [
+      "vomiting blood",
+      "hostile behavior",
+      "smoking problems",
+      "depression",
+      "low self esteem",
+      "drug abuse",
+      "abusing alcohol",
+      "depressive or psychotic symptoms"
+    ],
+    "top_symptom_weights": {
+      "vomiting blood": 346,
+      "hostile behavior": 345,
+      "smoking problems": 345,
+      "depression": 270,
+      "low self esteem": 262,
+      "drug abuse": 261,
+      "abusing alcohol": 249,
+      "depressive or psychotic symptoms": 246,
+      "anxiety and nervousness": 239
+    }
+  },
+  "carpal tunnel syndrome": {
+    "id": "carpal_tunnel_syndrome",
+    "name": "Carpal Tunnel Syndrome",
+    "category": "General Clinical",
+    "count": 896,
+    "symptoms": [
+      "elbow pain",
+      "wrist swelling",
+      "loss of sensation",
+      "neck pain",
+      "wrist pain",
+      "paresthesia",
+      "hand or finger stiffness or tightness",
+      "arm weakness"
+    ],
+    "top_symptom_weights": {
+      "elbow pain": 606,
+      "wrist swelling": 473,
+      "loss of sensation": 470,
+      "neck pain": 470,
+      "wrist pain": 468,
+      "paresthesia": 463,
+      "hand or finger stiffness or tightness": 453,
+      "arm weakness": 449,
+      "arm pain": 449,
+      "hand or finger pain": 448,
+      "hand or finger swelling": 441
+    }
+  },
+  "kidney stone": {
+    "id": "kidney_stone",
+    "name": "Kidney Stone",
+    "category": "Urological",
+    "count": 904,
+    "symptoms": [
+      "vomiting",
+      "back pain",
+      "side pain",
+      "frequent urination",
+      "painful urination",
+      "low back pain",
+      "suprapubic pain",
+      "sharp abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "vomiting": 638,
+      "back pain": 476,
+      "side pain": 474,
+      "frequent urination": 464,
+      "painful urination": 461,
+      "low back pain": 460,
+      "suprapubic pain": 453,
+      "sharp abdominal pain": 446,
+      "lower abdominal pain": 443,
+      "retention of urine": 434,
+      "blood in urine": 432
+    }
+  },
+  "autism": {
+    "id": "autism",
+    "name": "Autism",
+    "category": "General Clinical",
+    "count": 452,
+    "symptoms": [
+      "long menstrual periods",
+      "difficulty speaking",
+      "hostile behavior",
+      "antisocial behavior",
+      "depressive or psychotic symptoms",
+      "lack of growth",
+      "seizures",
+      "constipation"
+    ],
+    "top_symptom_weights": {
+      "long menstrual periods": 326,
+      "difficulty speaking": 300,
+      "hostile behavior": 231,
+      "antisocial behavior": 229,
+      "depressive or psychotic symptoms": 228,
+      "lack of growth": 226,
+      "seizures": 225,
+      "constipation": 223,
+      "temper problems": 223
+    }
+  },
+  "chronic glaucoma": {
+    "id": "chronic_glaucoma",
+    "name": "Chronic Glaucoma",
+    "category": "ENT & Sensory",
+    "count": 668,
+    "symptoms": [
+      "itchiness of eye",
+      "white discharge from eye",
+      "spots or clouds in vision",
+      "pain in eye",
+      "diminished vision",
+      "symptoms of eye",
+      "mass on eyelid",
+      "lacrimation"
+    ],
+    "top_symptom_weights": {
+      "itchiness of eye": 456,
+      "white discharge from eye": 437,
+      "spots or clouds in vision": 347,
+      "pain in eye": 343,
+      "diminished vision": 336,
+      "symptoms of eye": 332,
+      "mass on eyelid": 330,
+      "lacrimation": 326,
+      "eye burns or stings": 326,
+      "foreign body sensation in eye": 319
+    }
+  },
+  "nose disorder": {
+    "id": "nose_disorder",
+    "name": "Nose Disorder",
+    "category": "General Clinical",
+    "count": 1218,
+    "symptoms": [
+      "ear pain",
+      "nosebleed",
+      "facial pain",
+      "difficulty breathing",
+      "painful sinuses",
+      "cough",
+      "nasal congestion",
+      "headache"
+    ],
+    "top_symptom_weights": {
+      "ear pain": 632,
+      "nosebleed": 628,
+      "facial pain": 624,
+      "difficulty breathing": 619,
+      "painful sinuses": 617,
+      "cough": 616,
+      "nasal congestion": 608,
+      "headache": 607,
+      "sinus congestion": 603,
+      "fever": 603,
+      "coryza": 593,
+      "sore throat": 590
+    }
+  },
+  "dental caries": {
+    "id": "dental_caries",
+    "name": "Dental Caries",
+    "category": "General Clinical",
+    "count": 1185,
+    "symptoms": [
+      "facial pain",
+      "peripheral edema",
+      "restlessness",
+      "gum pain",
+      "mouth pain",
+      "ear pain",
+      "toothache",
+      "pain in gums"
+    ],
+    "top_symptom_weights": {
+      "facial pain": 619,
+      "peripheral edema": 615,
+      "restlessness": 614,
+      "gum pain": 611,
+      "mouth pain": 607,
+      "ear pain": 604,
+      "toothache": 602,
+      "pain in gums": 600,
+      "jaw swelling": 593,
+      "neck swelling": 591,
+      "skin irritation": 578,
+      "skin swelling": 570
+    }
+  },
+  "muscle spasm": {
+    "id": "muscle_spasm",
+    "name": "Muscle Spasm",
+    "category": "Musculoskeletal",
+    "count": 678,
+    "symptoms": [
+      "low back pain",
+      "leg pain",
+      "headache",
+      "loss of sensation",
+      "neck pain",
+      "arm pain",
+      "back pain",
+      "muscle cramps contractures or spasms"
+    ],
+    "top_symptom_weights": {
+      "low back pain": 464,
+      "leg pain": 454,
+      "headache": 359,
+      "loss of sensation": 355,
+      "neck pain": 353,
+      "arm pain": 351,
+      "back pain": 342,
+      "muscle cramps contractures or spasms": 339,
+      "abnormal involuntary movements": 334,
+      "sharp chest pain": 324
+    }
+  },
+  "itching of unknown cause": {
+    "id": "itching_of_unknown_cause",
+    "name": "Itching of Unknown Cause",
+    "category": "General Clinical",
+    "count": 504,
+    "symptoms": [
+      "problems during pregnancy",
+      "fluid retention",
+      "vaginal itching",
+      "allergic reaction",
+      "itchy scalp",
+      "abnormal appearing skin",
+      "itching of skin",
+      "skin rash"
+    ],
+    "top_symptom_weights": {
+      "problems during pregnancy": 344,
+      "fluid retention": 337,
+      "vaginal itching": 333,
+      "allergic reaction": 273,
+      "itchy scalp": 263,
+      "abnormal appearing skin": 254,
+      "itching of skin": 254,
+      "skin rash": 244,
+      "skin dryness peeling scaliness or roughness": 241
+    }
+  },
+  "urge incontinence": {
+    "id": "urge_incontinence",
+    "name": "Urge Incontinence",
+    "category": "Urological",
+    "count": 495,
+    "symptoms": [
+      "retention of urine",
+      "vaginal itching",
+      "blood in urine",
+      "frequent urination",
+      "involuntary urination",
+      "symptoms of bladder",
+      "painful urination",
+      "excessive urination at night"
+    ],
+    "top_symptom_weights": {
+      "retention of urine": 345,
+      "vaginal itching": 344,
+      "blood in urine": 337,
+      "frequent urination": 269,
+      "involuntary urination": 258,
+      "symptoms of bladder": 257,
+      "painful urination": 253,
+      "excessive urination at night": 250,
+      "constipation": 237
+    }
+  },
+  "corneal abrasion": {
+    "id": "corneal_abrasion",
+    "name": "Corneal Abrasion",
+    "category": "General Clinical",
+    "count": 500,
+    "symptoms": [
+      "diminished vision",
+      "itchiness of eye",
+      "white discharge from eye",
+      "symptoms of eye",
+      "pain in eye",
+      "foreign body sensation in eye",
+      "lacrimation",
+      "eye redness"
+    ],
+    "top_symptom_weights": {
+      "diminished vision": 343,
+      "itchiness of eye": 335,
+      "white discharge from eye": 328,
+      "symptoms of eye": 266,
+      "pain in eye": 259,
+      "foreign body sensation in eye": 259,
+      "lacrimation": 259,
+      "eye redness": 243,
+      "eyelid swelling": 233
+    }
+  },
+  "dysthymic disorder": {
+    "id": "dysthymic_disorder",
+    "name": "Dysthymic Disorder",
+    "category": "General Clinical",
+    "count": 499,
+    "symptoms": [
+      "excessive anger",
+      "loss of sex drive",
+      "temper problems",
+      "depression",
+      "disturbance of memory",
+      "insomnia",
+      "anxiety and nervousness",
+      "depressive or psychotic symptoms"
+    ],
+    "top_symptom_weights": {
+      "excessive anger": 342,
+      "loss of sex drive": 333,
+      "temper problems": 330,
+      "depression": 266,
+      "disturbance of memory": 261,
+      "insomnia": 259,
+      "anxiety and nervousness": 258,
+      "depressive or psychotic symptoms": 254,
+      "slurring words": 248
+    }
+  },
+  "hypertensive heart disease": {
+    "id": "hypertensive_heart_disease",
+    "name": "Hypertensive Heart Disease",
+    "category": "Cardiovascular",
+    "count": 902,
+    "symptoms": [
+      "leg swelling",
+      "palpitations",
+      "difficulty breathing",
+      "fatigue",
+      "sharp chest pain",
+      "chest tightness",
+      "recent pregnancy",
+      "heartburn"
+    ],
+    "top_symptom_weights": {
+      "leg swelling": 617,
+      "palpitations": 493,
+      "difficulty breathing": 469,
+      "fatigue": 467,
+      "sharp chest pain": 462,
+      "chest tightness": 461,
+      "recent pregnancy": 450,
+      "heartburn": 445,
+      "insomnia": 443,
+      "weakness": 435,
+      "shortness of breath": 435
+    }
+  },
+  "balanitis": {
+    "id": "balanitis",
+    "name": "Balanitis",
+    "category": "General Clinical",
+    "count": 454,
+    "symptoms": [
+      "suprapubic pain",
+      "painful urination",
+      "skin rash",
+      "cough",
+      "diaper rash",
+      "penis redness",
+      "abnormal appearing skin",
+      "itching of skin"
+    ],
+    "top_symptom_weights": {
+      "suprapubic pain": 343,
+      "painful urination": 300,
+      "skin rash": 228,
+      "cough": 228,
+      "diaper rash": 227,
+      "penis redness": 224,
+      "abnormal appearing skin": 222,
+      "itching of skin": 218,
+      "penis pain": 206
+    }
+  },
+  "alcohol withdrawal": {
+    "id": "alcohol_withdrawal",
+    "name": "Alcohol Withdrawal",
+    "category": "General Clinical",
+    "count": 665,
+    "symptoms": [
+      "dizziness",
+      "depressive or psychotic symptoms",
+      "vomiting",
+      "seizures",
+      "antisocial behavior",
+      "abusing alcohol",
+      "fainting",
+      "sharp chest pain"
+    ],
+    "top_symptom_weights": {
+      "dizziness": 447,
+      "depressive or psychotic symptoms": 430,
+      "vomiting": 355,
+      "seizures": 352,
+      "antisocial behavior": 345,
+      "abusing alcohol": 343,
+      "fainting": 339,
+      "sharp chest pain": 339,
+      "abnormal involuntary movements": 337,
+      "delusions or hallucinations": 319
+    }
+  },
+  "hemiplegia": {
+    "id": "hemiplegia",
+    "name": "Hemiplegia",
+    "category": "General Clinical",
+    "count": 504,
+    "symptoms": [
+      "weakness",
+      "slurring words",
+      "difficulty speaking",
+      "arm stiffness or tightness",
+      "seizures",
+      "headache",
+      "problems with movement",
+      "loss of sensation"
+    ],
+    "top_symptom_weights": {
+      "weakness": 352,
+      "slurring words": 338,
+      "difficulty speaking": 334,
+      "arm stiffness or tightness": 276,
+      "seizures": 260,
+      "headache": 255,
+      "problems with movement": 255,
+      "loss of sensation": 254,
+      "abnormal involuntary movements": 250
+    }
+  },
+  "joint effusion": {
+    "id": "joint_effusion",
+    "name": "Joint Effusion",
+    "category": "Musculoskeletal",
+    "count": 449,
+    "symptoms": [
+      "wrist pain",
+      "knee stiffness or tightness",
+      "ankle swelling",
+      "knee swelling",
+      "ankle pain",
+      "problems with movement",
+      "wrist swelling",
+      "knee pain"
+    ],
+    "top_symptom_weights": {
+      "wrist pain": 341,
+      "knee stiffness or tightness": 314,
+      "ankle swelling": 243,
+      "knee swelling": 241,
+      "ankle pain": 240,
+      "problems with movement": 229,
+      "wrist swelling": 228,
+      "knee pain": 228,
+      "elbow pain": 216
+    }
+  },
+  "seasonal allergies (hay fever)": {
+    "id": "seasonal_allergies_hay_fever",
+    "name": "Seasonal Allergies (hay Fever)",
+    "category": "Infectious",
+    "count": 910,
+    "symptoms": [
+      "lacrimation",
+      "ear pain",
+      "frontal headache",
+      "coryza",
+      "headache",
+      "allergic reaction",
+      "sneezing",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "lacrimation": 617,
+      "ear pain": 486,
+      "frontal headache": 472,
+      "coryza": 467,
+      "headache": 465,
+      "allergic reaction": 464,
+      "sneezing": 461,
+      "cough": 455,
+      "nasal congestion": 448,
+      "sore throat": 446,
+      "itchiness of eye": 443
+    }
+  },
+  "dry eye of unknown cause": {
+    "id": "dry_eye_of_unknown_cause",
+    "name": "Dry Eye of Unknown Cause",
+    "category": "ENT & Sensory",
+    "count": 861,
+    "symptoms": [
+      "foreign body sensation in eye",
+      "pain in eye",
+      "diminished vision",
+      "eye redness",
+      "lacrimation",
+      "symptoms of eye",
+      "abnormal movement of eyelid",
+      "spots or clouds in vision"
+    ],
+    "top_symptom_weights": {
+      "foreign body sensation in eye": 587,
+      "pain in eye": 465,
+      "diminished vision": 462,
+      "eye redness": 460,
+      "lacrimation": 457,
+      "symptoms of eye": 445,
+      "abnormal movement of eyelid": 442,
+      "spots or clouds in vision": 442,
+      "itchiness of eye": 434,
+      "double vision": 426,
+      "white discharge from eye": 414
+    }
+  },
+  "fungal infection of the hair": {
+    "id": "fungal_infection_of_the_hair",
+    "name": "Fungal Infection of the Hair",
+    "category": "Infectious",
+    "count": 1212,
+    "symptoms": [
+      "skin growth",
+      "skin rash",
+      "pelvic pain",
+      "irregular appearing scalp",
+      "skin lesion",
+      "acne or pimples",
+      "itching of skin",
+      "itchy scalp"
+    ],
+    "top_symptom_weights": {
+      "skin growth": 628,
+      "skin rash": 619,
+      "pelvic pain": 618,
+      "irregular appearing scalp": 617,
+      "skin lesion": 616,
+      "acne or pimples": 608,
+      "itching of skin": 606,
+      "itchy scalp": 601,
+      "abnormal appearing skin": 600,
+      "skin swelling": 589,
+      "skin irritation": 588,
+      "skin dryness peeling scaliness or roughness": 581
+    }
+  },
+  "tooth abscess": {
+    "id": "tooth_abscess",
+    "name": "Tooth Abscess",
+    "category": "Infectious",
+    "count": 669,
+    "symptoms": [
+      "neck swelling",
+      "skin swelling",
+      "pain in gums",
+      "gum pain",
+      "jaw swelling",
+      "peripheral edema",
+      "toothache",
+      "mouth pain"
+    ],
+    "top_symptom_weights": {
+      "neck swelling": 451,
+      "skin swelling": 429,
+      "pain in gums": 353,
+      "gum pain": 350,
+      "jaw swelling": 341,
+      "peripheral edema": 341,
+      "toothache": 340,
+      "mouth pain": 340,
+      "lip swelling": 336,
+      "facial pain": 325
+    }
+  },
+  "envenomation from spider or animal bite": {
+    "id": "envenomation_from_spider_or_animal_bite",
+    "name": "Envenomation From Spider or Animal Bite",
+    "category": "General Clinical",
+    "count": 455,
+    "symptoms": [
+      "arm swelling",
+      "itching of skin",
+      "paresthesia",
+      "hand or finger swelling",
+      "fluid retention",
+      "allergic reaction",
+      "skin swelling",
+      "abnormal appearing skin"
+    ],
+    "top_symptom_weights": {
+      "arm swelling": 339,
+      "itching of skin": 311,
+      "paresthesia": 236,
+      "hand or finger swelling": 235,
+      "fluid retention": 233,
+      "allergic reaction": 232,
+      "skin swelling": 225,
+      "abnormal appearing skin": 224,
+      "foot or toe swelling": 220
+    }
+  },
+  "rectal disorder": {
+    "id": "rectal_disorder",
+    "name": "Rectal Disorder",
+    "category": "General Clinical",
+    "count": 902,
+    "symptoms": [
+      "heartburn",
+      "pain of the anus",
+      "constipation",
+      "sharp abdominal pain",
+      "burning abdominal pain",
+      "rectal bleeding",
+      "cramps and spasms",
+      "diarrhea"
+    ],
+    "top_symptom_weights": {
+      "heartburn": 607,
+      "pain of the anus": 478,
+      "constipation": 473,
+      "sharp abdominal pain": 469,
+      "burning abdominal pain": 466,
+      "rectal bleeding": 461,
+      "cramps and spasms": 449,
+      "diarrhea": 444,
+      "blood in stool": 443,
+      "melena": 434,
+      "itching of the anus": 426
+    }
+  },
+  "benign paroxysmal positional vertical (bppv)": {
+    "id": "benign_paroxysmal_positional_vertical_bppv",
+    "name": "Benign Paroxysmal Positional Vertical (bppv)",
+    "category": "General Clinical",
+    "count": 443,
+    "symptoms": [
+      "irregular heartbeat",
+      "fainting",
+      "headache",
+      "nausea",
+      "dizziness",
+      "vomiting",
+      "problems with movement",
+      "weakness"
+    ],
+    "top_symptom_weights": {
+      "irregular heartbeat": 342,
+      "fainting": 302,
+      "headache": 241,
+      "nausea": 232,
+      "dizziness": 231,
+      "vomiting": 229,
+      "problems with movement": 228,
+      "weakness": 222,
+      "frontal headache": 221
+    }
+  },
+  "stye": {
+    "id": "stye",
+    "name": "Stye",
+    "category": "General Clinical",
+    "count": 908,
+    "symptoms": [
+      "skin swelling",
+      "eyelid lesion or rash",
+      "swollen eye",
+      "eyelid swelling",
+      "mass on eyelid",
+      "eye burns or stings",
+      "pain in eye",
+      "itchiness of eye"
+    ],
+    "top_symptom_weights": {
+      "skin swelling": 594,
+      "eyelid lesion or rash": 490,
+      "swollen eye": 485,
+      "eyelid swelling": 469,
+      "mass on eyelid": 462,
+      "eye burns or stings": 460,
+      "pain in eye": 459,
+      "itchiness of eye": 459,
+      "abnormal appearing skin": 458,
+      "symptoms of eye": 458,
+      "eye redness": 445
+    }
+  },
+  "atrophic skin condition": {
+    "id": "atrophic_skin_condition",
+    "name": "Atrophic Skin Condition",
+    "category": "Dermatological",
+    "count": 438,
+    "symptoms": [
+      "acne or pimples",
+      "lip swelling",
+      "skin lesion",
+      "skin growth",
+      "skin irritation",
+      "abnormal appearing skin",
+      "skin moles",
+      "skin swelling"
+    ],
+    "top_symptom_weights": {
+      "acne or pimples": 339,
+      "lip swelling": 292,
+      "skin lesion": 238,
+      "skin growth": 238,
+      "skin irritation": 236,
+      "abnormal appearing skin": 233,
+      "skin moles": 226,
+      "skin swelling": 215,
+      "wrinkles on skin": 204
+    }
+  },
+  "oral mucosal lesion": {
+    "id": "oral_mucosal_lesion",
+    "name": "Oral Mucosal Lesion",
+    "category": "General Clinical",
+    "count": 606,
+    "symptoms": [
+      "cough",
+      "lip swelling",
+      "fever",
+      "mouth pain",
+      "toothache",
+      "facial pain",
+      "gum pain",
+      "tongue lesions"
+    ],
+    "top_symptom_weights": {
+      "cough": 441,
+      "lip swelling": 310,
+      "fever": 305,
+      "mouth pain": 303,
+      "toothache": 302,
+      "facial pain": 302,
+      "gum pain": 300,
+      "tongue lesions": 295,
+      "mouth ulcer": 294,
+      "sore throat": 284
+    }
+  },
+  "intracerebral hemorrhage": {
+    "id": "intracerebral_hemorrhage",
+    "name": "Intracerebral Hemorrhage",
+    "category": "General Clinical",
+    "count": 603,
+    "symptoms": [
+      "diminished vision",
+      "focal weakness",
+      "nausea",
+      "headache",
+      "seizures",
+      "weakness",
+      "dizziness",
+      "blindness"
+    ],
+    "top_symptom_weights": {
+      "diminished vision": 468,
+      "focal weakness": 315,
+      "nausea": 304,
+      "headache": 301,
+      "seizures": 300,
+      "weakness": 299,
+      "dizziness": 295,
+      "blindness": 295,
+      "depressive or psychotic symptoms": 292,
+      "vomiting": 282
+    }
+  },
+  "ganglion cyst": {
+    "id": "ganglion_cyst",
+    "name": "Ganglion Cyst",
+    "category": "Dermatological",
+    "count": 675,
+    "symptoms": [
+      "knee lump or mass",
+      "leg pain",
+      "foot or toe pain",
+      "skin growth",
+      "hand or finger pain",
+      "knee swelling",
+      "wrist lump or mass",
+      "wrist swelling"
+    ],
+    "top_symptom_weights": {
+      "knee lump or mass": 448,
+      "leg pain": 441,
+      "foot or toe pain": 350,
+      "skin growth": 348,
+      "hand or finger pain": 345,
+      "knee swelling": 343,
+      "wrist lump or mass": 339,
+      "wrist swelling": 336,
+      "knee pain": 335,
+      "hand or finger lump or mass": 328
+    }
+  },
+  "skin disorder": {
+    "id": "skin_disorder",
+    "name": "Skin Disorder",
+    "category": "Dermatological",
+    "count": 676,
+    "symptoms": [
+      "abnormal appearing skin",
+      "skin irritation",
+      "skin moles",
+      "skin lesion",
+      "skin dryness peeling scaliness or roughness",
+      "itching of skin",
+      "skin growth",
+      "acne or pimples"
+    ],
+    "top_symptom_weights": {
+      "abnormal appearing skin": 468,
+      "skin irritation": 450,
+      "skin moles": 357,
+      "skin lesion": 356,
+      "skin dryness peeling scaliness or roughness": 351,
+      "itching of skin": 347,
+      "skin growth": 346,
+      "acne or pimples": 343,
+      "irregular appearing scalp": 323,
+      "skin swelling": 321
+    }
+  },
+  "tooth disorder": {
+    "id": "tooth_disorder",
+    "name": "Tooth Disorder",
+    "category": "General Clinical",
+    "count": 671,
+    "symptoms": [
+      "peripheral edema",
+      "mouth ulcer",
+      "ear pain",
+      "toothache",
+      "jaw swelling",
+      "bleeding gums",
+      "facial pain",
+      "gum pain"
+    ],
+    "top_symptom_weights": {
+      "peripheral edema": 456,
+      "mouth ulcer": 445,
+      "ear pain": 363,
+      "toothache": 336,
+      "jaw swelling": 334,
+      "bleeding gums": 334,
+      "facial pain": 334,
+      "gum pain": 329,
+      "pain in gums": 323,
+      "headache": 322
+    }
+  },
+  "heart attack": {
+    "id": "heart_attack",
+    "name": "Heart Attack",
+    "category": "Cardiovascular",
+    "count": 907,
+    "symptoms": [
+      "heartburn",
+      "fainting",
+      "nausea",
+      "increased heart rate",
+      "arm pain",
+      "burning chest pain",
+      "irregular heartbeat",
+      "shortness of breath"
+    ],
+    "top_symptom_weights": {
+      "heartburn": 590,
+      "fainting": 488,
+      "nausea": 484,
+      "increased heart rate": 475,
+      "arm pain": 462,
+      "burning chest pain": 459,
+      "irregular heartbeat": 451,
+      "shortness of breath": 450,
+      "chest tightness": 445,
+      "sweating": 445,
+      "sharp chest pain": 444
+    }
+  },
+  "fracture of the leg": {
+    "id": "fracture_of_the_leg",
+    "name": "Fracture of the Leg",
+    "category": "Musculoskeletal",
+    "count": 678,
+    "symptoms": [
+      "knee weakness",
+      "leg stiffness or tightness",
+      "ankle swelling",
+      "knee swelling",
+      "hip pain",
+      "problems with movement",
+      "leg swelling",
+      "knee pain"
+    ],
+    "top_symptom_weights": {
+      "knee weakness": 449,
+      "leg stiffness or tightness": 435,
+      "ankle swelling": 353,
+      "knee swelling": 349,
+      "hip pain": 347,
+      "problems with movement": 345,
+      "leg swelling": 342,
+      "knee pain": 334,
+      "leg pain": 329,
+      "ankle pain": 325
+    }
+  },
+  "oral thrush (yeast infection)": {
+    "id": "oral_thrush_yeast_infection",
+    "name": "Oral Thrush (yeast Infection)",
+    "category": "Infectious",
+    "count": 681,
+    "symptoms": [
+      "irritable infant",
+      "constipation",
+      "tongue lesions",
+      "cough",
+      "nasal congestion",
+      "mouth pain",
+      "mouth ulcer",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "irritable infant": 468,
+      "constipation": 455,
+      "tongue lesions": 357,
+      "cough": 348,
+      "nasal congestion": 344,
+      "mouth pain": 344,
+      "mouth ulcer": 343,
+      "fever": 337,
+      "skin rash": 331,
+      "sore throat": 328
+    }
+  },
+  "obstructive sleep apnea (osa)": {
+    "id": "obstructive_sleep_apnea_osa",
+    "name": "Obstructive Sleep Apnea (osa)",
+    "category": "Respiratory",
+    "count": 1196,
+    "symptoms": [
+      "mouth dryness",
+      "fatigue",
+      "sweating",
+      "difficulty breathing",
+      "abnormal breathing sounds",
+      "abnormal involuntary movements",
+      "apnea",
+      "weight gain"
+    ],
+    "top_symptom_weights": {
+      "mouth dryness": 630,
+      "fatigue": 622,
+      "sweating": 620,
+      "difficulty breathing": 611,
+      "abnormal breathing sounds": 609,
+      "abnormal involuntary movements": 608,
+      "apnea": 606,
+      "weight gain": 605,
+      "difficulty in swallowing": 600,
+      "insomnia": 599,
+      "sleepiness": 594,
+      "shortness of breath": 575
+    }
+  },
+  "hypokalemia": {
+    "id": "hypokalemia",
+    "name": "Hypokalemia",
+    "category": "General Clinical",
+    "count": 478,
+    "symptoms": [
+      "sharp chest pain",
+      "diarrhea",
+      "nausea",
+      "fainting",
+      "sharp abdominal pain",
+      "vomiting",
+      "shortness of breath",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "sharp chest pain": 390,
+      "diarrhea": 286,
+      "nausea": 280,
+      "fainting": 277,
+      "sharp abdominal pain": 266,
+      "vomiting": 266,
+      "shortness of breath": 264,
+      "fever": 259,
+      "loss of sensation": 253,
+      "headache": 246
+    }
+  },
+  "psoriasis": {
+    "id": "psoriasis",
+    "name": "Psoriasis",
+    "category": "Dermatological",
+    "count": 912,
+    "symptoms": [
+      "skin swelling",
+      "skin rash",
+      "irregular appearing scalp",
+      "itchy scalp",
+      "skin growth",
+      "skin moles",
+      "itching of skin",
+      "skin dryness peeling scaliness or roughness"
+    ],
+    "top_symptom_weights": {
+      "skin swelling": 594,
+      "skin rash": 505,
+      "irregular appearing scalp": 488,
+      "itchy scalp": 468,
+      "skin growth": 466,
+      "skin moles": 465,
+      "itching of skin": 456,
+      "skin dryness peeling scaliness or roughness": 454,
+      "abnormal appearing skin": 453,
+      "joint pain": 449,
+      "skin lesion": 446
+    }
+  },
+  "arthritis of the hip": {
+    "id": "arthritis_of_the_hip",
+    "name": "Arthritis of the Hip",
+    "category": "Musculoskeletal",
+    "count": 1210,
+    "symptoms": [
+      "pelvic pain",
+      "knee pain",
+      "ache all over",
+      "groin pain",
+      "hip stiffness or tightness",
+      "problems with movement",
+      "hip pain",
+      "back pain"
+    ],
+    "top_symptom_weights": {
+      "pelvic pain": 638,
+      "knee pain": 623,
+      "ache all over": 615,
+      "groin pain": 612,
+      "hip stiffness or tightness": 612,
+      "problems with movement": 610,
+      "hip pain": 608,
+      "back pain": 606,
+      "lower body pain": 603,
+      "low back pain": 599,
+      "joint pain": 595,
+      "leg pain": 591
+    }
+  },
+  "sensorineural hearing loss": {
+    "id": "sensorineural_hearing_loss",
+    "name": "Sensorineural Hearing Loss",
+    "category": "ENT & Sensory",
+    "count": 681,
+    "symptoms": [
+      "hoarse voice",
+      "throat feels tight",
+      "ear pain",
+      "nasal congestion",
+      "plugged feeling in ear",
+      "diminished hearing",
+      "fluid in ear",
+      "itchy ear s"
+    ],
+    "top_symptom_weights": {
+      "hoarse voice": 453,
+      "throat feels tight": 443,
+      "ear pain": 363,
+      "nasal congestion": 357,
+      "plugged feeling in ear": 343,
+      "diminished hearing": 342,
+      "fluid in ear": 336,
+      "itchy ear s": 334,
+      "ringing in ear": 332,
+      "dizziness": 326
+    }
+  },
+  "ileus": {
+    "id": "ileus",
+    "name": "Ileus",
+    "category": "General Clinical",
+    "count": 449,
+    "symptoms": [
+      "lower abdominal pain",
+      "headache",
+      "diarrhea",
+      "vomiting",
+      "sharp abdominal pain",
+      "pain of the anus",
+      "burning abdominal pain",
+      "nausea"
+    ],
+    "top_symptom_weights": {
+      "lower abdominal pain": 348,
+      "headache": 307,
+      "diarrhea": 240,
+      "vomiting": 231,
+      "sharp abdominal pain": 225,
+      "pain of the anus": 224,
+      "burning abdominal pain": 224,
+      "nausea": 223,
+      "constipation": 223
+    }
+  },
+  "sickle cell crisis": {
+    "id": "sickle_cell_crisis",
+    "name": "Sickle Cell Crisis",
+    "category": "General Clinical",
+    "count": 913,
+    "symptoms": [
+      "vomiting",
+      "arm pain",
+      "sharp abdominal pain",
+      "leg pain",
+      "knee pain",
+      "burning abdominal pain",
+      "back pain",
+      "low back pain"
+    ],
+    "top_symptom_weights": {
+      "vomiting": 624,
+      "arm pain": 496,
+      "sharp abdominal pain": 468,
+      "leg pain": 461,
+      "knee pain": 461,
+      "burning abdominal pain": 456,
+      "back pain": 452,
+      "low back pain": 448,
+      "ache all over": 447,
+      "hip pain": 446,
+      "sharp chest pain": 443
+    }
+  },
+  "urethritis": {
+    "id": "urethritis",
+    "name": "Urethritis",
+    "category": "Urological",
+    "count": 453,
+    "symptoms": [
+      "vaginal itching",
+      "suprapubic pain",
+      "painful urination",
+      "penile discharge",
+      "blood in urine",
+      "retention of urine",
+      "penis pain",
+      "sharp abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "vaginal itching": 338,
+      "suprapubic pain": 297,
+      "painful urination": 240,
+      "penile discharge": 233,
+      "blood in urine": 232,
+      "retention of urine": 228,
+      "penis pain": 224,
+      "sharp abdominal pain": 219,
+      "frequent urination": 214
+    }
+  },
+  "prostatitis": {
+    "id": "prostatitis",
+    "name": "Prostatitis",
+    "category": "Urological",
+    "count": 681,
+    "symptoms": [
+      "sharp abdominal pain",
+      "retention of urine",
+      "impotence",
+      "blood in urine",
+      "frequent urination",
+      "lower abdominal pain",
+      "chills",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "sharp abdominal pain": 458,
+      "retention of urine": 452,
+      "impotence": 375,
+      "blood in urine": 370,
+      "frequent urination": 356,
+      "lower abdominal pain": 350,
+      "chills": 349,
+      "fever": 347,
+      "painful urination": 342,
+      "back pain": 330
+    }
+  },
+  "otitis externa (swimmer's ear)": {
+    "id": "otitis_externa_swimmer_s_ear",
+    "name": "Otitis Externa (swimmer's Ear)",
+    "category": "ENT & Sensory",
+    "count": 904,
+    "symptoms": [
+      "itchy ear s",
+      "fever",
+      "ear pain",
+      "plugged feeling in ear",
+      "redness in ear",
+      "cough",
+      "fluid in ear",
+      "facial pain"
+    ],
+    "top_symptom_weights": {
+      "itchy ear s": 596,
+      "fever": 486,
+      "ear pain": 478,
+      "plugged feeling in ear": 475,
+      "redness in ear": 473,
+      "cough": 468,
+      "fluid in ear": 464,
+      "facial pain": 458,
+      "ringing in ear": 457,
+      "diminished hearing": 451,
+      "sore throat": 437
+    }
+  },
+  "acute bronchiolitis": {
+    "id": "acute_bronchiolitis",
+    "name": "Acute Bronchiolitis",
+    "category": "Respiratory",
+    "count": 1204,
+    "symptoms": [
+      "nasal congestion",
+      "fever",
+      "wheezing",
+      "vomiting",
+      "hurts to breath",
+      "cough",
+      "decreased appetite",
+      "difficulty breathing"
+    ],
+    "top_symptom_weights": {
+      "nasal congestion": 630,
+      "fever": 630,
+      "wheezing": 625,
+      "vomiting": 621,
+      "hurts to breath": 619,
+      "cough": 618,
+      "decreased appetite": 612,
+      "difficulty breathing": 598,
+      "irritable infant": 594,
+      "pulling at ears": 594,
+      "coryza": 577,
+      "shortness of breath": 577
+    }
+  },
+  "insect bite": {
+    "id": "insect_bite",
+    "name": "Insect Bite",
+    "category": "General Clinical",
+    "count": 669,
+    "symptoms": [
+      "leg swelling",
+      "hand or finger swelling",
+      "skin rash",
+      "peripheral edema",
+      "abnormal appearing skin",
+      "itching of skin",
+      "skin lesion",
+      "skin swelling"
+    ],
+    "top_symptom_weights": {
+      "leg swelling": 460,
+      "hand or finger swelling": 453,
+      "skin rash": 359,
+      "peripheral edema": 351,
+      "abnormal appearing skin": 345,
+      "itching of skin": 343,
+      "skin lesion": 339,
+      "skin swelling": 327,
+      "fluid retention": 327,
+      "lip swelling": 322
+    }
+  },
+  "paroxysmal ventricular tachycardia": {
+    "id": "paroxysmal_ventricular_tachycardia",
+    "name": "Paroxysmal Ventricular Tachycardia",
+    "category": "Cardiovascular",
+    "count": 671,
+    "symptoms": [
+      "dizziness",
+      "decreased heart rate",
+      "fainting",
+      "chest tightness",
+      "increased heart rate",
+      "sharp chest pain",
+      "fatigue",
+      "weight gain"
+    ],
+    "top_symptom_weights": {
+      "dizziness": 461,
+      "decreased heart rate": 450,
+      "fainting": 375,
+      "chest tightness": 346,
+      "increased heart rate": 345,
+      "sharp chest pain": 345,
+      "fatigue": 332,
+      "weight gain": 331,
+      "shortness of breath": 323,
+      "irregular heartbeat": 320
+    }
+  },
+  "pyogenic skin infection": {
+    "id": "pyogenic_skin_infection",
+    "name": "Pyogenic Skin Infection",
+    "category": "Infectious",
+    "count": 911,
+    "symptoms": [
+      "foot or toe pain",
+      "abnormal appearing skin",
+      "peripheral edema",
+      "leg swelling",
+      "skin rash",
+      "hand or finger swelling",
+      "leg pain",
+      "foot or toe swelling"
+    ],
+    "top_symptom_weights": {
+      "foot or toe pain": 599,
+      "abnormal appearing skin": 484,
+      "peripheral edema": 472,
+      "leg swelling": 470,
+      "skin rash": 466,
+      "hand or finger swelling": 463,
+      "leg pain": 454,
+      "foot or toe swelling": 454,
+      "skin lesion": 448,
+      "skin swelling": 446,
+      "hand or finger pain": 444
+    }
+  },
+  "viral exanthem": {
+    "id": "viral_exanthem",
+    "name": "Viral Exanthem",
+    "category": "Infectious",
+    "count": 601,
+    "symptoms": [
+      "skin swelling",
+      "fever",
+      "abnormal appearing skin",
+      "skin rash",
+      "pulling at ears",
+      "itching of skin",
+      "decreased appetite",
+      "nasal congestion"
+    ],
+    "top_symptom_weights": {
+      "skin swelling": 444,
+      "fever": 312,
+      "abnormal appearing skin": 311,
+      "skin rash": 307,
+      "pulling at ears": 304,
+      "itching of skin": 300,
+      "decreased appetite": 294,
+      "nasal congestion": 289,
+      "vomiting": 288,
+      "cough": 281
+    }
+  },
+  "noninfectious gastroenteritis": {
+    "id": "noninfectious_gastroenteritis",
+    "name": "Noninfectious Gastroenteritis",
+    "category": "Infectious",
+    "count": 1206,
+    "symptoms": [
+      "diarrhea",
+      "nausea",
+      "sharp abdominal pain",
+      "decreased appetite",
+      "vomiting",
+      "headache",
+      "rectal bleeding",
+      "burning abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "diarrhea": 634,
+      "nausea": 623,
+      "sharp abdominal pain": 621,
+      "decreased appetite": 621,
+      "vomiting": 615,
+      "headache": 614,
+      "rectal bleeding": 604,
+      "burning abdominal pain": 599,
+      "chills": 596,
+      "fever": 592,
+      "fluid retention": 589,
+      "blood in stool": 587
+    }
+  },
+  "benign prostatic hyperplasia (bph)": {
+    "id": "benign_prostatic_hyperplasia_bph",
+    "name": "Benign Prostatic Hyperplasia (bph)",
+    "category": "Urological",
+    "count": 1206,
+    "symptoms": [
+      "symptoms of prostate",
+      "frequent urination",
+      "blood in urine",
+      "impotence",
+      "symptoms of bladder",
+      "swelling of scrotum",
+      "low urine output",
+      "pain in testicles"
+    ],
+    "top_symptom_weights": {
+      "symptoms of prostate": 629,
+      "frequent urination": 625,
+      "blood in urine": 617,
+      "impotence": 608,
+      "symptoms of bladder": 607,
+      "swelling of scrotum": 605,
+      "low urine output": 605,
+      "pain in testicles": 603,
+      "hesitancy": 598,
+      "involuntary urination": 598,
+      "retention of urine": 597,
+      "excessive urination at night": 596
+    }
+  },
+  "cataract": {
+    "id": "cataract",
+    "name": "Cataract",
+    "category": "ENT & Sensory",
+    "count": 607,
+    "symptoms": [
+      "double vision",
+      "symptoms of eye",
+      "blindness",
+      "lacrimation",
+      "cloudy eye",
+      "pain in eye",
+      "spots or clouds in vision",
+      "abnormal movement of eyelid"
+    ],
+    "top_symptom_weights": {
+      "double vision": 437,
+      "symptoms of eye": 318,
+      "blindness": 313,
+      "lacrimation": 307,
+      "cloudy eye": 307,
+      "pain in eye": 306,
+      "spots or clouds in vision": 299,
+      "abnormal movement of eyelid": 296,
+      "itchiness of eye": 286,
+      "diminished vision": 278
+    }
+  },
+  "spinal stenosis": {
+    "id": "spinal_stenosis",
+    "name": "Spinal Stenosis",
+    "category": "Musculoskeletal",
+    "count": 1207,
+    "symptoms": [
+      "back pain",
+      "neck pain",
+      "problems with movement",
+      "arm pain",
+      "lower body pain",
+      "hip pain",
+      "low back pain",
+      "paresthesia"
+    ],
+    "top_symptom_weights": {
+      "back pain": 622,
+      "neck pain": 621,
+      "problems with movement": 621,
+      "arm pain": 618,
+      "lower body pain": 616,
+      "hip pain": 615,
+      "low back pain": 611,
+      "paresthesia": 601,
+      "headache": 599,
+      "loss of sensation": 595,
+      "leg pain": 592,
+      "shoulder pain": 587
+    }
+  },
+  "intestinal obstruction": {
+    "id": "intestinal_obstruction",
+    "name": "Intestinal Obstruction",
+    "category": "General Clinical",
+    "count": 445,
+    "symptoms": [
+      "vaginal itching",
+      "nausea",
+      "stomach bloating",
+      "sharp abdominal pain",
+      "retention of urine",
+      "vomiting",
+      "pain of the anus",
+      "constipation"
+    ],
+    "top_symptom_weights": {
+      "vaginal itching": 343,
+      "nausea": 293,
+      "stomach bloating": 236,
+      "sharp abdominal pain": 232,
+      "retention of urine": 228,
+      "vomiting": 225,
+      "pain of the anus": 224,
+      "constipation": 224,
+      "burning abdominal pain": 221
+    }
+  },
+  "acute bronchitis": {
+    "id": "acute_bronchitis",
+    "name": "Acute Bronchitis",
+    "category": "Respiratory",
+    "count": 1213,
+    "symptoms": [
+      "nasal congestion",
+      "fever",
+      "coryza",
+      "headache",
+      "cough",
+      "sore throat",
+      "sharp chest pain",
+      "congestion in chest"
+    ],
+    "top_symptom_weights": {
+      "nasal congestion": 634,
+      "fever": 631,
+      "coryza": 629,
+      "headache": 626,
+      "cough": 626,
+      "sore throat": 617,
+      "sharp chest pain": 609,
+      "congestion in chest": 606,
+      "wheezing": 602,
+      "coughing up sputum": 601,
+      "difficulty breathing": 594,
+      "shortness of breath": 589
+    }
+  },
+  "ischemic heart disease": {
+    "id": "ischemic_heart_disease",
+    "name": "Ischemic Heart Disease",
+    "category": "Cardiovascular",
+    "count": 886,
+    "symptoms": [
+      "muscle pain",
+      "sharp chest pain",
+      "peripheral edema",
+      "chest tightness",
+      "fatigue",
+      "palpitations",
+      "difficulty breathing",
+      "dizziness"
+    ],
+    "top_symptom_weights": {
+      "muscle pain": 565,
+      "sharp chest pain": 477,
+      "peripheral edema": 473,
+      "chest tightness": 465,
+      "fatigue": 461,
+      "palpitations": 456,
+      "difficulty breathing": 456,
+      "dizziness": 453,
+      "throat feels tight": 445,
+      "lymphedema": 445,
+      "shortness of breath": 435
+    }
+  },
+  "croup": {
+    "id": "croup",
+    "name": "Croup",
+    "category": "Respiratory",
+    "count": 904,
+    "symptoms": [
+      "nasal congestion",
+      "vomiting",
+      "cough",
+      "pulling at ears",
+      "abnormal breathing sounds",
+      "hoarse voice",
+      "fever",
+      "wheezing"
+    ],
+    "top_symptom_weights": {
+      "nasal congestion": 627,
+      "vomiting": 499,
+      "cough": 473,
+      "pulling at ears": 470,
+      "abnormal breathing sounds": 463,
+      "hoarse voice": 455,
+      "fever": 455,
+      "wheezing": 452,
+      "coryza": 441,
+      "sore throat": 439,
+      "shortness of breath": 435
+    }
+  },
+  "idiopathic excessive menstruation": {
+    "id": "idiopathic_excessive_menstruation",
+    "name": "Idiopathic Excessive Menstruation",
+    "category": "Reproductive",
+    "count": 906,
+    "symptoms": [
+      "sharp abdominal pain",
+      "cramps and spasms",
+      "frequent menstruation",
+      "unpredictable menstruation",
+      "painful menstruation",
+      "blood clots during menstrual periods",
+      "long menstrual periods",
+      "involuntary urination"
+    ],
+    "top_symptom_weights": {
+      "sharp abdominal pain": 596,
+      "cramps and spasms": 487,
+      "frequent menstruation": 485,
+      "unpredictable menstruation": 478,
+      "painful menstruation": 478,
+      "blood clots during menstrual periods": 464,
+      "long menstrual periods": 460,
+      "involuntary urination": 457,
+      "intermenstrual bleeding": 456,
+      "heavy menstrual flow": 449,
+      "vaginal discharge": 441
+    }
+  },
+  "ear drum damage": {
+    "id": "ear_drum_damage",
+    "name": "Ear Drum Damage",
+    "category": "ENT & Sensory",
+    "count": 907,
+    "symptoms": [
+      "pus draining from ear",
+      "ringing in ear",
+      "redness in ear",
+      "pulling at ears",
+      "plugged feeling in ear",
+      "ear pain",
+      "fluid in ear",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "pus draining from ear": 612,
+      "ringing in ear": 483,
+      "redness in ear": 474,
+      "pulling at ears": 469,
+      "plugged feeling in ear": 461,
+      "ear pain": 458,
+      "fluid in ear": 452,
+      "cough": 449,
+      "nasal congestion": 445,
+      "diminished hearing": 440,
+      "bleeding from ear": 434
+    }
+  },
+  "erectile dysfunction": {
+    "id": "erectile_dysfunction",
+    "name": "Erectile Dysfunction",
+    "category": "General Clinical",
+    "count": 606,
+    "symptoms": [
+      "involuntary urination",
+      "loss of sex drive",
+      "symptoms of prostate",
+      "frequent urination",
+      "blood in urine",
+      "impotence",
+      "excessive urination at night",
+      "pain during intercourse"
+    ],
+    "top_symptom_weights": {
+      "involuntary urination": 459,
+      "loss of sex drive": 325,
+      "symptoms of prostate": 315,
+      "frequent urination": 313,
+      "blood in urine": 311,
+      "impotence": 311,
+      "excessive urination at night": 309,
+      "pain during intercourse": 294,
+      "pain in testicles": 292,
+      "retention of urine": 285
+    }
+  },
+  "temporary or benign blood in urine": {
+    "id": "temporary_or_benign_blood_in_urine",
+    "name": "Temporary or Benign Blood in Urine",
+    "category": "Urological",
+    "count": 897,
+    "symptoms": [
+      "painful urination",
+      "suprapubic pain",
+      "frequent urination",
+      "lower abdominal pain",
+      "back pain",
+      "regurgitation",
+      "regurgitation 1",
+      "blood in urine"
+    ],
+    "top_symptom_weights": {
+      "painful urination": 615,
+      "suprapubic pain": 469,
+      "frequent urination": 467,
+      "lower abdominal pain": 467,
+      "back pain": 458,
+      "regurgitation": 456,
+      "regurgitation 1": 456,
+      "blood in urine": 456,
+      "involuntary urination": 452,
+      "sharp abdominal pain": 443,
+      "retention of urine": 442,
+      "symptoms of bladder": 438
+    }
+  },
+  "onychomycosis": {
+    "id": "onychomycosis",
+    "name": "Onychomycosis",
+    "category": "General Clinical",
+    "count": 505,
+    "symptoms": [
+      "skin growth",
+      "abnormal appearing skin",
+      "skin swelling",
+      "skin on leg or foot looks infected",
+      "skin dryness peeling scaliness or roughness",
+      "too little hair",
+      "skin rash",
+      "foot or toe pain"
+    ],
+    "top_symptom_weights": {
+      "skin growth": 346,
+      "abnormal appearing skin": 341,
+      "skin swelling": 328,
+      "skin on leg or foot looks infected": 268,
+      "skin dryness peeling scaliness or roughness": 265,
+      "too little hair": 264,
+      "skin rash": 264,
+      "foot or toe pain": 257,
+      "irregular appearing nails": 255
+    }
+  },
+  "iron deficiency anemia": {
+    "id": "iron_deficiency_anemia",
+    "name": "Iron Deficiency Anemia",
+    "category": "Endocrine",
+    "count": 683,
+    "symptoms": [
+      "intermenstrual bleeding",
+      "heartburn",
+      "weakness",
+      "heavy menstrual flow",
+      "rectal bleeding",
+      "fatigue",
+      "blood in stool",
+      "regurgitation"
+    ],
+    "top_symptom_weights": {
+      "intermenstrual bleeding": 452,
+      "heartburn": 452,
+      "weakness": 358,
+      "heavy menstrual flow": 358,
+      "rectal bleeding": 356,
+      "fatigue": 345,
+      "blood in stool": 339,
+      "regurgitation": 338,
+      "regurgitation 1": 338,
+      "weight gain": 338,
+      "dizziness": 337
+    }
+  },
+  "acute respiratory distress syndrome (ards)": {
+    "id": "acute_respiratory_distress_syndrome_ards",
+    "name": "Acute Respiratory Distress Syndrome (ards)",
+    "category": "Respiratory",
+    "count": 451,
+    "symptoms": [
+      "chills",
+      "chest tightness",
+      "fever",
+      "sharp chest pain",
+      "wheezing",
+      "difficulty breathing",
+      "depressive or psychotic symptoms",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "chills": 337,
+      "chest tightness": 293,
+      "fever": 236,
+      "sharp chest pain": 235,
+      "wheezing": 235,
+      "difficulty breathing": 234,
+      "depressive or psychotic symptoms": 231,
+      "cough": 228,
+      "shortness of breath": 222
+    }
+  },
+  "tendinitis": {
+    "id": "tendinitis",
+    "name": "Tendinitis",
+    "category": "Musculoskeletal",
+    "count": 678,
+    "symptoms": [
+      "hand or finger swelling",
+      "ankle pain",
+      "arm pain",
+      "shoulder pain",
+      "knee pain",
+      "foot or toe pain",
+      "hip pain",
+      "hand or finger pain"
+    ],
+    "top_symptom_weights": {
+      "hand or finger swelling": 463,
+      "ankle pain": 449,
+      "arm pain": 361,
+      "shoulder pain": 353,
+      "knee pain": 352,
+      "foot or toe pain": 351,
+      "hip pain": 345,
+      "hand or finger pain": 338,
+      "wrist pain": 336,
+      "leg pain": 319
+    }
+  },
+  "common cold": {
+    "id": "common_cold",
+    "name": "Common Cold",
+    "category": "General Clinical",
+    "count": 905,
+    "symptoms": [
+      "chills",
+      "headache",
+      "ear pain",
+      "cough",
+      "wheezing",
+      "vomiting",
+      "fever",
+      "flu like syndrome"
+    ],
+    "top_symptom_weights": {
+      "chills": 597,
+      "headache": 481,
+      "ear pain": 478,
+      "cough": 469,
+      "wheezing": 464,
+      "vomiting": 464,
+      "fever": 463,
+      "flu like syndrome": 460,
+      "coryza": 457,
+      "nasal congestion": 448,
+      "sore throat": 438
+    }
+  },
+  "acne": {
+    "id": "acne",
+    "name": "Acne",
+    "category": "Dermatological",
+    "count": 496,
+    "symptoms": [
+      "irregular appearing scalp",
+      "skin dryness peeling scaliness or roughness",
+      "long menstrual periods",
+      "abnormal appearing skin",
+      "skin rash",
+      "acne or pimples",
+      "skin moles",
+      "skin swelling"
+    ],
+    "top_symptom_weights": {
+      "irregular appearing scalp": 343,
+      "skin dryness peeling scaliness or roughness": 337,
+      "long menstrual periods": 332,
+      "abnormal appearing skin": 272,
+      "skin rash": 262,
+      "acne or pimples": 255,
+      "skin moles": 254,
+      "skin swelling": 247,
+      "skin growth": 247
+    }
+  },
+  "depression": {
+    "id": "depression",
+    "name": "Depression",
+    "category": "Mental Health",
+    "count": 912,
+    "symptoms": [
+      "disturbance of memory",
+      "abusing alcohol",
+      "hostile behavior",
+      "temper problems",
+      "drug abuse",
+      "delusions or hallucinations",
+      "depression",
+      "insomnia"
+    ],
+    "top_symptom_weights": {
+      "disturbance of memory": 595,
+      "abusing alcohol": 475,
+      "hostile behavior": 475,
+      "temper problems": 474,
+      "drug abuse": 467,
+      "delusions or hallucinations": 464,
+      "depression": 459,
+      "insomnia": 458,
+      "excessive anger": 456,
+      "depressive or psychotic symptoms": 446,
+      "anxiety and nervousness": 444
+    }
+  },
+  "drug abuse": {
+    "id": "drug_abuse",
+    "name": "Drug Abuse",
+    "category": "General Clinical",
+    "count": 603,
+    "symptoms": [
+      "smoking problems",
+      "antisocial behavior",
+      "drug abuse",
+      "abusing alcohol",
+      "sweating",
+      "depression",
+      "hostile behavior",
+      "delusions or hallucinations"
+    ],
+    "top_symptom_weights": {
+      "smoking problems": 455,
+      "antisocial behavior": 330,
+      "drug abuse": 324,
+      "abusing alcohol": 314,
+      "sweating": 306,
+      "depression": 300,
+      "hostile behavior": 298,
+      "delusions or hallucinations": 296,
+      "anxiety and nervousness": 287,
+      "depressive or psychotic symptoms": 285
+    }
+  },
+  "urinary tract obstruction": {
+    "id": "urinary_tract_obstruction",
+    "name": "Urinary Tract Obstruction",
+    "category": "Urological",
+    "count": 683,
+    "symptoms": [
+      "painful urination",
+      "excessive urination at night",
+      "blood in urine",
+      "frequent urination",
+      "symptoms of prostate",
+      "suprapubic pain",
+      "sharp abdominal pain",
+      "retention of urine"
+    ],
+    "top_symptom_weights": {
+      "painful urination": 455,
+      "excessive urination at night": 450,
+      "blood in urine": 369,
+      "frequent urination": 343,
+      "symptoms of prostate": 339,
+      "suprapubic pain": 338,
+      "sharp abdominal pain": 338,
+      "retention of urine": 337,
+      "back pain": 337,
+      "side pain": 337
+    }
+  },
+  "iridocyclitis": {
+    "id": "iridocyclitis",
+    "name": "Iridocyclitis",
+    "category": "General Clinical",
+    "count": 496,
+    "symptoms": [
+      "headache",
+      "foreign body sensation in eye",
+      "lacrimation",
+      "pain in eye",
+      "eye redness",
+      "eye burns or stings",
+      "diminished vision",
+      "symptoms of eye"
+    ],
+    "top_symptom_weights": {
+      "headache": 344,
+      "foreign body sensation in eye": 336,
+      "lacrimation": 331,
+      "pain in eye": 275,
+      "eye redness": 264,
+      "eye burns or stings": 249,
+      "diminished vision": 244,
+      "symptoms of eye": 243,
+      "cloudy eye": 238
+    }
+  },
+  "varicocele of the testicles": {
+    "id": "varicocele_of_the_testicles",
+    "name": "Varicocele of the Testicles",
+    "category": "General Clinical",
+    "count": 682,
+    "symptoms": [
+      "involuntary urination",
+      "pain of the anus",
+      "infertility",
+      "pain in testicles",
+      "groin pain",
+      "skin growth",
+      "lower abdominal pain",
+      "swelling of scrotum"
+    ],
+    "top_symptom_weights": {
+      "involuntary urination": 464,
+      "pain of the anus": 460,
+      "infertility": 363,
+      "pain in testicles": 354,
+      "groin pain": 350,
+      "skin growth": 349,
+      "lower abdominal pain": 347,
+      "swelling of scrotum": 341,
+      "mass in scrotum": 334,
+      "symptoms of the scrotum and testes": 332
+    }
+  },
+  "irritable bowel syndrome": {
+    "id": "irritable_bowel_syndrome",
+    "name": "Irritable Bowel Syndrome",
+    "category": "Digestive",
+    "count": 510,
+    "symptoms": [
+      "flatulence",
+      "insomnia",
+      "nausea",
+      "lower abdominal pain",
+      "upper abdominal pain",
+      "sharp abdominal pain",
+      "diarrhea",
+      "burning abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "flatulence": 348,
+      "insomnia": 342,
+      "nausea": 338,
+      "lower abdominal pain": 261,
+      "upper abdominal pain": 257,
+      "sharp abdominal pain": 257,
+      "diarrhea": 246,
+      "burning abdominal pain": 246,
+      "anxiety and nervousness": 238
+    }
+  },
+  "ovarian cyst": {
+    "id": "ovarian_cyst",
+    "name": "Ovarian Cyst",
+    "category": "Dermatological",
+    "count": 499,
+    "symptoms": [
+      "intermenstrual bleeding",
+      "vaginal discharge",
+      "vomiting",
+      "lower abdominal pain",
+      "nausea",
+      "sharp abdominal pain",
+      "painful menstruation",
+      "burning abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "intermenstrual bleeding": 342,
+      "vaginal discharge": 341,
+      "vomiting": 336,
+      "lower abdominal pain": 282,
+      "nausea": 260,
+      "sharp abdominal pain": 258,
+      "painful menstruation": 254,
+      "burning abdominal pain": 242,
+      "pelvic pain": 235
+    }
+  },
+  "lipoma": {
+    "id": "lipoma",
+    "name": "Lipoma",
+    "category": "General Clinical",
+    "count": 684,
+    "symptoms": [
+      "bones are painful",
+      "groin mass",
+      "arm lump or mass",
+      "abnormal appearing skin",
+      "shoulder lump or mass",
+      "neck mass",
+      "skin lesion",
+      "skin growth"
+    ],
+    "top_symptom_weights": {
+      "bones are painful": 467,
+      "groin mass": 449,
+      "arm lump or mass": 357,
+      "abnormal appearing skin": 353,
+      "shoulder lump or mass": 350,
+      "neck mass": 349,
+      "skin lesion": 345,
+      "skin growth": 344,
+      "back mass or lump": 338,
+      "skin swelling": 320
+    }
+  },
+  "pulmonary hypertension": {
+    "id": "pulmonary_hypertension",
+    "name": "Pulmonary Hypertension",
+    "category": "Cardiovascular",
+    "count": 446,
+    "symptoms": [
+      "feeling ill",
+      "apnea",
+      "sharp chest pain",
+      "palpitations",
+      "difficulty breathing",
+      "shortness of breath",
+      "fatigue",
+      "hemoptysis"
+    ],
+    "top_symptom_weights": {
+      "feeling ill": 338,
+      "apnea": 293,
+      "sharp chest pain": 233,
+      "palpitations": 232,
+      "difficulty breathing": 232,
+      "shortness of breath": 230,
+      "fatigue": 227,
+      "hemoptysis": 222,
+      "cough": 220
+    }
+  },
+  "lymphadenitis": {
+    "id": "lymphadenitis",
+    "name": "Lymphadenitis",
+    "category": "General Clinical",
+    "count": 453,
+    "symptoms": [
+      "cough",
+      "sharp abdominal pain",
+      "neck swelling",
+      "fever",
+      "neck pain",
+      "sore throat",
+      "ear pain",
+      "neck mass"
+    ],
+    "top_symptom_weights": {
+      "cough": 347,
+      "sharp abdominal pain": 295,
+      "neck swelling": 245,
+      "fever": 241,
+      "neck pain": 230,
+      "sore throat": 228,
+      "ear pain": 225,
+      "neck mass": 225,
+      "skin swelling": 221
+    }
+  },
+  "injury to the face": {
+    "id": "injury_to_the_face",
+    "name": "Injury to the Face",
+    "category": "General Clinical",
+    "count": 455,
+    "symptoms": [
+      "diminished hearing",
+      "neck stiffness or tightness",
+      "neck pain",
+      "nosebleed",
+      "mouth pain",
+      "ear pain",
+      "bleeding from ear",
+      "headache"
+    ],
+    "top_symptom_weights": {
+      "diminished hearing": 356,
+      "neck stiffness or tightness": 315,
+      "neck pain": 251,
+      "nosebleed": 244,
+      "mouth pain": 234,
+      "ear pain": 231,
+      "bleeding from ear": 223,
+      "headache": 217,
+      "facial pain": 205
+    }
+  },
+  "aortic valve disease": {
+    "id": "aortic_valve_disease",
+    "name": "Aortic Valve Disease",
+    "category": "General Clinical",
+    "count": 451,
+    "symptoms": [
+      "irregular heartbeat",
+      "sharp chest pain",
+      "difficulty breathing",
+      "palpitations",
+      "fainting",
+      "lymphedema",
+      "peripheral edema",
+      "shortness of breath"
+    ],
+    "top_symptom_weights": {
+      "irregular heartbeat": 347,
+      "sharp chest pain": 308,
+      "difficulty breathing": 243,
+      "palpitations": 239,
+      "fainting": 239,
+      "lymphedema": 234,
+      "peripheral edema": 223,
+      "shortness of breath": 222,
+      "groin mass": 205
+    }
+  },
+  "rheumatoid arthritis": {
+    "id": "rheumatoid_arthritis",
+    "name": "Rheumatoid Arthritis",
+    "category": "Musculoskeletal",
+    "count": 678,
+    "symptoms": [
+      "wrist swelling",
+      "elbow swelling",
+      "ache all over",
+      "wrist pain",
+      "joint swelling",
+      "knee pain",
+      "joint pain",
+      "peripheral edema"
+    ],
+    "top_symptom_weights": {
+      "wrist swelling": 460,
+      "elbow swelling": 455,
+      "ache all over": 354,
+      "wrist pain": 347,
+      "joint swelling": 342,
+      "knee pain": 342,
+      "joint pain": 338,
+      "peripheral edema": 334,
+      "hand or finger swelling": 333,
+      "hand or finger pain": 321
+    }
+  },
+  "impetigo": {
+    "id": "impetigo",
+    "name": "Impetigo",
+    "category": "General Clinical",
+    "count": 683,
+    "symptoms": [
+      "mouth ulcer",
+      "skin swelling",
+      "skin lesion",
+      "sore in nose",
+      "skin rash",
+      "abnormal appearing skin",
+      "nasal congestion",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "mouth ulcer": 464,
+      "skin swelling": 454,
+      "skin lesion": 349,
+      "sore in nose": 342,
+      "skin rash": 339,
+      "abnormal appearing skin": 339,
+      "nasal congestion": 338,
+      "cough": 336,
+      "fever": 335,
+      "itching of skin": 327
+    }
+  },
+  "oppositional disorder": {
+    "id": "oppositional_disorder",
+    "name": "Oppositional Disorder",
+    "category": "General Clinical",
+    "count": 431,
+    "symptoms": [
+      "low self esteem",
+      "hostile behavior",
+      "excessive anger",
+      "fainting",
+      "restlessness",
+      "low urine output",
+      "obsessions and compulsions",
+      "antisocial behavior"
+    ],
+    "top_symptom_weights": {
+      "low self esteem": 290,
+      "hostile behavior": 241,
+      "excessive anger": 233,
+      "fainting": 233,
+      "restlessness": 230,
+      "low urine output": 225,
+      "obsessions and compulsions": 220,
+      "antisocial behavior": 216,
+      "depressive or psychotic symptoms": 213,
+      "temper problems": 203
+    }
+  },
+  "diabetic peripheral neuropathy": {
+    "id": "diabetic_peripheral_neuropathy",
+    "name": "Diabetic Peripheral Neuropathy",
+    "category": "Endocrine",
+    "count": 452,
+    "symptoms": [
+      "lymphedema",
+      "foot or toe stiffness or tightness",
+      "skin lesion",
+      "leg pain",
+      "paresthesia",
+      "foot or toe swelling",
+      "foot or toe pain",
+      "loss of sensation"
+    ],
+    "top_symptom_weights": {
+      "lymphedema": 351,
+      "foot or toe stiffness or tightness": 306,
+      "skin lesion": 231,
+      "leg pain": 228,
+      "paresthesia": 227,
+      "foot or toe swelling": 225,
+      "foot or toe pain": 225,
+      "loss of sensation": 219,
+      "problems with movement": 215
+    }
+  },
+  "idiopathic irregular menstrual cycle": {
+    "id": "idiopathic_irregular_menstrual_cycle",
+    "name": "Idiopathic Irregular Menstrual Cycle",
+    "category": "Reproductive",
+    "count": 908,
+    "symptoms": [
+      "cramps and spasms",
+      "unpredictable menstruation",
+      "heavy menstrual flow",
+      "long menstrual periods",
+      "pelvic pain",
+      "painful menstruation",
+      "frequent menstruation",
+      "lower abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "cramps and spasms": 611,
+      "unpredictable menstruation": 468,
+      "heavy menstrual flow": 468,
+      "long menstrual periods": 466,
+      "pelvic pain": 460,
+      "painful menstruation": 460,
+      "frequent menstruation": 460,
+      "lower abdominal pain": 454,
+      "sharp abdominal pain": 451,
+      "intermenstrual bleeding": 448,
+      "infertility": 445
+    }
+  },
+  "interstitial lung disease": {
+    "id": "interstitial_lung_disease",
+    "name": "Interstitial Lung Disease",
+    "category": "Respiratory",
+    "count": 511,
+    "symptoms": [
+      "sore throat",
+      "shortness of breath",
+      "wheezing",
+      "cough",
+      "nasal congestion",
+      "fever",
+      "headache",
+      "sleepiness"
+    ],
+    "top_symptom_weights": {
+      "sore throat": 337,
+      "shortness of breath": 329,
+      "wheezing": 327,
+      "cough": 273,
+      "nasal congestion": 264,
+      "fever": 264,
+      "headache": 259,
+      "sleepiness": 253,
+      "abnormal breathing sounds": 244
+    }
+  },
+  "mononeuritis": {
+    "id": "mononeuritis",
+    "name": "Mononeuritis",
+    "category": "General Clinical",
+    "count": 676,
+    "symptoms": [
+      "hand or finger pain",
+      "leg pain",
+      "wrist pain",
+      "hand or finger weakness",
+      "ankle pain",
+      "arm pain",
+      "loss of sensation",
+      "elbow pain"
+    ],
+    "top_symptom_weights": {
+      "hand or finger pain": 448,
+      "leg pain": 448,
+      "wrist pain": 358,
+      "hand or finger weakness": 355,
+      "ankle pain": 350,
+      "arm pain": 344,
+      "loss of sensation": 342,
+      "elbow pain": 337,
+      "foot or toe pain": 334,
+      "shoulder pain": 332
+    }
+  },
+  "hypovolemia": {
+    "id": "hypovolemia",
+    "name": "Hypovolemia",
+    "category": "General Clinical",
+    "count": 424,
+    "symptoms": [
+      "fainting",
+      "dizziness",
+      "diarrhea",
+      "vomiting",
+      "feeling ill",
+      "sharp abdominal pain",
+      "fever",
+      "nausea"
+    ],
+    "top_symptom_weights": {
+      "fainting": 322,
+      "dizziness": 291,
+      "diarrhea": 238,
+      "vomiting": 230,
+      "feeling ill": 223,
+      "sharp abdominal pain": 221,
+      "fever": 221,
+      "nausea": 214,
+      "decreased appetite": 204
+    }
+  },
+  "schizophrenia": {
+    "id": "schizophrenia",
+    "name": "Schizophrenia",
+    "category": "Mental Health",
+    "count": 890,
+    "symptoms": [
+      "insomnia",
+      "depression",
+      "hysterical behavior",
+      "fears and phobias",
+      "excessive anger",
+      "temper problems",
+      "depressive or psychotic symptoms",
+      "delusions or hallucinations"
+    ],
+    "top_symptom_weights": {
+      "insomnia": 599,
+      "depression": 473,
+      "hysterical behavior": 466,
+      "fears and phobias": 465,
+      "excessive anger": 462,
+      "temper problems": 451,
+      "depressive or psychotic symptoms": 451,
+      "delusions or hallucinations": 449,
+      "low self esteem": 448,
+      "anxiety and nervousness": 432,
+      "hostile behavior": 432
+    }
+  },
+  "sepsis": {
+    "id": "sepsis",
+    "name": "Sepsis",
+    "category": "Infectious",
+    "count": 909,
+    "symptoms": [
+      "shortness of breath",
+      "fever",
+      "feeling ill",
+      "difficulty breathing",
+      "vomiting",
+      "weakness",
+      "cough",
+      "decreased appetite"
+    ],
+    "top_symptom_weights": {
+      "shortness of breath": 603,
+      "fever": 489,
+      "feeling ill": 482,
+      "difficulty breathing": 464,
+      "vomiting": 464,
+      "weakness": 461,
+      "cough": 460,
+      "decreased appetite": 457,
+      "sharp abdominal pain": 456,
+      "suprapubic pain": 455,
+      "chills": 454
+    }
+  },
+  "cholecystitis": {
+    "id": "cholecystitis",
+    "name": "Cholecystitis",
+    "category": "Digestive",
+    "count": 1204,
+    "symptoms": [
+      "vomiting",
+      "back pain",
+      "side pain",
+      "sharp abdominal pain",
+      "burning abdominal pain",
+      "symptoms of the kidneys",
+      "regurgitation 1",
+      "lower body pain"
+    ],
+    "top_symptom_weights": {
+      "vomiting": 627,
+      "back pain": 622,
+      "side pain": 622,
+      "sharp abdominal pain": 620,
+      "burning abdominal pain": 619,
+      "symptoms of the kidneys": 609,
+      "regurgitation 1": 609,
+      "lower body pain": 606,
+      "nausea": 602,
+      "upper abdominal pain": 594,
+      "sharp chest pain": 579,
+      "stomach bloating": 575
+    }
+  },
+  "social phobia": {
+    "id": "social_phobia",
+    "name": "Social Phobia",
+    "category": "Mental Health",
+    "count": 511,
+    "symptoms": [
+      "abusing alcohol",
+      "excessive appetite",
+      "excessive anger",
+      "depression",
+      "fears and phobias",
+      "insomnia",
+      "anxiety and nervousness",
+      "delusions or hallucinations"
+    ],
+    "top_symptom_weights": {
+      "abusing alcohol": 348,
+      "excessive appetite": 347,
+      "excessive anger": 345,
+      "depression": 261,
+      "fears and phobias": 256,
+      "insomnia": 250,
+      "anxiety and nervousness": 250,
+      "delusions or hallucinations": 247,
+      "depressive or psychotic symptoms": 241
+    }
+  },
+  "ear wax impaction": {
+    "id": "ear_wax_impaction",
+    "name": "Ear Wax Impaction",
+    "category": "ENT & Sensory",
+    "count": 678,
+    "symptoms": [
+      "fluid in ear",
+      "sinus congestion",
+      "plugged feeling in ear",
+      "ringing in ear",
+      "diminished hearing",
+      "nasal congestion",
+      "fever",
+      "pulling at ears"
+    ],
+    "top_symptom_weights": {
+      "fluid in ear": 470,
+      "sinus congestion": 440,
+      "plugged feeling in ear": 354,
+      "ringing in ear": 353,
+      "diminished hearing": 342,
+      "nasal congestion": 340,
+      "fever": 340,
+      "pulling at ears": 340,
+      "ear pain": 330,
+      "cough": 328
+    }
+  },
+  "rosacea": {
+    "id": "rosacea",
+    "name": "Rosacea",
+    "category": "Dermatological",
+    "count": 678,
+    "symptoms": [
+      "abnormal appearing skin",
+      "symptoms of eye",
+      "skin growth",
+      "skin dryness peeling scaliness or roughness",
+      "acne or pimples",
+      "skin moles",
+      "skin lesion",
+      "skin swelling"
+    ],
+    "top_symptom_weights": {
+      "abnormal appearing skin": 457,
+      "symptoms of eye": 451,
+      "skin growth": 352,
+      "skin dryness peeling scaliness or roughness": 345,
+      "acne or pimples": 345,
+      "skin moles": 342,
+      "skin lesion": 340,
+      "skin swelling": 326,
+      "lymphedema": 321,
+      "itching of skin": 321
+    }
+  },
+  "fracture of the facial bones": {
+    "id": "fracture_of_the_facial_bones",
+    "name": "Fracture of the Facial Bones",
+    "category": "Musculoskeletal",
+    "count": 449,
+    "symptoms": [
+      "lip swelling",
+      "pain in eye",
+      "double vision",
+      "facial pain",
+      "peripheral edema",
+      "headache",
+      "redness in or around nose",
+      "swollen eye"
+    ],
+    "top_symptom_weights": {
+      "lip swelling": 342,
+      "pain in eye": 312,
+      "double vision": 234,
+      "facial pain": 232,
+      "peripheral edema": 231,
+      "headache": 231,
+      "redness in or around nose": 227,
+      "swollen eye": 225,
+      "abusing alcohol": 220
+    }
+  },
+  "post-traumatic stress disorder (ptsd)": {
+    "id": "post_traumatic_stress_disorder_ptsd",
+    "name": "Post-traumatic Stress Disorder (ptsd)",
+    "category": "General Clinical",
+    "count": 607,
+    "symptoms": [
+      "hostile behavior",
+      "temper problems",
+      "insomnia",
+      "drug abuse",
+      "abusing alcohol",
+      "delusions or hallucinations",
+      "excessive anger",
+      "depression"
+    ],
+    "top_symptom_weights": {
+      "hostile behavior": 461,
+      "temper problems": 321,
+      "insomnia": 314,
+      "drug abuse": 305,
+      "abusing alcohol": 305,
+      "delusions or hallucinations": 303,
+      "excessive anger": 299,
+      "depression": 297,
+      "depressive or psychotic symptoms": 291,
+      "anxiety and nervousness": 278
+    }
+  },
+  "blepharitis": {
+    "id": "blepharitis",
+    "name": "Blepharitis",
+    "category": "General Clinical",
+    "count": 906,
+    "symptoms": [
+      "eye burns or stings",
+      "eyelid swelling",
+      "spots or clouds in vision",
+      "lacrimation",
+      "diminished vision",
+      "pain in eye",
+      "eye redness",
+      "swollen eye"
+    ],
+    "top_symptom_weights": {
+      "eye burns or stings": 604,
+      "eyelid swelling": 476,
+      "spots or clouds in vision": 471,
+      "lacrimation": 471,
+      "diminished vision": 466,
+      "pain in eye": 465,
+      "eye redness": 461,
+      "swollen eye": 457,
+      "itchiness of eye": 455,
+      "white discharge from eye": 438,
+      "symptoms of eye": 434
+    }
+  },
+  "cystitis": {
+    "id": "cystitis",
+    "name": "Cystitis",
+    "category": "Dermatological",
+    "count": 1219,
+    "symptoms": [
+      "involuntary urination",
+      "side pain",
+      "symptoms of bladder",
+      "frequent urination",
+      "suprapubic pain",
+      "lower abdominal pain",
+      "blood in urine",
+      "sharp abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "involuntary urination": 639,
+      "side pain": 630,
+      "symptoms of bladder": 628,
+      "frequent urination": 624,
+      "suprapubic pain": 614,
+      "lower abdominal pain": 613,
+      "blood in urine": 613,
+      "sharp abdominal pain": 609,
+      "painful urination": 602,
+      "back pain": 587,
+      "retention of urine": 586,
+      "pelvic pain": 575
+    }
+  },
+  "hemorrhoids": {
+    "id": "hemorrhoids",
+    "name": "Hemorrhoids",
+    "category": "Digestive",
+    "count": 908,
+    "symptoms": [
+      "heartburn",
+      "lower body pain",
+      "constipation",
+      "rectal bleeding",
+      "changes in stool appearance",
+      "mass or swelling around the anus",
+      "itching of the anus",
+      "melena"
+    ],
+    "top_symptom_weights": {
+      "heartburn": 623,
+      "lower body pain": 474,
+      "constipation": 470,
+      "rectal bleeding": 469,
+      "changes in stool appearance": 463,
+      "mass or swelling around the anus": 453,
+      "itching of the anus": 453,
+      "melena": 452,
+      "blood in stool": 450,
+      "pain of the anus": 447,
+      "sharp abdominal pain": 444
+    }
+  },
+  "contact dermatitis": {
+    "id": "contact_dermatitis",
+    "name": "Contact Dermatitis",
+    "category": "Dermatological",
+    "count": 909,
+    "symptoms": [
+      "skin moles",
+      "allergic reaction",
+      "itching of skin",
+      "skin irritation",
+      "skin dryness peeling scaliness or roughness",
+      "skin rash",
+      "abnormal appearing skin",
+      "swollen eye"
+    ],
+    "top_symptom_weights": {
+      "skin moles": 614,
+      "allergic reaction": 494,
+      "itching of skin": 468,
+      "skin irritation": 467,
+      "skin dryness peeling scaliness or roughness": 461,
+      "skin rash": 454,
+      "abnormal appearing skin": 452,
+      "swollen eye": 451,
+      "skin swelling": 450,
+      "acne or pimples": 449,
+      "skin lesion": 443
+    }
+  },
+  "sinus bradycardia": {
+    "id": "sinus_bradycardia",
+    "name": "Sinus Bradycardia",
+    "category": "Cardiovascular",
+    "count": 909,
+    "symptoms": [
+      "chest tightness",
+      "irregular heartbeat",
+      "fainting",
+      "decreased heart rate",
+      "increased heart rate",
+      "sharp chest pain",
+      "feeling ill",
+      "palpitations"
+    ],
+    "top_symptom_weights": {
+      "chest tightness": 620,
+      "irregular heartbeat": 489,
+      "fainting": 473,
+      "decreased heart rate": 471,
+      "increased heart rate": 468,
+      "sharp chest pain": 458,
+      "feeling ill": 456,
+      "palpitations": 451,
+      "weakness": 451,
+      "shortness of breath": 450,
+      "dizziness": 449
+    }
+  },
+  "pelvic inflammatory disease": {
+    "id": "pelvic_inflammatory_disease",
+    "name": "Pelvic Inflammatory Disease",
+    "category": "Reproductive",
+    "count": 900,
+    "symptoms": [
+      "burning abdominal pain",
+      "painful urination",
+      "intermenstrual bleeding",
+      "lower abdominal pain",
+      "vaginal discharge",
+      "nausea",
+      "back pain",
+      "sharp abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "burning abdominal pain": 614,
+      "painful urination": 464,
+      "intermenstrual bleeding": 464,
+      "lower abdominal pain": 462,
+      "vaginal discharge": 462,
+      "nausea": 458,
+      "back pain": 458,
+      "sharp abdominal pain": 454,
+      "vomiting": 451,
+      "pelvic pain": 448,
+      "suprapubic pain": 438
+    }
+  },
+  "liver disease": {
+    "id": "liver_disease",
+    "name": "Liver Disease",
+    "category": "Digestive",
+    "count": 1209,
+    "symptoms": [
+      "upper abdominal pain",
+      "nausea",
+      "blood in stool",
+      "peripheral edema",
+      "jaundice",
+      "sharp abdominal pain",
+      "unusual color or odor to urine",
+      "side pain"
+    ],
+    "top_symptom_weights": {
+      "upper abdominal pain": 634,
+      "nausea": 630,
+      "blood in stool": 618,
+      "peripheral edema": 617,
+      "jaundice": 616,
+      "sharp abdominal pain": 613,
+      "unusual color or odor to urine": 610,
+      "side pain": 603,
+      "diarrhea": 601,
+      "weakness": 601,
+      "heartburn": 599,
+      "shortness of breath": 577
+    }
+  },
+  "chronic constipation": {
+    "id": "chronic_constipation",
+    "name": "Chronic Constipation",
+    "category": "General Clinical",
+    "count": 913,
+    "symptoms": [
+      "retention of urine",
+      "lower abdominal pain",
+      "vomiting",
+      "constipation",
+      "pain of the anus",
+      "rectal bleeding",
+      "blood in stool",
+      "changes in stool appearance"
+    ],
+    "top_symptom_weights": {
+      "retention of urine": 596,
+      "lower abdominal pain": 483,
+      "vomiting": 473,
+      "constipation": 472,
+      "pain of the anus": 467,
+      "rectal bleeding": 462,
+      "blood in stool": 459,
+      "changes in stool appearance": 457,
+      "nausea": 453,
+      "burning abdominal pain": 452,
+      "sharp abdominal pain": 451
+    }
+  },
+  "flu": {
+    "id": "flu",
+    "name": "Flu",
+    "category": "General Clinical",
+    "count": 679,
+    "symptoms": [
+      "sore throat",
+      "headache",
+      "nausea",
+      "chills",
+      "diarrhea",
+      "ache all over",
+      "coryza",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "sore throat": 449,
+      "headache": 444,
+      "nausea": 357,
+      "chills": 349,
+      "diarrhea": 347,
+      "ache all over": 346,
+      "coryza": 339,
+      "cough": 336,
+      "fever": 328,
+      "vomiting": 326
+    }
+  },
+  "skin polyp": {
+    "id": "skin_polyp",
+    "name": "Skin Polyp",
+    "category": "Dermatological",
+    "count": 897,
+    "symptoms": [
+      "skin swelling",
+      "skin moles",
+      "warts",
+      "irregular appearing scalp",
+      "skin growth",
+      "acne or pimples",
+      "abnormal appearing skin",
+      "skin dryness peeling scaliness or roughness"
+    ],
+    "top_symptom_weights": {
+      "skin swelling": 602,
+      "skin moles": 494,
+      "warts": 480,
+      "irregular appearing scalp": 471,
+      "skin growth": 458,
+      "acne or pimples": 457,
+      "abnormal appearing skin": 456,
+      "skin dryness peeling scaliness or roughness": 453,
+      "skin irritation": 442,
+      "itching of skin": 440,
+      "skin lesion": 437
+    }
+  },
+  "brachial neuritis": {
+    "id": "brachial_neuritis",
+    "name": "Brachial Neuritis",
+    "category": "General Clinical",
+    "count": 907,
+    "symptoms": [
+      "elbow pain",
+      "neck pain",
+      "paresthesia",
+      "low back pain",
+      "back pain",
+      "shoulder pain",
+      "hand or finger pain",
+      "hand or finger weakness"
+    ],
+    "top_symptom_weights": {
+      "elbow pain": 613,
+      "neck pain": 482,
+      "paresthesia": 473,
+      "low back pain": 472,
+      "back pain": 470,
+      "shoulder pain": 459,
+      "hand or finger pain": 457,
+      "hand or finger weakness": 455,
+      "arm pain": 448,
+      "loss of sensation": 445,
+      "headache": 442
+    }
+  },
+  "esophagitis": {
+    "id": "esophagitis",
+    "name": "Esophagitis",
+    "category": "Digestive",
+    "count": 1215,
+    "symptoms": [
+      "difficulty in swallowing",
+      "upper abdominal pain",
+      "vomiting",
+      "sore throat",
+      "cough",
+      "sharp chest pain",
+      "nausea",
+      "chest tightness"
+    ],
+    "top_symptom_weights": {
+      "difficulty in swallowing": 639,
+      "upper abdominal pain": 636,
+      "vomiting": 629,
+      "sore throat": 620,
+      "cough": 612,
+      "sharp chest pain": 611,
+      "nausea": 611,
+      "chest tightness": 608,
+      "heartburn": 607,
+      "sharp abdominal pain": 596,
+      "shortness of breath": 576,
+      "burning abdominal pain": 575
+    }
+  },
+  "yeast infection": {
+    "id": "yeast_infection",
+    "name": "Yeast Infection",
+    "category": "Infectious",
+    "count": 470,
+    "symptoms": [
+      "suprapubic pain",
+      "frequent urination",
+      "sharp abdominal pain",
+      "vaginal discharge",
+      "vaginal itching",
+      "skin rash",
+      "vaginal pain",
+      "diaper rash"
+    ],
+    "top_symptom_weights": {
+      "suprapubic pain": 340,
+      "frequent urination": 313,
+      "sharp abdominal pain": 308,
+      "vaginal discharge": 254,
+      "vaginal itching": 252,
+      "skin rash": 249,
+      "vaginal pain": 245,
+      "diaper rash": 245,
+      "pelvic pain": 238
+    }
+  },
+  "diverticulitis": {
+    "id": "diverticulitis",
+    "name": "Diverticulitis",
+    "category": "Digestive",
+    "count": 1214,
+    "symptoms": [
+      "constipation",
+      "sharp abdominal pain",
+      "lower abdominal pain",
+      "diarrhea",
+      "nausea",
+      "vomiting",
+      "chills",
+      "side pain"
+    ],
+    "top_symptom_weights": {
+      "constipation": 639,
+      "sharp abdominal pain": 628,
+      "lower abdominal pain": 622,
+      "diarrhea": 617,
+      "nausea": 617,
+      "vomiting": 606,
+      "chills": 605,
+      "side pain": 604,
+      "burning abdominal pain": 596,
+      "fever": 596,
+      "blood in stool": 576,
+      "upper abdominal pain": 576
+    }
+  },
+  "psychotic disorder": {
+    "id": "psychotic_disorder",
+    "name": "Psychotic Disorder",
+    "category": "Mental Health",
+    "count": 902,
+    "symptoms": [
+      "insomnia",
+      "hostile behavior",
+      "fears and phobias",
+      "delusions or hallucinations",
+      "depression",
+      "temper problems",
+      "abusing alcohol",
+      "depressive or psychotic symptoms"
+    ],
+    "top_symptom_weights": {
+      "insomnia": 623,
+      "hostile behavior": 490,
+      "fears and phobias": 465,
+      "delusions or hallucinations": 465,
+      "depression": 463,
+      "temper problems": 463,
+      "abusing alcohol": 455,
+      "depressive or psychotic symptoms": 449,
+      "hysterical behavior": 449,
+      "excessive anger": 448,
+      "anxiety and nervousness": 434
+    }
+  },
+  "smoking or tobacco addiction": {
+    "id": "smoking_or_tobacco_addiction",
+    "name": "Smoking or Tobacco Addiction",
+    "category": "Mental Health",
+    "count": 883,
+    "symptoms": [
+      "excessive anger",
+      "smoking problems",
+      "hurts to breath",
+      "drug abuse",
+      "sharp chest pain",
+      "coughing up sputum",
+      "abusing alcohol",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "excessive anger": 580,
+      "smoking problems": 476,
+      "hurts to breath": 467,
+      "drug abuse": 465,
+      "sharp chest pain": 464,
+      "coughing up sputum": 455,
+      "abusing alcohol": 453,
+      "cough": 449,
+      "hemoptysis": 441,
+      "headache": 441,
+      "shortness of breath": 438
+    }
+  },
+  "sprain or strain": {
+    "id": "sprain_or_strain",
+    "name": "Sprain or Strain",
+    "category": "Musculoskeletal",
+    "count": 1212,
+    "symptoms": [
+      "back pain",
+      "arm pain",
+      "wrist pain",
+      "foot or toe pain",
+      "low back pain",
+      "shoulder pain",
+      "headache",
+      "neck pain"
+    ],
+    "top_symptom_weights": {
+      "back pain": 629,
+      "arm pain": 623,
+      "wrist pain": 621,
+      "foot or toe pain": 620,
+      "low back pain": 613,
+      "shoulder pain": 609,
+      "headache": 608,
+      "neck pain": 608,
+      "hand or finger pain": 607,
+      "ankle pain": 603,
+      "knee pain": 600,
+      "leg pain": 585
+    }
+  },
+  "idiopathic painful menstruation": {
+    "id": "idiopathic_painful_menstruation",
+    "name": "Idiopathic Painful Menstruation",
+    "category": "Reproductive",
+    "count": 906,
+    "symptoms": [
+      "vaginal discharge",
+      "pelvic pain",
+      "cramps and spasms",
+      "heavy menstrual flow",
+      "vaginal itching",
+      "long menstrual periods",
+      "painful menstruation",
+      "unpredictable menstruation"
+    ],
+    "top_symptom_weights": {
+      "vaginal discharge": 600,
+      "pelvic pain": 482,
+      "cramps and spasms": 477,
+      "heavy menstrual flow": 469,
+      "vaginal itching": 465,
+      "long menstrual periods": 462,
+      "painful menstruation": 452,
+      "unpredictable menstruation": 451,
+      "blood clots during menstrual periods": 450,
+      "lower abdominal pain": 445,
+      "sharp abdominal pain": 442
+    }
+  },
+  "eustachian tube dysfunction (ear disorder)": {
+    "id": "eustachian_tube_dysfunction_ear_disorder",
+    "name": "Eustachian Tube Dysfunction (ear Disorder)",
+    "category": "ENT & Sensory",
+    "count": 909,
+    "symptoms": [
+      "sore throat",
+      "abnormal breathing sounds",
+      "ringing in ear",
+      "ear pain",
+      "diminished hearing",
+      "swollen or red tonsils",
+      "redness in ear",
+      "dizziness"
+    ],
+    "top_symptom_weights": {
+      "sore throat": 602,
+      "abnormal breathing sounds": 488,
+      "ringing in ear": 481,
+      "ear pain": 475,
+      "diminished hearing": 456,
+      "swollen or red tonsils": 454,
+      "redness in ear": 453,
+      "dizziness": 450,
+      "allergic reaction": 450,
+      "plugged feeling in ear": 449,
+      "nasal congestion": 444
+    }
+  },
+  "appendicitis": {
+    "id": "appendicitis",
+    "name": "Appendicitis",
+    "category": "General Clinical",
+    "count": 903,
+    "symptoms": [
+      "decreased appetite",
+      "burning abdominal pain",
+      "lower abdominal pain",
+      "stomach bloating",
+      "vomiting",
+      "nausea",
+      "side pain",
+      "diarrhea"
+    ],
+    "top_symptom_weights": {
+      "decreased appetite": 595,
+      "burning abdominal pain": 478,
+      "lower abdominal pain": 468,
+      "stomach bloating": 464,
+      "vomiting": 464,
+      "nausea": 464,
+      "side pain": 463,
+      "diarrhea": 456,
+      "upper abdominal pain": 456,
+      "fever": 454,
+      "sharp abdominal pain": 433
+    }
+  },
+  "hyperemesis gravidarum": {
+    "id": "hyperemesis_gravidarum",
+    "name": "Hyperemesis Gravidarum",
+    "category": "General Clinical",
+    "count": 912,
+    "symptoms": [
+      "vomiting blood",
+      "burning abdominal pain",
+      "nausea",
+      "pain during pregnancy",
+      "diarrhea",
+      "weakness",
+      "headache",
+      "sharp abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "vomiting blood": 614,
+      "burning abdominal pain": 486,
+      "nausea": 478,
+      "pain during pregnancy": 477,
+      "diarrhea": 466,
+      "weakness": 462,
+      "headache": 458,
+      "sharp abdominal pain": 456,
+      "problems during pregnancy": 455,
+      "vomiting": 446,
+      "dizziness": 443
+    }
+  },
+  "pleural effusion": {
+    "id": "pleural_effusion",
+    "name": "Pleural Effusion",
+    "category": "General Clinical",
+    "count": 607,
+    "symptoms": [
+      "sharp abdominal pain",
+      "weakness",
+      "rib pain",
+      "hurts to breath",
+      "back pain",
+      "side pain",
+      "sharp chest pain",
+      "difficulty breathing"
+    ],
+    "top_symptom_weights": {
+      "sharp abdominal pain": 459,
+      "weakness": 325,
+      "rib pain": 320,
+      "hurts to breath": 314,
+      "back pain": 307,
+      "side pain": 298,
+      "sharp chest pain": 295,
+      "difficulty breathing": 291,
+      "cough": 289,
+      "shortness of breath": 278
+    }
+  },
+  "sialoadenitis": {
+    "id": "sialoadenitis",
+    "name": "Sialoadenitis",
+    "category": "General Clinical",
+    "count": 509,
+    "symptoms": [
+      "swollen lymph nodes",
+      "cough",
+      "sore throat",
+      "facial pain",
+      "peripheral edema",
+      "nasal congestion",
+      "neck swelling",
+      "jaw swelling"
+    ],
+    "top_symptom_weights": {
+      "swollen lymph nodes": 353,
+      "cough": 332,
+      "sore throat": 331,
+      "facial pain": 268,
+      "peripheral edema": 265,
+      "nasal congestion": 262,
+      "neck swelling": 256,
+      "jaw swelling": 252,
+      "neck mass": 249
+    }
+  },
+  "urinary tract infection": {
+    "id": "urinary_tract_infection",
+    "name": "Urinary Tract Infection",
+    "category": "Infectious",
+    "count": 910,
+    "symptoms": [
+      "suprapubic pain",
+      "painful urination",
+      "side pain",
+      "vomiting",
+      "blood in urine",
+      "frequent urination",
+      "back pain",
+      "lower abdominal pain"
+    ],
+    "top_symptom_weights": {
+      "suprapubic pain": 611,
+      "painful urination": 497,
+      "side pain": 473,
+      "vomiting": 467,
+      "blood in urine": 464,
+      "frequent urination": 461,
+      "back pain": 461,
+      "lower abdominal pain": 452,
+      "nausea": 449,
+      "retention of urine": 445,
+      "fever": 438
+    }
+  },
+  "ankylosing spondylitis": {
+    "id": "ankylosing_spondylitis",
+    "name": "Ankylosing Spondylitis",
+    "category": "Musculoskeletal",
+    "count": 606,
+    "symptoms": [
+      "paresthesia",
+      "elbow pain",
+      "ache all over",
+      "low back pain",
+      "stiffness all over",
+      "knee pain",
+      "lower body pain",
+      "back pain"
+    ],
+    "top_symptom_weights": {
+      "paresthesia": 449,
+      "elbow pain": 316,
+      "ache all over": 309,
+      "low back pain": 308,
+      "stiffness all over": 306,
+      "knee pain": 306,
+      "lower body pain": 294,
+      "back pain": 291,
+      "leg pain": 287,
+      "hip pain": 287
+    }
+  },
+  "peripheral nerve disorder": {
+    "id": "peripheral_nerve_disorder",
+    "name": "Peripheral Nerve Disorder",
+    "category": "General Clinical",
+    "count": 1215,
+    "symptoms": [
+      "leg weakness",
+      "loss of sensation",
+      "arm pain",
+      "back pain",
+      "foot or toe pain",
+      "leg pain",
+      "abnormal involuntary movements",
+      "paresthesia"
+    ],
+    "top_symptom_weights": {
+      "leg weakness": 633,
+      "loss of sensation": 623,
+      "arm pain": 620,
+      "back pain": 618,
+      "foot or toe pain": 618,
+      "leg pain": 612,
+      "abnormal involuntary movements": 609,
+      "paresthesia": 609,
+      "arm weakness": 605,
+      "problems with movement": 599,
+      "disturbance of memory": 587,
+      "dizziness": 578
+    }
+  },
+  "sebaceous cyst": {
+    "id": "sebaceous_cyst",
+    "name": "Sebaceous Cyst",
+    "category": "Dermatological",
+    "count": 913,
+    "symptoms": [
+      "skin moles",
+      "skin growth",
+      "neck mass",
+      "hand or finger lump or mass",
+      "irregular appearing scalp",
+      "acne or pimples",
+      "abnormal appearing skin",
+      "back mass or lump"
+    ],
+    "top_symptom_weights": {
+      "skin moles": 612,
+      "skin growth": 483,
+      "neck mass": 475,
+      "hand or finger lump or mass": 474,
+      "irregular appearing scalp": 466,
+      "acne or pimples": 457,
+      "abnormal appearing skin": 452,
+      "back mass or lump": 449,
+      "skin swelling": 447,
+      "skin lesion": 444,
+      "arm lump or mass": 442
+    }
+  },
+  "neurosis": {
+    "id": "neurosis",
+    "name": "Neurosis",
+    "category": "General Clinical",
+    "count": 902,
+    "symptoms": [
+      "smoking problems",
+      "hostile behavior",
+      "depression",
+      "excessive anger",
+      "obsessions and compulsions",
+      "drug abuse",
+      "insomnia",
+      "headache"
+    ],
+    "top_symptom_weights": {
+      "smoking problems": 597,
+      "hostile behavior": 470,
+      "depression": 462,
+      "excessive anger": 462,
+      "obsessions and compulsions": 461,
+      "drug abuse": 459,
+      "insomnia": 457,
+      "headache": 457,
+      "depressive or psychotic symptoms": 448,
+      "delusions or hallucinations": 443,
+      "anxiety and nervousness": 442
+    }
+  },
+  "seborrheic keratosis": {
+    "id": "seborrheic_keratosis",
+    "name": "Seborrheic Keratosis",
+    "category": "Dermatological",
+    "count": 870,
+    "symptoms": [
+      "itching of skin",
+      "skin moles",
+      "abnormal appearing skin",
+      "skin growth",
+      "skin irritation",
+      "skin rash",
+      "warts",
+      "skin lesion"
+    ],
+    "top_symptom_weights": {
+      "itching of skin": 574,
+      "skin moles": 475,
+      "abnormal appearing skin": 470,
+      "skin growth": 467,
+      "skin irritation": 450,
+      "skin rash": 449,
+      "warts": 447,
+      "skin lesion": 442,
+      "irregular appearing scalp": 441,
+      "acne or pimples": 438,
+      "skin swelling": 419
+    }
+  },
+  "spontaneous abortion": {
+    "id": "spontaneous_abortion",
+    "name": "Spontaneous Abortion",
+    "category": "General Clinical",
+    "count": 1212,
+    "symptoms": [
+      "burning abdominal pain",
+      "uterine contractions",
+      "pain during pregnancy",
+      "pelvic pain",
+      "heavy menstrual flow",
+      "intermenstrual bleeding",
+      "lower abdominal pain",
+      "spotting or bleeding during pregnancy"
+    ],
+    "top_symptom_weights": {
+      "burning abdominal pain": 635,
+      "uterine contractions": 629,
+      "pain during pregnancy": 622,
+      "pelvic pain": 619,
+      "heavy menstrual flow": 611,
+      "intermenstrual bleeding": 608,
+      "lower abdominal pain": 607,
+      "spotting or bleeding during pregnancy": 606,
+      "problems during pregnancy": 604,
+      "cramps and spasms": 598,
+      "sharp abdominal pain": 589,
+      "blood clots during menstrual periods": 585
+    }
+  },
+  "adjustment reaction": {
+    "id": "adjustment_reaction",
+    "name": "Adjustment Reaction",
+    "category": "General Clinical",
+    "count": 503,
+    "symptoms": [
+      "delusions or hallucinations",
+      "insomnia",
+      "depression",
+      "hostile behavior",
+      "fears and phobias",
+      "anxiety and nervousness",
+      "restlessness",
+      "excessive anger"
+    ],
+    "top_symptom_weights": {
+      "delusions or hallucinations": 353,
+      "insomnia": 346,
+      "depression": 336,
+      "hostile behavior": 267,
+      "fears and phobias": 259,
+      "anxiety and nervousness": 254,
+      "restlessness": 253,
+      "excessive anger": 250,
+      "nightmares": 246
+    }
+  },
+  "gallstone": {
+    "id": "gallstone",
+    "name": "Gallstone",
+    "category": "General Clinical",
+    "count": 904,
+    "symptoms": [
+      "regurgitation 1",
+      "back pain",
+      "burning abdominal pain",
+      "nausea",
+      "upper abdominal pain",
+      "sharp abdominal pain",
+      "lower body pain",
+      "side pain"
+    ],
+    "top_symptom_weights": {
+      "regurgitation 1": 604,
+      "back pain": 480,
+      "burning abdominal pain": 472,
+      "nausea": 469,
+      "upper abdominal pain": 467,
+      "sharp abdominal pain": 463,
+      "lower body pain": 461,
+      "side pain": 461,
+      "heartburn": 456,
+      "vomiting": 444,
+      "sharp chest pain": 435
+    }
+  },
+  "multiple sclerosis": {
+    "id": "multiple_sclerosis",
+    "name": "Multiple Sclerosis",
+    "category": "Neurological",
+    "count": 910,
+    "symptoms": [
+      "abnormal involuntary movements",
+      "leg weakness",
+      "loss of sensation",
+      "fatigue",
+      "weakness",
+      "disturbance of memory",
+      "problems with movement",
+      "paresthesia"
+    ],
+    "top_symptom_weights": {
+      "abnormal involuntary movements": 610,
+      "leg weakness": 493,
+      "loss of sensation": 487,
+      "fatigue": 471,
+      "weakness": 466,
+      "disturbance of memory": 466,
+      "problems with movement": 465,
+      "paresthesia": 453,
+      "headache": 446,
+      "dizziness": 445,
+      "focal weakness": 441
+    }
+  },
+  "angina": {
+    "id": "angina",
+    "name": "Angina",
+    "category": "Cardiovascular",
+    "count": 906,
+    "symptoms": [
+      "hot flashes",
+      "palpitations",
+      "sharp chest pain",
+      "chest tightness",
+      "irregular heartbeat",
+      "lower body pain",
+      "arm pain",
+      "increased heart rate"
+    ],
+    "top_symptom_weights": {
+      "hot flashes": 616,
+      "palpitations": 476,
+      "sharp chest pain": 473,
+      "chest tightness": 461,
+      "irregular heartbeat": 460,
+      "lower body pain": 458,
+      "arm pain": 455,
+      "increased heart rate": 454,
+      "sweating": 452,
+      "shortness of breath": 442,
+      "dizziness": 441
+    }
+  },
+  "skin pigmentation disorder": {
+    "id": "skin_pigmentation_disorder",
+    "name": "Skin Pigmentation Disorder",
+    "category": "Dermatological",
+    "count": 909,
+    "symptoms": [
+      "irregular appearing scalp",
+      "warts",
+      "skin growth",
+      "skin moles",
+      "skin dryness peeling scaliness or roughness",
+      "acne or pimples",
+      "abnormal appearing skin",
+      "itching of skin"
+    ],
+    "top_symptom_weights": {
+      "irregular appearing scalp": 629,
+      "warts": 499,
+      "skin growth": 483,
+      "skin moles": 472,
+      "skin dryness peeling scaliness or roughness": 463,
+      "acne or pimples": 460,
+      "abnormal appearing skin": 458,
+      "itching of skin": 452,
+      "skin rash": 451,
+      "skin swelling": 450,
+      "skin lesion": 441
+    }
+  },
+  "diabetic ketoacidosis": {
+    "id": "diabetic_ketoacidosis",
+    "name": "Diabetic Ketoacidosis",
+    "category": "Endocrine",
+    "count": 673,
+    "symptoms": [
+      "frequent urination",
+      "decreased appetite",
+      "nausea",
+      "fluid retention",
+      "sharp abdominal pain",
+      "sharp chest pain",
+      "vomiting",
+      "diarrhea"
+    ],
+    "top_symptom_weights": {
+      "frequent urination": 457,
+      "decreased appetite": 452,
+      "nausea": 364,
+      "fluid retention": 343,
+      "sharp abdominal pain": 343,
+      "sharp chest pain": 342,
+      "vomiting": 341,
+      "diarrhea": 340,
+      "weakness": 333,
+      "depressive or psychotic symptoms": 327
+    }
+  },
+  "obsessive compulsive disorder (ocd)": {
+    "id": "obsessive_compulsive_disorder_ocd",
+    "name": "Obsessive Compulsive Disorder (ocd)",
+    "category": "General Clinical",
+    "count": 454,
+    "symptoms": [
+      "feeling ill",
+      "lack of growth",
+      "low self esteem",
+      "anxiety and nervousness",
+      "depression",
+      "depressive or psychotic symptoms",
+      "hostile behavior",
+      "temper problems"
+    ],
+    "top_symptom_weights": {
+      "feeling ill": 360,
+      "lack of growth": 299,
+      "low self esteem": 233,
+      "anxiety and nervousness": 230,
+      "depression": 228,
+      "depressive or psychotic symptoms": 228,
+      "hostile behavior": 225,
+      "temper problems": 224,
+      "obsessions and compulsions": 219
+    }
+  },
+  "hyponatremia": {
+    "id": "hyponatremia",
+    "name": "Hyponatremia",
+    "category": "General Clinical",
+    "count": 495,
+    "symptoms": [
+      "shortness of breath",
+      "back pain",
+      "sharp chest pain",
+      "vomiting",
+      "weakness",
+      "nausea",
+      "sharp abdominal pain",
+      "fainting"
+    ],
+    "top_symptom_weights": {
+      "shortness of breath": 343,
+      "back pain": 331,
+      "sharp chest pain": 325,
+      "vomiting": 271,
+      "weakness": 270,
+      "nausea": 266,
+      "sharp abdominal pain": 261,
+      "fainting": 255,
+      "seizures": 252
+    }
+  },
+  "personality disorder": {
+    "id": "personality_disorder",
+    "name": "Personality Disorder",
+    "category": "General Clinical",
+    "count": 911,
+    "symptoms": [
+      "temper problems",
+      "hostile behavior",
+      "delusions or hallucinations",
+      "insomnia",
+      "low self esteem",
+      "fears and phobias",
+      "excessive anger",
+      "drug abuse"
+    ],
+    "top_symptom_weights": {
+      "temper problems": 601,
+      "hostile behavior": 494,
+      "delusions or hallucinations": 472,
+      "insomnia": 463,
+      "low self esteem": 463,
+      "fears and phobias": 458,
+      "excessive anger": 457,
+      "drug abuse": 456,
+      "depression": 455,
+      "anxiety and nervousness": 447,
+      "depressive or psychotic symptoms": 447
+    }
+  },
+  "strep throat": {
+    "id": "strep_throat",
+    "name": "Strep Throat",
+    "category": "Infectious",
+    "count": 1210,
+    "symptoms": [
+      "vomiting",
+      "headache",
+      "ear pain",
+      "skin rash",
+      "decreased appetite",
+      "chills",
+      "nasal congestion",
+      "ache all over"
+    ],
+    "top_symptom_weights": {
+      "vomiting": 638,
+      "headache": 631,
+      "ear pain": 625,
+      "skin rash": 624,
+      "decreased appetite": 614,
+      "chills": 612,
+      "nasal congestion": 608,
+      "ache all over": 608,
+      "cough": 606,
+      "fever": 605,
+      "sore throat": 591,
+      "difficulty in swallowing": 587
+    }
+  },
+  "gastritis": {
+    "id": "gastritis",
+    "name": "Gastritis",
+    "category": "Digestive",
+    "count": 679,
+    "symptoms": [
+      "headache",
+      "diarrhea",
+      "sharp abdominal pain",
+      "regurgitation 1",
+      "nausea",
+      "vomiting",
+      "vomiting blood",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "headache": 459,
+      "diarrhea": 455,
+      "sharp abdominal pain": 346,
+      "regurgitation 1": 341,
+      "nausea": 339,
+      "vomiting": 334,
+      "vomiting blood": 333,
+      "fever": 330,
+      "sharp chest pain": 329,
+      "burning abdominal pain": 329
+    }
+  },
+  "skin cancer": {
+    "id": "skin_cancer",
+    "name": "Skin Cancer",
+    "category": "Dermatological",
+    "count": 661,
+    "symptoms": [
+      "irregular appearing scalp",
+      "lip swelling",
+      "skin lesion",
+      "skin growth",
+      "skin moles",
+      "warts",
+      "skin irritation",
+      "abnormal appearing skin"
+    ],
+    "top_symptom_weights": {
+      "irregular appearing scalp": 450,
+      "lip swelling": 444,
+      "skin lesion": 345,
+      "skin growth": 340,
+      "skin moles": 339,
+      "warts": 337,
+      "skin irritation": 331,
+      "abnormal appearing skin": 327,
+      "skin dryness peeling scaliness or roughness": 326,
+      "skin swelling": 320
+    }
+  },
+  "tonsillitis": {
+    "id": "tonsillitis",
+    "name": "Tonsillitis",
+    "category": "ENT & Sensory",
+    "count": 446,
+    "symptoms": [
+      "lump in throat",
+      "diminished hearing",
+      "abnormal breathing sounds",
+      "throat redness",
+      "nasal congestion",
+      "throat feels tight",
+      "swollen or red tonsils",
+      "sore throat"
+    ],
+    "top_symptom_weights": {
+      "lump in throat": 343,
+      "diminished hearing": 297,
+      "abnormal breathing sounds": 247,
+      "throat redness": 234,
+      "nasal congestion": 232,
+      "throat feels tight": 227,
+      "swollen or red tonsils": 226,
+      "sore throat": 223,
+      "redness in ear": 222
+    }
+  },
+  "developmental disability": {
+    "id": "developmental_disability",
+    "name": "Developmental Disability",
+    "category": "General Clinical",
+    "count": 911,
+    "symptoms": [
+      "restlessness",
+      "temper problems",
+      "seizures",
+      "obsessions and compulsions",
+      "fears and phobias",
+      "hostile behavior",
+      "delusions or hallucinations",
+      "difficulty speaking"
+    ],
+    "top_symptom_weights": {
+      "restlessness": 621,
+      "temper problems": 476,
+      "seizures": 467,
+      "obsessions and compulsions": 467,
+      "fears and phobias": 466,
+      "hostile behavior": 464,
+      "delusions or hallucinations": 462,
+      "difficulty speaking": 455,
+      "antisocial behavior": 455,
+      "depressive or psychotic symptoms": 447,
+      "lack of growth": 447
+    }
+  },
+  "acute stress reaction": {
+    "id": "acute_stress_reaction",
+    "name": "Acute Stress Reaction",
+    "category": "General Clinical",
+    "count": 910,
+    "symptoms": [
+      "abnormal involuntary movements",
+      "sharp chest pain",
+      "headache",
+      "dizziness",
+      "depressive or psychotic symptoms",
+      "fatigue",
+      "burning abdominal pain",
+      "insomnia"
+    ],
+    "top_symptom_weights": {
+      "abnormal involuntary movements": 610,
+      "sharp chest pain": 484,
+      "headache": 470,
+      "dizziness": 467,
+      "depressive or psychotic symptoms": 466,
+      "fatigue": 463,
+      "burning abdominal pain": 460,
+      "insomnia": 454,
+      "depression": 453,
+      "shortness of breath": 447,
+      "anxiety and nervousness": 446
+    }
+  },
+  "delirium": {
+    "id": "delirium",
+    "name": "Delirium",
+    "category": "General Clinical",
+    "count": 598,
+    "symptoms": [
+      "slurring words",
+      "problems with movement",
+      "hostile behavior",
+      "delusions or hallucinations",
+      "difficulty speaking",
+      "focal weakness",
+      "abnormal involuntary movements",
+      "depressive or psychotic symptoms"
+    ],
+    "top_symptom_weights": {
+      "slurring words": 455,
+      "problems with movement": 319,
+      "hostile behavior": 306,
+      "delusions or hallucinations": 303,
+      "difficulty speaking": 301,
+      "focal weakness": 301,
+      "abnormal involuntary movements": 298,
+      "depressive or psychotic symptoms": 297,
+      "disturbance of memory": 297,
+      "depression": 280
+    }
+  },
+  "callus": {
+    "id": "callus",
+    "name": "Callus",
+    "category": "General Clinical",
+    "count": 513,
+    "symptoms": [
+      "acne or pimples",
+      "skin swelling",
+      "foot or toe swelling",
+      "skin growth",
+      "foot or toe pain",
+      "skin lesion",
+      "irregular appearing nails",
+      "abnormal appearing skin"
+    ],
+    "top_symptom_weights": {
+      "acne or pimples": 349,
+      "skin swelling": 332,
+      "foot or toe swelling": 332,
+      "skin growth": 280,
+      "foot or toe pain": 262,
+      "skin lesion": 257,
+      "irregular appearing nails": 256,
+      "abnormal appearing skin": 249,
+      "skin rash": 249
+    }
+  },
+  "deviated nasal septum": {
+    "id": "deviated_nasal_septum",
+    "name": "Deviated Nasal Septum",
+    "category": "General Clinical",
+    "count": 607,
+    "symptoms": [
+      "facial pain",
+      "nosebleed",
+      "painful sinuses",
+      "headache",
+      "difficulty breathing",
+      "abnormal breathing sounds",
+      "allergic reaction",
+      "apnea"
+    ],
+    "top_symptom_weights": {
+      "facial pain": 452,
+      "nosebleed": 319,
+      "painful sinuses": 314,
+      "headache": 311,
+      "difficulty breathing": 311,
+      "abnormal breathing sounds": 310,
+      "allergic reaction": 305,
+      "apnea": 300,
+      "nasal congestion": 296,
+      "sore throat": 276
+    }
+  },
+  "hemangioma": {
+    "id": "hemangioma",
+    "name": "Hemangioma",
+    "category": "General Clinical",
+    "count": 676,
+    "symptoms": [
+      "lip swelling",
+      "irregular appearing scalp",
+      "skin moles",
+      "skin lesion",
+      "skin growth",
+      "lymphedema",
+      "skin dryness peeling scaliness or roughness",
+      "abnormal appearing skin"
+    ],
+    "top_symptom_weights": {
+      "lip swelling": 456,
+      "irregular appearing scalp": 455,
+      "skin moles": 346,
+      "skin lesion": 342,
+      "skin growth": 342,
+      "lymphedema": 336,
+      "skin dryness peeling scaliness or roughness": 336,
+      "abnormal appearing skin": 335,
+      "skin swelling": 326,
+      "irregular appearing nails": 323
+    }
+  },
+  "chronic back pain": {
+    "id": "chronic_back_pain",
+    "name": "Chronic Back Pain",
+    "category": "General Clinical",
+    "count": 899,
+    "symptoms": [
+      "back cramps or spasms",
+      "side pain",
+      "low back pain",
+      "hip pain",
+      "neck pain",
+      "back stiffness or tightness",
+      "back pain",
+      "lower body pain"
+    ],
+    "top_symptom_weights": {
+      "back cramps or spasms": 608,
+      "side pain": 475,
+      "low back pain": 470,
+      "hip pain": 460,
+      "neck pain": 458,
+      "back stiffness or tightness": 455,
+      "back pain": 453,
+      "lower body pain": 452,
+      "loss of sensation": 448,
+      "groin pain": 447,
+      "leg pain": 436
+    }
+  },
+  "heart failure": {
+    "id": "heart_failure",
+    "name": "Heart Failure",
+    "category": "Cardiovascular",
+    "count": 903,
+    "symptoms": [
+      "cough",
+      "difficulty breathing",
+      "palpitations",
+      "sharp chest pain",
+      "hurts to breath",
+      "weight gain",
+      "leg swelling",
+      "fluid retention"
+    ],
+    "top_symptom_weights": {
+      "cough": 615,
+      "difficulty breathing": 468,
+      "palpitations": 468,
+      "sharp chest pain": 462,
+      "hurts to breath": 462,
+      "weight gain": 458,
+      "leg swelling": 456,
+      "fluid retention": 454,
+      "chest tightness": 443,
+      "weakness": 440,
+      "shortness of breath": 438
+    }
+  },
+  "conjunctivitis": {
+    "id": "conjunctivitis",
+    "name": "Conjunctivitis",
+    "category": "General Clinical",
+    "count": 909,
+    "symptoms": [
+      "sore throat",
+      "pain in eye",
+      "coryza",
+      "swollen eye",
+      "eye redness",
+      "cough",
+      "itchiness of eye",
+      "fever"
+    ],
+    "top_symptom_weights": {
+      "sore throat": 598,
+      "pain in eye": 494,
+      "coryza": 480,
+      "swollen eye": 478,
+      "eye redness": 472,
+      "cough": 466,
+      "itchiness of eye": 462,
+      "fever": 459,
+      "white discharge from eye": 454,
+      "nasal congestion": 454,
+      "lacrimation": 451
+    }
+  },
+  "herniated disk": {
+    "id": "herniated_disk",
+    "name": "Herniated Disk",
+    "category": "Digestive",
+    "count": 908,
+    "symptoms": [
+      "arm pain",
+      "low back pain",
+      "paresthesia",
+      "back pain",
+      "neck pain",
+      "loss of sensation",
+      "hip pain",
+      "leg pain"
+    ],
+    "top_symptom_weights": {
+      "arm pain": 596,
+      "low back pain": 477,
+      "paresthesia": 474,
+      "back pain": 472,
+      "neck pain": 464,
+      "loss of sensation": 463,
+      "hip pain": 454,
+      "leg pain": 451,
+      "leg weakness": 449,
+      "shoulder pain": 443,
+      "arm weakness": 432
+    }
+  },
+  "breast infection (mastitis)": {
+    "id": "breast_infection_mastitis",
+    "name": "Breast Infection (mastitis)",
+    "category": "Infectious",
+    "count": 501,
+    "symptoms": [
+      "skin growth",
+      "chills",
+      "mouth dryness",
+      "pain or soreness of breast",
+      "lump or mass of breast",
+      "fever",
+      "postpartum problems of the breast",
+      "bleeding or discharge from nipple"
+    ],
+    "top_symptom_weights": {
+      "skin growth": 335,
+      "chills": 334,
+      "mouth dryness": 333,
+      "pain or soreness of breast": 263,
+      "lump or mass of breast": 254,
+      "fever": 253,
+      "postpartum problems of the breast": 252,
+      "bleeding or discharge from nipple": 251,
+      "abnormal appearing skin": 251
+    }
+  },
+  "pulmonary embolism": {
+    "id": "pulmonary_embolism",
+    "name": "Pulmonary Embolism",
+    "category": "Cardiovascular",
+    "count": 880,
+    "symptoms": [
+      "leg pain",
+      "sharp chest pain",
+      "cough",
+      "side pain",
+      "difficulty breathing",
+      "leg swelling",
+      "sweating",
+      "shortness of breath"
+    ],
+    "top_symptom_weights": {
+      "leg pain": 606,
+      "sharp chest pain": 466,
+      "cough": 460,
+      "side pain": 453,
+      "difficulty breathing": 448,
+      "leg swelling": 447,
+      "sweating": 447,
+      "shortness of breath": 445,
+      "hemoptysis": 441,
+      "weakness": 438,
+      "chest tightness": 431
+    }
+  },
+  "conduct disorder": {
+    "id": "conduct_disorder",
+    "name": "Conduct Disorder",
+    "category": "General Clinical",
+    "count": 679,
+    "symptoms": [
+      "abusing alcohol",
+      "lack of growth",
+      "hostile behavior",
+      "temper problems",
+      "depressive or psychotic symptoms",
+      "seizures",
+      "excessive anger",
+      "depression"
+    ],
+    "top_symptom_weights": {
+      "abusing alcohol": 459,
+      "lack of growth": 451,
+      "hostile behavior": 359,
+      "temper problems": 354,
+      "depressive or psychotic symptoms": 346,
+      "seizures": 343,
+      "excessive anger": 343,
+      "depression": 330,
+      "hysterical behavior": 328,
+      "fainting": 317
+    }
+  },
+  "epididymitis": {
+    "id": "epididymitis",
+    "name": "Epididymitis",
+    "category": "General Clinical",
+    "count": 511,
+    "symptoms": [
+      "mass in scrotum",
+      "painful urination",
+      "retention of urine",
+      "sharp abdominal pain",
+      "groin pain",
+      "pain in testicles",
+      "swelling of scrotum",
+      "side pain"
+    ],
+    "top_symptom_weights": {
+      "mass in scrotum": 353,
+      "painful urination": 337,
+      "retention of urine": 328,
+      "sharp abdominal pain": 272,
+      "groin pain": 272,
+      "pain in testicles": 263,
+      "swelling of scrotum": 257,
+      "side pain": 257,
+      "lower body pain": 248
+    }
+  },
+  "molluscum contagiosum": {
+    "id": "molluscum_contagiosum",
+    "name": "Molluscum Contagiosum",
+    "category": "General Clinical",
+    "count": 511,
+    "symptoms": [
+      "acne or pimples",
+      "abnormal appearing skin",
+      "knee lump or mass",
+      "itching of skin",
+      "warts",
+      "skin lesion",
+      "skin rash",
+      "skin dryness peeling scaliness or roughness"
+    ],
+    "top_symptom_weights": {
+      "acne or pimples": 359,
+      "abnormal appearing skin": 349,
+      "knee lump or mass": 338,
+      "itching of skin": 268,
+      "warts": 259,
+      "skin lesion": 253,
+      "skin rash": 251,
+      "skin dryness peeling scaliness or roughness": 241,
+      "skin swelling": 240
+    }
+  },
+  "benign vaginal discharge (leukorrhea)": {
+    "id": "benign_vaginal_discharge_leukorrhea",
+    "name": "Benign Vaginal Discharge (leukorrhea)",
+    "category": "Reproductive",
+    "count": 682,
+    "symptoms": [
+      "painful urination",
+      "suprapubic pain",
+      "vaginal discharge",
+      "vaginal redness",
+      "pain during pregnancy",
+      "vaginal itching",
+      "frequent urination",
+      "problems during pregnancy"
+    ],
+    "top_symptom_weights": {
+      "painful urination": 462,
+      "suprapubic pain": 450,
+      "vaginal discharge": 360,
+      "vaginal redness": 357,
+      "pain during pregnancy": 355,
+      "vaginal itching": 350,
+      "frequent urination": 350,
+      "problems during pregnancy": 338,
+      "burning abdominal pain": 336,
+      "sharp abdominal pain": 326
+    }
+  },
+  "laryngitis": {
+    "id": "laryngitis",
+    "name": "Laryngitis",
+    "category": "ENT & Sensory",
+    "count": 678,
+    "symptoms": [
+      "throat feels tight",
+      "difficulty speaking",
+      "sore throat",
+      "fever",
+      "nasal congestion",
+      "ear pain",
+      "cough",
+      "coryza"
+    ],
+    "top_symptom_weights": {
+      "throat feels tight": 469,
+      "difficulty speaking": 448,
+      "sore throat": 350,
+      "fever": 349,
+      "nasal congestion": 348,
+      "ear pain": 348,
+      "cough": 347,
+      "coryza": 341,
+      "difficulty in swallowing": 336,
+      "hoarse voice": 326
+    }
+  },
+  "diaper rash": {
+    "id": "diaper_rash",
+    "name": "Diaper Rash",
+    "category": "Dermatological",
+    "count": 897,
+    "symptoms": [
+      "temper problems",
+      "skin rash",
+      "diarrhea",
+      "fever",
+      "diaper rash",
+      "nasal congestion",
+      "vomiting",
+      "pulling at ears"
+    ],
+    "top_symptom_weights": {
+      "temper problems": 603,
+      "skin rash": 483,
+      "diarrhea": 472,
+      "fever": 470,
+      "diaper rash": 467,
+      "nasal congestion": 462,
+      "vomiting": 457,
+      "pulling at ears": 454,
+      "blood in stool": 451,
+      "irritable infant": 439,
+      "cough": 436
+    }
+  },
+  "gastroduodenal ulcer": {
+    "id": "gastroduodenal_ulcer",
+    "name": "Gastroduodenal Ulcer",
+    "category": "Digestive",
+    "count": 683,
+    "symptoms": [
+      "changes in stool appearance",
+      "blood in stool",
+      "vomiting blood",
+      "upper abdominal pain",
+      "vomiting",
+      "sharp abdominal pain",
+      "heartburn",
+      "nausea"
+    ],
+    "top_symptom_weights": {
+      "changes in stool appearance": 460,
+      "blood in stool": 442,
+      "vomiting blood": 362,
+      "upper abdominal pain": 354,
+      "vomiting": 354,
+      "sharp abdominal pain": 350,
+      "heartburn": 350,
+      "nausea": 346,
+      "sharp chest pain": 336,
+      "burning abdominal pain": 320
+    }
+  },
+  "inguinal hernia": {
+    "id": "inguinal_hernia",
+    "name": "Inguinal Hernia",
+    "category": "Digestive",
+    "count": 402,
+    "symptoms": [
+      "symptoms of the scrotum and testes",
+      "lower abdominal pain",
+      "groin pain",
+      "groin mass",
+      "ache all over",
+      "swollen abdomen",
+      "sharp abdominal pain",
+      "pain in testicles"
+    ],
+    "top_symptom_weights": {
+      "symptoms of the scrotum and testes": 261,
+      "lower abdominal pain": 233,
+      "groin pain": 226,
+      "groin mass": 222,
+      "ache all over": 220,
+      "swollen abdomen": 218,
+      "sharp abdominal pain": 215,
+      "pain in testicles": 210,
+      "swelling of scrotum": 208,
+      "mass in scrotum": 207
+    }
+  },
+  "eczema": {
+    "id": "eczema",
+    "name": "Eczema",
+    "category": "Dermatological",
+    "count": 1207,
+    "symptoms": [
+      "itching of skin",
+      "skin lesion",
+      "acne or pimples",
+      "skin swelling",
+      "skin rash",
+      "warts",
+      "irregular appearing scalp",
+      "skin irritation"
+    ],
+    "top_symptom_weights": {
+      "itching of skin": 633,
+      "skin lesion": 619,
+      "acne or pimples": 617,
+      "skin swelling": 615,
+      "skin rash": 614,
+      "warts": 612,
+      "irregular appearing scalp": 609,
+      "skin irritation": 603,
+      "allergic reaction": 601,
+      "abnormal appearing skin": 600,
+      "skin dryness peeling scaliness or roughness": 597,
+      "cough": 591
+    }
+  },
+  "paronychia": {
+    "id": "paronychia",
+    "name": "Paronychia",
+    "category": "General Clinical",
+    "count": 438,
+    "symptoms": [
+      "sinus congestion",
+      "hand or finger swelling",
+      "abnormal appearing skin",
+      "foot or toe swelling",
+      "foot or toe pain",
+      "skin on leg or foot looks infected",
+      "hand or finger pain",
+      "hand or finger lump or mass"
+    ],
+    "top_symptom_weights": {
+      "sinus congestion": 333,
+      "hand or finger swelling": 303,
+      "abnormal appearing skin": 240,
+      "foot or toe swelling": 239,
+      "foot or toe pain": 228,
+      "skin on leg or foot looks infected": 225,
+      "hand or finger pain": 218,
+      "hand or finger lump or mass": 211,
+      "skin on arm or hand looks infected": 203
+    }
+  },
+  "white blood cell disease": {
+    "id": "white_blood_cell_disease",
+    "name": "White Blood Cell Disease",
+    "category": "General Clinical",
+    "count": 504,
+    "symptoms": [
+      "chills",
+      "diarrhea",
+      "heartburn",
+      "fever",
+      "sharp abdominal pain",
+      "nausea",
+      "fatigue",
+      "cough"
+    ],
+    "top_symptom_weights": {
+      "chills": 337,
+      "diarrhea": 334,
+      "heartburn": 333,
+      "fever": 266,
+      "sharp abdominal pain": 265,
+      "nausea": 257,
+      "fatigue": 253,
+      "cough": 250,
+      "vomiting": 247
+    }
+  },
+  "spondylolisthesis": {
+    "id": "spondylolisthesis",
+    "name": "Spondylolisthesis",
+    "category": "Musculoskeletal",
+    "count": 673,
+    "symptoms": [
+      "leg cramps or spasms",
+      "hip pain",
+      "low back pain",
+      "back pain",
+      "neck pain",
+      "paresthesia",
+      "loss of sensation",
+      "leg weakness"
+    ],
+    "top_symptom_weights": {
+      "leg cramps or spasms": 450,
+      "hip pain": 445,
+      "low back pain": 352,
+      "back pain": 349,
+      "neck pain": 341,
+      "paresthesia": 341,
+      "loss of sensation": 339,
+      "leg weakness": 332,
+      "leg pain": 330,
+      "problems with movement": 324
+    }
+  },
+  "conjunctivitis due to virus": {
+    "id": "conjunctivitis_due_to_virus",
+    "name": "Conjunctivitis Due to Virus",
+    "category": "Infectious",
+    "count": 681,
+    "symptoms": [
+      "lacrimation",
+      "diminished vision",
+      "nasal congestion",
+      "pain in eye",
+      "swollen eye",
+      "white discharge from eye",
+      "eye redness",
+      "itchiness of eye"
+    ],
+    "top_symptom_weights": {
+      "lacrimation": 466,
+      "diminished vision": 465,
+      "nasal congestion": 348,
+      "pain in eye": 347,
+      "swollen eye": 345,
+      "white discharge from eye": 341,
+      "eye redness": 338,
+      "itchiness of eye": 338,
+      "fever": 335,
+      "cough": 328
+    }
+  }
+}

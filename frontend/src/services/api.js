@@ -22,10 +22,21 @@ api.interceptors.request.use(
   }
 );
 
-// Response Interceptor: Handle global 401 unauthorized errors
+// Response Interceptor: Handle global 401 unauthorized errors and enhance network errors
 api.interceptors.response.use(
   (response) => response,
   (error) => {
+    // If there is no response, it is a network error (server down, CORS block, or wrong URL)
+    if (!error.response) {
+      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const targetUrl = api.defaults.baseURL || 'http://localhost:5000/api';
+      if (isLocal) {
+        error.userMessage = `Cannot reach backend server at ${targetUrl}. Please ensure your backend is running on port 5000 (run "npm run dev:backend" or "npm run dev").`;
+      } else {
+        error.userMessage = `Cannot connect to API server. If deployed, please ensure VITE_API_URL is configured in your hosting environment variables (e.g., Vercel) and the backend is live.`;
+      }
+    }
+
     if (error.response && error.response.status === 401) {
       // Clear token if invalid or expired
       localStorage.removeItem('token');

@@ -1,0 +1,743 @@
+/* ==========================================================================
+   BmiSection.css — Clinical BMI & Metabolic Risk Analysis Component
+   Editorial design with ink borders, hard offset shadows, and responsive gauges.
+   ========================================================================== */
+
+.bmi-section-wrapper {
+  background: var(--bg);
+  position: relative;
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
+
+/* Quick Presets Row */
+.bmi-presets-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+  padding: 12px 18px;
+  background: var(--surface);
+  border: var(--border);
+  box-shadow: var(--shadow-offset-sm);
+  border-radius: 6px;
+}
+
+.presets-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 4px;
+}
+
+.bmi-preset-chip {
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.bmi-preset-chip:hover {
+  background: var(--green-soft);
+  transform: translateY(-1px);
+}
+
+/* Main Split Grid (Inputs vs Result) */
+.bmi-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 960px) {
+  .bmi-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Biometric Input Card */
+.bmi-input-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bmi-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px dashed var(--ink-subtle);
+}
+
+.bmi-card-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
+.bmi-card-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Unit System Switcher Pill */
+.unit-toggle-pill {
+  display: inline-flex;
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 30px;
+  padding: 3px;
+  box-shadow: var(--shadow-offset-sm);
+}
+
+.unit-toggle-btn {
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: transparent;
+  color: var(--ink-muted);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.unit-toggle-btn.active {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+/* Form Fields */
+.bmi-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.bmi-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bmi-field-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bmi-field-label-row label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.bmi-field-val-badge {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green);
+  background: var(--green-soft);
+  padding: 2px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--ink);
+}
+
+.bmi-input-with-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bmi-number-input {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.bmi-number-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 2px var(--green-soft);
+}
+
+/* Dual inputs for Feet / Inches */
+.bmi-dual-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.dual-input-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-unit-sub {
+  position: absolute;
+  right: 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* Range Slider */
+.bmi-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: var(--green-soft);
+  border: 1.5px solid var(--ink);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.bmi-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  background: var(--surface);
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.bmi-range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: var(--green);
+}
+
+.bmi-range-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  background: var(--surface);
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 var(--ink);
+  cursor: pointer;
+}
+
+/* Demographics Row */
+.bmi-demographics-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .bmi-demographics-row {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+.demo-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.demo-select-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.bmi-select {
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Footer note & reset */
+.bmi-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.bmi-reset-btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.bmi-reset-btn:hover {
+  color: var(--ink);
+}
+
+.bmi-calc-note {
+  font-size: 0.75rem;
+  color: var(--ink-subtle);
+  font-style: italic;
+}
+
+/* Result Card */
+.bmi-result-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bmi-score-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.bmi-score-caption {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bmi-score-display {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.bmi-score-val {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.bmi-score-unit {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.bmi-category-badge-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.bmi-pill-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: 1.5px solid currentColor;
+  border-radius: 20px;
+  box-shadow: 2px 2px 0 var(--ink);
+  white-space: nowrap;
+}
+
+.bmi-severity-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Spectrum Gauge */
+.bmi-gauge-container {
+  margin: 10px 0 24px;
+}
+
+.bmi-gauge-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+  margin-bottom: 6px;
+}
+
+.bmi-gauge-track {
+  position: relative;
+  height: 18px;
+  display: flex;
+  border: var(--border);
+  border-radius: 9px;
+  overflow: visible;
+  box-shadow: var(--shadow-offset-sm);
+}
+
+.gauge-segment {
+  height: 100%;
+  transition: opacity 0.2s ease;
+}
+
+.seg-under {
+  width: 21.6%;
+  background: #2980B9;
+  border-radius: 7px 0 0 7px;
+}
+
+.seg-normal {
+  width: 21.3%;
+  background: #3E9B4F;
+}
+
+.seg-over {
+  width: 16.7%;
+  background: #D47E16;
+}
+
+.seg-obese1 {
+  width: 16.7%;
+  background: #E05338;
+}
+
+.seg-obese2 {
+  width: 23.7%;
+  background: #C0392B;
+  border-radius: 0 7px 7px 0;
+}
+
+/* Dynamic Gauge Sliding Needle */
+.bmi-gauge-needle {
+  position: absolute;
+  top: -8px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  transition: left 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.needle-pin {
+  width: 14px;
+  height: 34px;
+  border: 2px solid var(--ink);
+  border-radius: 7px;
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+.needle-tooltip {
+  position: absolute;
+  top: 36px;
+  background: var(--ink);
+  color: var(--surface);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.bmi-gauge-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-subtle);
+  margin-top: 14px;
+  padding: 0 4px;
+}
+
+/* Targets & Difference Strip */
+.bmi-targets-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 540px) {
+  .bmi-targets-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+.target-metric-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.target-metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.target-metric-val {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.target-metric-status {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.status-optimal {
+  color: var(--green);
+}
+
+.status-under {
+  color: #2980B9;
+}
+
+.status-over {
+  color: #D47E16;
+}
+
+.bmi-clinical-summary {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 20px 0;
+}
+
+.bmi-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Detailed Breakdown Panels */
+.bmi-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bmi-detail-panel {
+  padding: 28px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px dashed var(--ink-subtle);
+}
+
+.panel-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.panel-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: var(--ink);
+}
+
+.panel-subtitle {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+/* Risks Grid */
+.panel-risks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.risk-item-box {
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 6px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow-offset-sm);
+}
+
+.risk-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.risk-item-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--ink);
+  flex-shrink: 0;
+}
+
+.risk-item-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ink);
+}
+
+.risk-item-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+/* Factors Checklist */
+.factors-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.factor-check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 6px;
+  padding: 12px 16px;
+  box-shadow: var(--shadow-offset-sm);
+}
+
+.factor-check-icon {
+  width: 22px;
+  height: 22px;
+  background: var(--green);
+  color: #FFFFFF;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.factor-check-text {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Consistent Goals Panel (Highlight) */
+.goals-panel-optimal {
+  background: var(--surface);
+  border-color: var(--green);
+  box-shadow: var(--shadow-offset-lg);
+}
+
+.goals-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.goal-card {
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: var(--shadow-offset-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-offset);
+}
+
+.goal-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goal-card-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.goal-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ink);
+}
+
+.goal-card-target {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink-muted);
+  margin: 0;
+}
