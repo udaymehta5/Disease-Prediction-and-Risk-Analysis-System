@@ -7,6 +7,10 @@ const dotenv = require('dotenv');
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 dotenv.config();
 
+// Capture runtime overrides (e.g., PORT passed via CLI) before db.js reloads .env with override: true
+const PORT = process.env.PORT || 5000;
+const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
+
 const authRoutes = require('./routes/authRoutes');
 const uploadRoutes = require('./routes/uploadRoutes');
 const chatRoutes = require('./routes/chatRoutes');
@@ -15,8 +19,6 @@ const historyRoutes = require('./routes/historyRoutes');
 const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
 
 // 1. CORS Configuration (Supports localhost, 127.0.0.1, Vercel, and custom domains)
 const allowedOrigins = [
